@@ -1,0 +1,1388 @@
+[
+  {
+    "chunk_id": "courses_001",
+    "text": "COURSES - Corvit Systems (Overview & Policy)\n\nCORVIT SYSTEMS — COURSE INFORMATION & COURSE OUTLINES\n======================================================\n\nDATA TYPE:\nCourses, Course Duration, Technologies, Topics, Career Guidance\n\nSOURCE:\nOfficial Corvit Systems course information\n\nIMPORTANT:\nCourse availability, batch dates, timings and fees can change.\nA course appearing in the course information does not automatically\nmean that the course is currently open for admission.",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "COURSES - Corvit Systems (Overview & Policy)",
+    "char_count": 479,
+    "token_estimate": 60
+  },
+  {
+    "chunk_id": "courses_002",
+    "text": "1. ARTIFICIAL INTELLIGENCE MACHINE LEARNING & DEEP LEARNING\n\nDuration:\n3 Months\n\nMain Area:\nArtificial Intelligence, Machine Learning and Deep Learning\n\nTopics / Skills:\n\n- Artificial Intelligence fundamentals\n- Machine Learning\n- Deep Learning\n- Natural Language Processing (NLP)\n- Python programming\n- Azure AI\n- Linux\n- Anaconda\n- VS Code\n- PyCharm\n- AI development concepts\n\nSuitable For:\n\n- Students interested in Artificial Intelligence\n- Students interested in Machine Learning\n- Students interested in Deep Learning\n- Students interested in Python and AI development\n- Students interested in AI/ML careers\n\nRecommended Background:\n\nBasic programming knowledge can be helpful, but students should\nconfirm the latest course requirements before enrollment.",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "1. ARTIFICIAL INTELLIGENCE MACHINE LEARNING & DEEP LEARNING",
+    "char_count": 761,
+    "token_estimate": 109
+  },
+  {
+    "chunk_id": "courses_003",
+    "text": "2. ARTIFICIAL INTELLIGENCE — ROBOTICS\n\nDuration:\n3 Months\n\nMain Area:\nArtificial Intelligence and Robotics\n\nTopics / Skills:\n\n- Artificial Intelligence\n- Robotics concepts\n- Programming\n- Machine Learning\n- Computer Vision\n- Git\n- HTML\n- CSS\n- JavaScript\n- Cloud concepts\n- AI and robotics development\n\nSuitable For:\n\n- Students interested in Robotics\n- Students interested in AI\n- Students interested in programming\n- Students interested in Computer Vision\n- Students interested in automation",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "2. ARTIFICIAL INTELLIGENCE — ROBOTICS",
+    "char_count": 493,
+    "token_estimate": 75
+  },
+  {
+    "chunk_id": "courses_004",
+    "text": "3. CIT — WEB DEVELOPMENT\n\nDuration:\n3 Months\n\nMain Area:\nWeb Development\n\nTopics / Skills:\n\n- World Wide Web fundamentals\n- Website development\n- HTML\n- CSS\n- Bootstrap\n- Forms\n- Tables\n- Multimedia\n- Web page structure\n- Laravel\n- CRUD operations\n- Database-related web development\n- Gallery development\n- Website projects\n\nSuitable For:\n\n- Beginners interested in web development\n- Students who want to create websites\n- Students interested in frontend/backend development\n- Students interested in freelancing",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "3. CIT — WEB DEVELOPMENT",
+    "char_count": 511,
+    "token_estimate": 80
+  },
+  {
+    "chunk_id": "courses_005",
+    "text": "4. DIGITAL MARKETING & SEO\n\nDuration:\n3 Months\n\nMain Area:\nDigital Marketing and Search Engine Optimization\n\nTopics / Skills:\n\n- Digital Marketing fundamentals\n- Search Engine Optimization (SEO)\n- Search engines\n- Keyword research\n- On-page SEO\n- Technical SEO\n- Google Search Console\n- Google Analytics\n- PPC / Paid advertising\n- YouTube marketing\n- Digital marketing strategies\n- Freelancing\n\nSuitable For:\n\n- Students interested in online marketing\n- Students interested in SEO\n- Students interested in freelancing\n- Students interested in social media and online business",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "4. DIGITAL MARKETING & SEO",
+    "char_count": 575,
+    "token_estimate": 88
+  },
+  {
+    "chunk_id": "courses_006",
+    "text": "5. CLOUD COMPUTING — MICROSOFT AZURE\n\nDuration:\n3 Months\n\nMain Area:\nCloud Computing and Microsoft Azure\n\nTopics / Skills:\n\n- Networking fundamentals\n- Virtualization\n- Cloud Computing\n- Microsoft Azure\n- Azure services\n- Cloud security\n- Azure Active Directory\n- Cloud infrastructure\n- Cloud administration concepts\n\nSuitable For:\n\n- Students interested in Cloud Computing\n- Students interested in Microsoft Azure\n- Students interested in cloud administration\n- IT/networking students",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "5. CLOUD COMPUTING — MICROSOFT AZURE",
+    "char_count": 485,
+    "token_estimate": 70
+  },
+  {
+    "chunk_id": "courses_007",
+    "text": "6. DEVOPS\n\nMain Area:\nDevelopment Operations, Automation and Cloud\n\nTopics / Skills:\n\n- Infrastructure concepts\n- Agile methodology\n- Ubuntu / Linux\n- Networking\n- AWS\n- Microsoft Azure\n- Bash\n- PowerShell\n- Python\n- YAML\n- Automation\n- DevOps practices\n- Cloud-related technologies\n\nSuitable For:\n\n- Students interested in DevOps\n- Students interested in Cloud Computing\n- Students interested in Linux\n- Students interested in automation\n- IT professionals and developers",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "6. DEVOPS",
+    "char_count": 472,
+    "token_estimate": 73
+  },
+  {
+    "chunk_id": "courses_008",
+    "text": "7. CYBER SECURITY\n\nMain Area:\nCyber Security and Information Security\n\nTopics / Skills:\n\n- Cybersecurity fundamentals\n- Information Security\n- Hacking concepts\n- Footprinting\n- Scanning\n- Penetration Testing concepts\n- Security assessment concepts\n- VMware\n- EVE-NG\n- Kali Linux\n- Network security concepts\n\nSuitable For:\n\n- Students interested in Cyber Security\n- Students interested in ethical hacking\n- Students interested in network security\n- Students interested in penetration testing\n\nIMPORTANT:\nSecurity topics should be understood and practiced only in\nauthorized educational/lab environments.",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "7. CYBER SECURITY",
+    "char_count": 602,
+    "token_estimate": 84
+  },
+  {
+    "chunk_id": "courses_009",
+    "text": "8. E-COMMERCE\n\nMain Area:\nE-Commerce and Online Business\n\nTopics / Skills:\n\n- Local E-Commerce\n- Inventory management\n- Logistics\n- Digital Marketing\n- Social Media\n- SEO\n- Daraz\n- Shopify\n- WooCommerce\n- Product launching\n- Online business\n- Freelancing\n\nSuitable For:\n\n- Students interested in online business\n- Students interested in E-Commerce\n- Students interested in Shopify\n- Students interested in Daraz\n- Students interested in freelancing",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "8. E-COMMERCE",
+    "char_count": 448,
+    "token_estimate": 69
+  },
+  {
+    "chunk_id": "courses_010",
+    "text": "9. GRAPHIC DESIGNING & VIDEO EDITING\n\nMain Area:\nGraphic Design and Video Editing\n\nStudents interested in visual content creation can consider this\narea.\n\nPotential career directions include:\n\n- Graphic Designer\n- Video Editor\n- Social Media Content Creator\n- Digital Content Creator\n- Freelancing\n\nThe exact current syllabus and software should be confirmed from\nthe latest Corvit course information.",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "9. GRAPHIC DESIGNING & VIDEO EDITING",
+    "char_count": 401,
+    "token_estimate": 59
+  },
+  {
+    "chunk_id": "courses_011",
+    "text": "10. MOBILE APP DEVELOPMENT\n\nMain Area:\nMobile Application Development\n\nSuitable For:\n\n- Students interested in mobile applications\n- Students interested in programming\n- Students interested in software development\n\nThe exact current syllabus, technology stack and duration should be\nconfirmed from the latest Corvit course information.",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "10. MOBILE APP DEVELOPMENT",
+    "char_count": 335,
+    "token_estimate": 45
+  },
+  {
+    "chunk_id": "courses_012",
+    "text": "11. PYTHON\n\nMain Area:\nPython Programming\n\nSuitable For:\n\n- Beginners interested in programming\n- Students interested in Python\n- Students planning to enter AI/ML\n- Students interested in automation\n- Students interested in software development\n\nPython can also be useful as a foundation for:\n\n- Artificial Intelligence\n- Machine Learning\n- Data Science\n- Automation\n- Backend Development\n\nThe exact current Python course syllabus should be confirmed from\nthe latest Corvit information.",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "11. PYTHON",
+    "char_count": 486,
+    "token_estimate": 72
+  },
+  {
+    "chunk_id": "courses_013",
+    "text": "12. .NET CORE + REACT\n\nMain Area:\nWeb / Software Development\n\nTechnology Areas:\n\n- .NET Core\n- React\n- Web application development\n- Frontend development\n- Backend development\n\nSuitable For:\n\n- Students interested in full-stack development\n- Students interested in modern web applications\n- Students interested in software development",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "12. .NET CORE + REACT",
+    "char_count": 334,
+    "token_estimate": 49
+  },
+  {
+    "chunk_id": "courses_014",
+    "text": "13. CCNA / NETWORKING\n\nMain Area:\nComputer Networking\n\nCommon areas associated with networking training include:\n\n- Networking fundamentals\n- Routing\n- Switching\n- Network configuration\n- Network troubleshooting\n- Cisco technologies\n- CCNA preparation\n\nSuitable For:\n\n- Students interested in networking\n- Students interested in system administration\n- Students interested in network engineering\n- Students interested in IT infrastructure",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "13. CCNA / NETWORKING",
+    "char_count": 438,
+    "token_estimate": 59
+  },
+  {
+    "chunk_id": "courses_015",
+    "text": "14. COURSE RECOMMENDATION LOGIC\n\nThe chatbot should recommend a course based on the student's:\n\n- Interest\n- Career goal\n- Educational background\n- Previous technical knowledge\n- Programming interest\n- Beginner/intermediate/advanced level\n- Preferred field\n\nExamples:\n\nIf student says:\n\"I want to learn AI.\"\n\nRecommend:\nArtificial Intelligence — Machine Learning & Deep Learning\n\nIf student says:\n\"I want to make websites.\"\n\nRecommend:\nCIT — Web Development\n\nIf student says:\n\"I am interested in hacking and security.\"\n\nRecommend:\nCyber Security\n\nIf student says:\n\"I want to learn cloud.\"\n\nRecommend:\nCloud Computing / Microsoft Azure\n\nIf student says:\n\"I want to learn AWS, Linux and automation.\"\n\nRecommend:\nDevOps\n\nIf student says:\n\"I want to sell products online.\"\n\nRecommend:\nE-Commerce\n\nIf student says:\n\"I want to earn through SEO and online marketing.\"\n\nRecommend:\nDigital Marketing & SEO\n\nIf student says:\n\"I want to make mobile apps.\"\n\nRecommend:\nMobile App Development\n\nIf student says:\n\"I want to learn programming first.\"\n\nRecommend:\nPython or an appropriate beginner programming course.",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "14. COURSE RECOMMENDATION LOGIC",
+    "char_count": 1100,
+    "token_estimate": 164
+  },
+  {
+    "chunk_id": "courses_016",
+    "text": "15. BEGINNER STUDENT GUIDANCE\n\nIf a student has no technical background:\n\n1. Ask about their interest.\n2. Ask about their career goal.\n3. Ask whether they like programming.\n4. Ask whether they prefer creative work, business, security,\n   networking, cloud or AI.\n5. Recommend an appropriate beginner-friendly course.\n6. Explain why the course is suitable.\n7. Provide duration and outline if available.\n8. Provide latest timetable and fee only when current data is\n   available.",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "15. BEGINNER STUDENT GUIDANCE",
+    "char_count": 477,
+    "token_estimate": 73
+  },
+  {
+    "chunk_id": "courses_017",
+    "text": "16. COURSE SELECTION EXAMPLES\n\nInterest:\nAI / Machine Learning\n\nRecommendation:\nAI — Machine Learning & Deep Learning\n\nInterest:\nRobotics / Computer Vision\n\nRecommendation:\nAI — Robotics\n\nInterest:\nWebsite Development\n\nRecommendation:\nCIT — Web Development\n\nInterest:\nSEO / Digital Marketing\n\nRecommendation:\nDigital Marketing & SEO\n\nInterest:\nCloud / Azure\n\nRecommendation:\nCloud Computing — Microsoft Azure\n\nInterest:\nDevOps / AWS / Linux\n\nRecommendation:\nDevOps\n\nInterest:\nCybersecurity / Ethical Hacking\n\nRecommendation:\nCyber Security\n\nInterest:\nOnline Store / Shopify / Daraz\n\nRecommendation:\nE-Commerce\n\nInterest:\nNetworking / Cisco\n\nRecommendation:\nCCNA / Networking",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "16. COURSE SELECTION EXAMPLES",
+    "char_count": 674,
+    "token_estimate": 87
+  },
+  {
+    "chunk_id": "courses_018",
+    "text": "17. IMPORTANT COURSE DATA RULE\n\nThe chatbot MUST NOT assume that:\n\n- Every listed course is currently open.\n- Every course has the same duration.\n- Every course has the same fee.\n- Every course is available at every campus.\n- Every course is available online.\n- Every course is currently offered under NAVTTC.\n\nCurrent course availability must be verified using the latest official\nCorvit information.",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "17. IMPORTANT COURSE DATA RULE",
+    "char_count": 401,
+    "token_estimate": 66
+  },
+  {
+    "chunk_id": "courses_019",
+    "text": "18. CHATBOT COURSE RESPONSE FORMAT\n\nWhen a student asks about a course, the chatbot should preferably\nprovide:\n\nCourse Name:\nDuration:\nMain Topics:\nSuitable For:\nCareer Direction:\nTraining Mode:\nCurrent Timetable:\nCurrent Fee:\nAdmission Information:\n\nIf any information is unavailable or time-sensitive, clearly tell\nthe student that it needs current verification.",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "18. CHATBOT COURSE RESPONSE FORMAT",
+    "char_count": 364,
+    "token_estimate": 50
+  },
+  {
+    "chunk_id": "courses_020",
+    "text": "19. COURSE RECOMMENDATION SAFETY / ACCURACY\n\nThe chatbot should recommend courses based on the student's stated\ngoals and interests.\n\nIt should not guarantee:\n\n- A job\n- A specific salary\n- Guaranteed freelancing income\n- Guaranteed admission\n- Guaranteed certification\n- Guaranteed employment\n\nRecommendations should be presented as guidance, not guarantees.",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "19. COURSE RECOMMENDATION SAFETY / ACCURACY",
+    "char_count": 359,
+    "token_estimate": 51
+  },
+  {
+    "chunk_id": "courses_021",
+    "text": "20. DATA REVIEW\n\nThis file contains course information collected from Corvit's\nofficial course information.\n\nCourse availability, fees, schedules and admission information are\ndynamic and should be updated when new official information becomes\navailable.\n\nLast reviewed:\nSeptember 2026\n\n======================================================\nEND OF FILE\n======================================================",
+    "category": "courses",
+    "source_file": "corvit_courses.txt",
+    "section_title": "20. DATA REVIEW",
+    "char_count": 408,
+    "token_estimate": 42
+  },
+  {
+    "chunk_id": "navttc_001",
+    "text": "NAVTTC - Corvit Systems (Overview & Policy)\n\nCORVIT SYSTEMS — NAVTTC INFORMATION\n====================================\n\nDATA SOURCE:\nOfficial Corvit Systems website\n\nDATA COLLECTION DATE:\n04 September 2026",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "NAVTTC - Corvit Systems (Overview & Policy)",
+    "char_count": 204,
+    "token_estimate": 25
+  },
+  {
+    "chunk_id": "navttc_002",
+    "text": "1. WHAT IS NAVTTC?\n\nNAVTTC stands for National Vocational and Technical\nTraining Commission.\n\nNAVTTC is a Government of Pakistan organization\nresponsible for promoting and supporting technical and\nvocational education and training.\n\nCorvit Systems describes itself as a NAVTTC-approved\ntraining institute.",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "1. WHAT IS NAVTTC?",
+    "char_count": 305,
+    "token_estimate": 40
+  },
+  {
+    "chunk_id": "navttc_003",
+    "text": "2. NAVTTC TRAINING AT CORVIT\n\nCorvit Systems offers NAVTTC-supported technical and\nvocational training programs.\n\nCorvit states that its NAVTTC programs are funded by\nthe Government of Pakistan.\n\nFor eligible students, these programs are offered\nwithout tuition fees.\n\nThe availability of a particular program can depend\non the current NAVTTC project, batch and seats.",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "2. NAVTTC TRAINING AT CORVIT",
+    "char_count": 368,
+    "token_estimate": 53
+  },
+  {
+    "chunk_id": "navttc_004",
+    "text": "3. NAVTTC COURSES LISTED BY CORVIT\n\nThe following programs are listed on Corvit's current\nNAVTTC page:\n\n1. Full Stack Web Development\n\n2. Cyber Security\n\n3. Artificial Intelligence\n\n4. Graphic Designing and Video Editing\n\n5. Digital Marketing and SEO\n\n6. Cloud Computing AWS\n\n7. DevOps",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "3. NAVTTC COURSES LISTED BY CORVIT",
+    "char_count": 285,
+    "token_estimate": 44
+  },
+  {
+    "chunk_id": "navttc_005",
+    "text": "4. NAVTTC COURSE BENEFITS\n\nAccording to Corvit, NAVTTC programs can provide:\n\n- Free training for eligible students\n- Government-funded training\n- Practical / hands-on training\n- Assessments\n- NAVTTC certification\n- Market-relevant technical skills\n- Career development opportunities\n- Job-oriented skills\n- Freelancing opportunities\n- Real-project exposure",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "4. NAVTTC COURSE BENEFITS",
+    "char_count": 357,
+    "token_estimate": 47
+  },
+  {
+    "chunk_id": "navttc_006",
+    "text": "5. NAVTTC CERTIFICATION\n\nCorvit states that students who successfully complete\nthe relevant NAVTTC program receive an official NAVTTC\ncertificate.\n\nThe certificate is described by Corvit as being\nrecognized across Pakistan.",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "5. NAVTTC CERTIFICATION",
+    "char_count": 223,
+    "token_estimate": 30
+  },
+  {
+    "chunk_id": "navttc_007",
+    "text": "6. GENERAL ELIGIBILITY\n\nEligibility requirements can vary according to the\nspecific NAVTTC program and current NAVTTC project.\n\nCorvit's current NAVTTC page states that Pakistani\nstudents who meet the basic education and age\nrequirements set by NAVTTC can apply.\n\nCorvit also states that most courses require at least\nIntermediate education.\n\nIMPORTANT:\n\nThe chatbot must NOT tell every student that the same\neligibility criteria apply to every course.\n\nInstead, it should say:\n\n\"Eligibility can vary by course and current NAVTTC\nrequirements. Please check the latest eligibility\nrequirements for the specific course.\"",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "6. GENERAL ELIGIBILITY",
+    "char_count": 618,
+    "token_estimate": 89
+  },
+  {
+    "chunk_id": "navttc_008",
+    "text": "7. NAVTTC ADMISSION PROCESS\n\nCorvit describes the following general process:\n\nSTEP 1:\nCheck the currently available NAVTTC courses.\n\nSTEP 2:\nSelect the course that matches your interests and\ncareer goals.\n\nSTEP 3:\nCheck whether you meet the eligibility requirements.\n\nSTEP 4:\nComplete the NAVTTC registration/application form\nonline or visit the Corvit Lahore campus.\n\nSTEP 5:\nSubmit the required documents.\n\nSTEP 6:\nAppear for any required interview or test.\n\nSTEP 7:\nAfter successful enrollment, start the training.",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "7. NAVTTC ADMISSION PROCESS",
+    "char_count": 517,
+    "token_estimate": 76
+  },
+  {
+    "chunk_id": "navttc_009",
+    "text": "8. REQUIRED DOCUMENTS\n\nThe exact required documents can vary according to\nthe current NAVTTC program.\n\nStudents should check the latest admission instructions\nbefore submitting an application.\n\nThe chatbot should NOT invent a fixed document list\nunless that list is present in the current official\nsource.",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "8. REQUIRED DOCUMENTS",
+    "char_count": 305,
+    "token_estimate": 45
+  },
+  {
+    "chunk_id": "navttc_010",
+    "text": "9. SEAT AVAILABILITY\n\nCorvit states that NAVTTC seats are limited and in\nhigh demand.\n\nStudents are encouraged to register early when a\nrelevant batch is open.",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "9. SEAT AVAILABILITY",
+    "char_count": 159,
+    "token_estimate": 26
+  },
+  {
+    "chunk_id": "navttc_011",
+    "text": "10. NAVTTC VS PAID TRAINING\n\nNAVTTC TRAINING:\n\n- Government-supported/funded program\n- Free tuition for eligible students\n- Eligibility requirements apply\n- Course availability depends on current NAVTTC\n  programs/batches\n- NAVTTC certification may be provided after\n  successful completion\n- Seats may be limited\n\nPAID TRAINING:\n\n- Student pays the course fee\n- Course availability depends on Corvit's current\n  paid-course offerings\n- Fee depends on the selected course\n- Schedule depends on the current batch\n- Certification depends on the specific course/program",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "10. NAVTTC VS PAID TRAINING",
+    "char_count": 566,
+    "token_estimate": 80
+  },
+  {
+    "chunk_id": "navttc_012",
+    "text": "11. HOW CHATBOT SHOULD EXPLAIN FREE VS PAID\n\nIf a student asks:\n\n\"Corvit mein free courses hain?\"\n\nAnswer:\n\n\"Yes. Corvit currently lists NAVTTC-supported programs\nthat are free for eligible students. These include areas\nsuch as Artificial Intelligence, Cyber Security, Full\nStack Web Development, Digital Marketing & SEO, Cloud\nComputing AWS, DevOps, and Graphic Designing & Video\nEditing. Availability depends on the current NAVTTC\nbatch and eligibility.\"\n\nIf a student asks:\n\n\"Free course konsa hai?\"\n\nAnswer:\n\n\"Corvit's NAVTTC page currently lists several free\nprograms. Tell me your area of interest—for example AI,\nCyber Security, Web Development, Cloud or Digital\nMarketing—and I can help you choose a suitable option.\"\n\nIf a student asks:\n\n\"Paid course aur NAVTTC course mein kya difference hai?\"\n\nAnswer:\n\n\"NAVTTC programs are government-supported and are free\nfor eligible students, while paid courses require the\nstudent to pay the course fee. NAVTTC courses also have\nspecific eligibility and batch requirements.\"",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "11. HOW CHATBOT SHOULD EXPLAIN FREE VS PAID",
+    "char_count": 1024,
+    "token_estimate": 151
+  },
+  {
+    "chunk_id": "navttc_013",
+    "text": "12. COURSE RECOMMENDATION USING NAVTTC\n\nIf the student is interested in Artificial Intelligence:\n\nRecommended:\nArtificial Intelligence\n\nReason:\nSuitable for students interested in AI and related\ntechnical fields.\n\nIf the student is interested in websites:\n\nRecommended:\nFull Stack Web Development\n\nReason:\nSuitable for students who want to learn complete\nweb-development skills and build web applications.\n\nIf the student is interested in hacking/security:\n\nRecommended:\nCyber Security\n\nReason:\nSuitable for students interested in cyber security\nand information security.\n\nIf the student is interested in online business,\nmarketing or SEO:\n\nRecommended:\nDigital Marketing and SEO\n\nReason:\nSuitable for students interested in digital marketing,\nSEO, online business and related digital skills.\n\nIf the student is interested in cloud technology:\n\nRecommended:\nCloud Computing AWS\n\nReason:\nSuitable for students interested in cloud computing,\ncloud infrastructure and AWS.\n\nIf the student is interested in DevOps:\n\nRecommended:\nDevOps\n\nReason:\nSuitable for students interested in software\ndevelopment operations, automation and deployment.\n\nIf the student is interested in design/video:\n\nRecommended:\nGraphic Designing and Video Editing\n\nReason:\nSuitable for students interested in visual design,\ncreative work, graphics and video editing.",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "12. COURSE RECOMMENDATION USING NAVTTC",
+    "char_count": 1336,
+    "token_estimate": 178
+  },
+  {
+    "chunk_id": "navttc_014",
+    "text": "13. IMPORTANT CHATBOT RULES\n\nRULE 1:\nNever tell a student that a NAVTTC course is available\nunless it exists in the latest dataset.\n\nRULE 2:\nNever guarantee admission.\n\nRULE 3:\nNever guarantee that a student is eligible without\nchecking the relevant course requirements.\n\nRULE 4:\nNever claim that every NAVTTC course has identical\neligibility requirements.\n\nRULE 5:\nNever invent application deadlines.\n\nRULE 6:\nNever invent fees.\n\nRULE 7:\nFor changing information such as batches, seats,\ndeadlines and eligibility, use the latest available\nofficial Corvit/NAVTTC information.\n\nRULE 8:\nIf the chatbot does not have current information, it\nshould clearly say that the student should verify the\nlatest information from Corvit.",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "13. IMPORTANT CHATBOT RULES",
+    "char_count": 723,
+    "token_estimate": 109
+  },
+  {
+    "chunk_id": "navttc_015",
+    "text": "14. SOURCE\n\nPrimary source:\n\nCorvit Systems official website\nNAVTTC Free Courses page\n\nData collected:\n04 September 2026\n\nThis dataset should be updated whenever Corvit publishes\nnew NAVTTC programs, batches, eligibility requirements,\nadmission dates or other important changes.",
+    "category": "navttc",
+    "source_file": "corvit_navttc.txt",
+    "section_title": "14. SOURCE",
+    "char_count": 278,
+    "token_estimate": 37
+  },
+  {
+    "chunk_id": "timetable_001",
+    "text": "TIMETABLE - Corvit Systems (Overview & Policy)\n\nCORVIT SYSTEMS — TIMETABLE & CLASS SCHEDULE DATA\n==================================================\n\nDATA TYPE:\nClass Timings, Batches, Schedule, Online/On-Campus\n\nSOURCE:\nOfficial Corvit Systems website and official Corvit schedule pages\n\nIMPORTANT:\nTimetable information is TIME-SENSITIVE.\n\nClass timings, starting dates, trainers, course availability,\ncampus availability and online/on-campus options can change.\n\nThe chatbot must always prefer the latest official timetable.",
+    "category": "timetable",
+    "source_file": "corvit_timetable.txt",
+    "section_title": "TIMETABLE - Corvit Systems (Overview & Policy)",
+    "char_count": 526,
+    "token_estimate": 61
+  },
+  {
+    "chunk_id": "timetable_002",
+    "text": "1. GENERAL CORVIT TIMINGS\n\nCorvit Systems general operating/training hours are listed as:\n\n9:00 AM to 9:00 PM\n\nActual class timing depends on the course, batch, trainer and campus.",
+    "category": "timetable",
+    "source_file": "corvit_timetable.txt",
+    "section_title": "1. GENERAL CORVIT TIMINGS",
+    "char_count": 180,
+    "token_estimate": 28
+  },
+  {
+    "chunk_id": "timetable_003",
+    "text": "2. TRAINING MODES\n\nDepending on the course and batch, Corvit may offer:\n\n- On-Campus classes\n- Online classes\n- Live virtual sessions\n- Weekend batches\n- Weekday batches\n- Morning batches\n- Evening batches\n\nAvailability varies by course and campus.",
+    "category": "timetable",
+    "source_file": "corvit_timetable.txt",
+    "section_title": "2. TRAINING MODES",
+    "char_count": 248,
+    "token_estimate": 40
+  },
+  {
+    "chunk_id": "timetable_004",
+    "text": "3. RAWALPINDI — JULY 2026 SCHEDULE SNAPSHOT\n\nNOTE:\n\nThe following is a July 2026 schedule snapshot published by Corvit.\nIt must NOT be presented by the chatbot as the current September 2026\ntimetable unless a current official source confirms it.\n\n--------------------------------------------------\nCCNA 200-301 — MORNING\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n11:00 AM – 12:00 PM\n\nMode:\nOn-Campus / Online\n\nStart:\n13 July 2026\n\n--------------------------------------------------\nCCNA 200-301 — EVENING\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n6:00 PM – 7:00 PM\n\nStart:\n7 July 2026\n\n--------------------------------------------------\nCCNA 200-301 — WEEKEND\n--------------------------------------------------\n\nDays:\nSaturday / Sunday\n\nTime:\n12:00 PM – 2:00 PM\n\nStart:\n18 July 2026\n\n--------------------------------------------------\nCCNP ENCOR\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n7:00 PM – 8:00 PM\n\nStart:\n20 July 2026\n\n--------------------------------------------------\nIBM QRADAR — SIEM\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n9:00 PM – 10:00 PM\n\nMode:\nOnline Only\n\nStart:\n13 July 2026\n\n--------------------------------------------------\nSOC ANALYST\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n6:00 PM – 7:00 PM\n\nStart:\n20 July 2026",
+    "category": "timetable",
+    "source_file": "corvit_timetable.txt",
+    "section_title": "3. RAWALPINDI — JULY 2026 SCHEDULE SNAPSHOT",
+    "char_count": 1447,
+    "token_estimate": 163
+  },
+  {
+    "chunk_id": "timetable_005",
+    "text": "3. RAWALPINDI — JULY 2026 SCHEDULE SNAPSHOT\n\nStart:\n20 July 2026\n\n--------------------------------------------------\nCERTIFIED ETHICAL HACKER — CEH\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n6:00 PM – 7:00 PM\n\nStart:\n16 July 2026\n\nMode:\nOn-Campus / Online\n\n--------------------------------------------------\nCEH — WEEKEND\n--------------------------------------------------\n\nDays:\nSaturday / Sunday\n\nTime:\n12:00 PM – 2:00 PM\n\nStart:\n11 July 2026\n\nMode:\nOn-Campus / Online\n\n--------------------------------------------------\nAI FOR CYBER SECURITY\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n3:00 PM – 5:00 PM\n\nStart:\n20 July 2026\n\n--------------------------------------------------\nMICROSOFT AZURE 104\n--------------------------------------------------\n\nDays:\nMonday, Wednesday & Friday\n\nTime:\n9:00 PM – 10:00 PM\n\nMode:\nOnline Only\n\nStart:\n13 July 2026\n\n--------------------------------------------------\nAWS SAA-C03\n--------------------------------------------------\n\nCourse:\nAWS Solutions Architect\n\nDays:\nTuesday, Thursday & Saturday\n\nTime:\n9:00 PM – 10:00 PM\n\nStart:\n14 July 2026\n\n--------------------------------------------------\nMICROSOFT SERVER ADMINISTRATION\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n3:00 PM – 4:00 PM\n\nStart:\n16 July 2026\n\n--------------------------------------------------\nDATA ANALYTICS\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n6:00 PM – 7:00 PM",
+    "category": "timetable",
+    "source_file": "corvit_timetable.txt",
+    "section_title": "3. RAWALPINDI — JULY 2026 SCHEDULE SNAPSHOT",
+    "char_count": 1534,
+    "token_estimate": 158
+  },
+  {
+    "chunk_id": "timetable_006",
+    "text": "3. RAWALPINDI — JULY 2026 SCHEDULE SNAPSHOT\n\nTime:\n6:00 PM – 7:00 PM\n\nStart:\n6 July 2026\n\n--------------------------------------------------\nPYTHON PROGRAMMING\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n5:00 PM – 6:00 PM\n\nStart:\n15 July 2026\n\n--------------------------------------------------\nARTIFICIAL INTELLIGENCE\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n12:00 PM – 1:00 PM\n\nStart:\n15 July 2026\n\n--------------------------------------------------\nFULL STACK PYTHON\n--------------------------------------------------\n\nCourse:\nFull Stack Python — Basic to Expert Data Science\n\nDays:\nSaturday / Sunday\n\nTime:\n10:00 AM – 12:00 PM\n\nStart:\n18 July 2026\n\n--------------------------------------------------\nROBOTICS FOR KIDS\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n10:00 AM – 11:00 AM\nAND\n6:00 PM – 8:00 PM\n\nStart:\n16 July 2026\n\n--------------------------------------------------\nGENERATIVE AI / AGENTIC AI\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n12:00 PM – 1:00 PM\n\nStart:\n15 July 2026\n\n--------------------------------------------------\nDATA VISUALIZATION WITH BUSINESS INTELLIGENCE\n--------------------------------------------------\n\nDays:\nSaturday / Sunday\n\nTime:\n10:00 AM – 12:00 PM\n\nStart:\n18 July 2026\n\n--------------------------------------------------\nPMP WITH PRIMAVERA AND MS PROJECT\n--------------------------------------------------\n\nDays:\nSaturday / Sunday",
+    "category": "timetable",
+    "source_file": "corvit_timetable.txt",
+    "section_title": "3. RAWALPINDI — JULY 2026 SCHEDULE SNAPSHOT",
+    "char_count": 1534,
+    "token_estimate": 161
+  },
+  {
+    "chunk_id": "timetable_007",
+    "text": "3. RAWALPINDI — JULY 2026 SCHEDULE SNAPSHOT\n\nDays:\nSaturday / Sunday\n\nTime:\n12:00 PM – 2:00 PM\n\nStart:\n25 July 2026\n\n--------------------------------------------------\nPRIMAVERA P6\n--------------------------------------------------\n\nDays:\nSaturday / Sunday\n\nTime:\n10:00 AM – 12:00 PM\n\nStart:\n25 July 2026\n\n--------------------------------------------------\nMS PROJECT\n--------------------------------------------------\n\nDays:\nSaturday / Sunday\n\nTime:\n2:00 PM – 4:00 PM\n\nStart:\n25 July 2026\n\n--------------------------------------------------\nBASIC TO ADVANCED IT\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n3:00 PM – 4:00 PM\n\nMode:\nOn-Campus\n\nStart:\n6 July 2026\n\n--------------------------------------------------\nFULL STACK WEB DEVELOPMENT\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n4:00 PM – 5:00 PM\n\nStart:\n20 July 2026\n\n--------------------------------------------------\nGRAPHIC DESIGNING & VIDEO EDITING\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n1:00 PM – 2:00 PM\n\nMode:\nOn-Campus\n\nStart:\n20 July 2026\n\n--------------------------------------------------\nDIGITAL MARKETING & SEO\n--------------------------------------------------\n\nDays:\nMonday – Thursday\n\nTime:\n2:00 PM – 3:00 PM\n\nMode:\nOn-Campus\n\nStart:\n20 July 2026",
+    "category": "timetable",
+    "source_file": "corvit_timetable.txt",
+    "section_title": "3. RAWALPINDI — JULY 2026 SCHEDULE SNAPSHOT",
+    "char_count": 1341,
+    "token_estimate": 144
+  },
+  {
+    "chunk_id": "timetable_008",
+    "text": "4. CURRENT SCHEDULE RULE\n\nThe chatbot must NOT assume that July 2026 batches are still active.\n\nIf a student asks:\n\n\"What is the current timetable?\"\n\nThe chatbot should use the latest official Corvit schedule available.\n\nIf current timetable data is unavailable:\n\n\"The timetable can change according to the current batch. Please\nconfirm the latest schedule with Corvit before enrollment.\"",
+    "category": "timetable",
+    "source_file": "corvit_timetable.txt",
+    "section_title": "4. CURRENT SCHEDULE RULE",
+    "char_count": 388,
+    "token_estimate": 59
+  },
+  {
+    "chunk_id": "timetable_009",
+    "text": "5. STUDENT TIMETABLE QUESTIONS\n\nIf student asks:\n\n\"Morning classes hain?\"\n\nThe chatbot should search/check the current schedule and list\ncurrently available morning batches.\n\nIf student asks:\n\n\"Evening class chahiye.\"\n\nThe chatbot should check current evening batches.\n\nIf student asks:\n\n\"Weekend course hai?\"\n\nThe chatbot should check current Saturday/Sunday batches.\n\nIf student asks:\n\n\"Online class available hai?\"\n\nThe chatbot should check whether the selected course currently\noffers online training.",
+    "category": "timetable",
+    "source_file": "corvit_timetable.txt",
+    "section_title": "5. STUDENT TIMETABLE QUESTIONS",
+    "char_count": 505,
+    "token_estimate": 68
+  },
+  {
+    "chunk_id": "timetable_010",
+    "text": "6. TIMETABLE RESPONSE FORMAT\n\nWhen providing a timetable, the chatbot should show:\n\nCourse:\nDays:\nTime:\nStart Date:\nTrainer:\nMode:\nCampus:\n\nIf any field is unavailable, do not invent it.",
+    "category": "timetable",
+    "source_file": "corvit_timetable.txt",
+    "section_title": "6. TIMETABLE RESPONSE FORMAT",
+    "char_count": 186,
+    "token_estimate": 29
+  },
+  {
+    "chunk_id": "timetable_011",
+    "text": "7. TIMETABLE ACCURACY RULES\n\nThe chatbot MUST:\n\n- Never invent a class timing.\n- Never invent a starting date.\n- Never claim a seat is available without current confirmation.\n- Never treat an old schedule as a current schedule.\n- Never assume every course has morning/evening/weekend batches.\n- Never assume every course is available online.\n- Check campus-specific information where possible.",
+    "category": "timetable",
+    "source_file": "corvit_timetable.txt",
+    "section_title": "7. TIMETABLE ACCURACY RULES",
+    "char_count": 393,
+    "token_estimate": 61
+  },
+  {
+    "chunk_id": "timetable_012",
+    "text": "8. CAMPUS-SPECIFIC INFORMATION\n\nCorvit lists campuses including:\n\n- Lahore\n- Islamabad\n- Rawalpindi\n- Peshawar\n- Muzaffarabad\n\nTimetables can differ between campuses.\n\nTherefore, if a student asks for a timetable without specifying\na campus, the chatbot should ask:\n\n\"Which Corvit campus are you interested in?\"\n\nPossible options:\n\n- Lahore\n- Islamabad\n- Rawalpindi\n- Peshawar\n- Muzaffarabad\n- Online",
+    "category": "timetable",
+    "source_file": "corvit_timetable.txt",
+    "section_title": "8. CAMPUS-SPECIFIC INFORMATION",
+    "char_count": 400,
+    "token_estimate": 59
+  },
+  {
+    "chunk_id": "timetable_013",
+    "text": "9. BEST CHATBOT BEHAVIOR\n\nStudent:\n\"AI ka timetable kya hai?\"\n\nChatbot:\n\"AI ke batches campus aur current schedule ke according change ho\nsakte hain. Aap Lahore, Islamabad, Rawalpindi ya Online mein se\nkaunsa option chahte hain?\"\n\nStudent:\n\"Rawalpindi.\"\n\nChatbot:\n\"Main Rawalpindi ka latest available AI schedule check karke\ntiming, days aur start date bataunga.\"",
+    "category": "timetable",
+    "source_file": "corvit_timetable.txt",
+    "section_title": "9. BEST CHATBOT BEHAVIOR",
+    "char_count": 363,
+    "token_estimate": 54
+  },
+  {
+    "chunk_id": "timetable_014",
+    "text": "10. IMPORTANT\n\nTimetable is dynamic data.\n\nAlways prioritize the latest official Corvit schedule over older\nsaved schedule information.\n\nLast reviewed:\nSeptember 2026\n\n==================================================\nEND OF FILE\n==================================================",
+    "category": "timetable",
+    "source_file": "corvit_timetable.txt",
+    "section_title": "10. IMPORTANT",
+    "char_count": 281,
+    "token_estimate": 27
+  },
+  {
+    "chunk_id": "fees_001",
+    "text": "FEES - Corvit Systems (Overview & Policy)\n\nCORVIT SYSTEMS — PAID COURSES & FEES DATA\n==================================================\n\nDATA TYPE:\nPaid Courses, Fees, Payment Methods, Installments\n\nSOURCE:\nOfficial Corvit Systems website and FAQ\n\nIMPORTANT:\nFees and course availability can change according to course, batch,\ncampus, timing, and current offers. The chatbot must NOT invent or\nguess a fee.",
+    "category": "fees",
+    "source_file": "corvit_paid_courses_fees.txt",
+    "section_title": "FEES - Corvit Systems (Overview & Policy)",
+    "char_count": 406,
+    "token_estimate": 56
+  },
+  {
+    "chunk_id": "fees_002",
+    "text": "1. PAID COURSES\n\nCorvit Systems offers professional IT training programs and\ncertification-oriented courses in different technology areas.\n\nCommon training areas include:\n\n- Networking\n- CCNA\n- Cyber Security\n- Ethical Hacking\n- Cloud Computing\n- Microsoft Azure\n- AWS\n- DevOps\n- Linux\n- RHCSA\n- Web Development\n- Python\n- Artificial Intelligence\n- Machine Learning\n- Deep Learning\n- Digital Marketing\n- SEO\n- Graphic Designing\n- Video Editing\n- E-Commerce\n- Mobile App Development\n- Other professional IT certifications\n\nThe exact list of currently active paid courses may change over time.",
+    "category": "fees",
+    "source_file": "corvit_paid_courses_fees.txt",
+    "section_title": "1. PAID COURSES",
+    "char_count": 591,
+    "token_estimate": 93
+  },
+  {
+    "chunk_id": "fees_003",
+    "text": "2. COURSE FEE\n\nCorvit's website provides course/training information, but a complete\npublic and permanently fixed numeric fee list is not available for\nevery course.\n\nTherefore:\n\n- Do not assume that every course has the same fee.\n- Do not provide an old fee as the current fee.\n- Do not make up a fee if the exact current fee is unavailable.\n- Fee can depend on the selected course and current batch.\n- Students should verify the latest fee directly with Corvit before\n  admission/payment.\n\nRecommended chatbot response when exact fee is unavailable:\n\n\"The fee depends on the selected course and current batch. Corvit's\nlatest fee should be confirmed with the campus/admissions team. I can\nhelp you identify the course, duration, timetable and admission\nrequirements first.\"",
+    "category": "fees",
+    "source_file": "corvit_paid_courses_fees.txt",
+    "section_title": "2. COURSE FEE",
+    "char_count": 775,
+    "token_estimate": 125
+  },
+  {
+    "chunk_id": "fees_004",
+    "text": "3. PAYMENT METHOD\n\nAccording to Corvit's FAQ:\n\nFor in-campus students:\n\n- Payment can be made through cash or cheque.\n\nFor online students:\n\n- Payment can be made through the available online payment methods,\n  including bank/payment arrangements mentioned by Corvit.\n\nStudents should confirm the currently accepted payment method before\nmaking payment.",
+    "category": "fees",
+    "source_file": "corvit_paid_courses_fees.txt",
+    "section_title": "3. PAYMENT METHOD",
+    "char_count": 353,
+    "token_estimate": 50
+  },
+  {
+    "chunk_id": "fees_005",
+    "text": "4. INSTALLMENT FACILITY\n\nCorvit's FAQ states that:\n\n- Course fee is generally payable at the beginning of the course.\n- In certain cases, deserving students may be allowed to pay the fee\n  in two equal installments.\n- Installment availability should be confirmed with Corvit.\n\nThe chatbot must NOT promise installments to every student.\n\nRecommended chatbot response:\n\n\"Corvit may allow two equal installments for certain deserving\nstudents. Please confirm your eligibility with the Corvit campus\nbefore admission.\"",
+    "category": "fees",
+    "source_file": "corvit_paid_courses_fees.txt",
+    "section_title": "4. INSTALLMENT FACILITY",
+    "char_count": 515,
+    "token_estimate": 76
+  },
+  {
+    "chunk_id": "fees_006",
+    "text": "5. CORPORATE TRAINING PAYMENT\n\nFor corporate training, Corvit states that payment is generally\nrequired in advance.\n\nThe chatbot should distinguish corporate training from normal\nindividual student admission.",
+    "category": "fees",
+    "source_file": "corvit_paid_courses_fees.txt",
+    "section_title": "5. CORPORATE TRAINING PAYMENT",
+    "char_count": 208,
+    "token_estimate": 27
+  },
+  {
+    "chunk_id": "fees_007",
+    "text": "6. ONLINE VS ON-CAMPUS TRAINING\n\nCorvit provides both physical/on-campus and online/virtual training\nfor different programs.\n\nAvailability depends on the specific course and current batch.\n\nThe chatbot should always check the latest course/batch information\nbefore claiming that a particular course is currently available\nonline or on campus.",
+    "category": "fees",
+    "source_file": "corvit_paid_courses_fees.txt",
+    "section_title": "6. ONLINE VS ON-CAMPUS TRAINING",
+    "char_count": 342,
+    "token_estimate": 46
+  },
+  {
+    "chunk_id": "fees_008",
+    "text": "7. PAID VS NAVTTC\n\nPAID TRAINING:\n\n- Student pays the course/training fee.\n- Fee depends on course and current batch.\n- Payment rules depend on Corvit's current policy.\n- Installments may be available in certain cases.\n\nNAVTTC TRAINING:\n\n- NAVTTC programs advertised by Corvit may be government-funded/free\n  for eligible students.\n- Eligibility requirements apply.\n- Seats may be limited.\n- Admission depends on the current NAVTTC program and selection\n  process.\n\nIMPORTANT:\nA course appearing in Corvit's normal course list does NOT\nautomatically mean that it is currently available as a free NAVTTC\ncourse.",
+    "category": "fees",
+    "source_file": "corvit_paid_courses_fees.txt",
+    "section_title": "7. PAID VS NAVTTC",
+    "char_count": 610,
+    "token_estimate": 93
+  },
+  {
+    "chunk_id": "fees_009",
+    "text": "8. FEE-RELATED CHATBOT RULES\n\nIf a student asks:\n\n\"Fee kitni hai?\"\n\nThe chatbot should first identify:\n\n1. Course name\n2. Campus/online preference\n3. Current batch if known\n\nIf the exact current fee is not available in the dataset:\n\n\"The current fee depends on the course and batch. Please confirm the\nlatest fee with Corvit admissions.\"\n\nNever invent a numeric fee.\n\nIf a student asks:\n\n\"Installment ho sakti hai?\"\n\nAnswer:\n\n\"Corvit's FAQ mentions that certain deserving students may be allowed\nto pay in two equal installments. Please confirm with Corvit before\nenrollment.\"\n\nIf a student asks:\n\n\"Kya ye course free hai?\"\n\nThe chatbot should determine whether the student is asking about:\n\n- Normal paid Corvit training\nOR\n- A current NAVTTC-funded program.\n\nDo not call a normal paid course free unless a current official source\nconfirms it.",
+    "category": "fees",
+    "source_file": "corvit_paid_courses_fees.txt",
+    "section_title": "8. FEE-RELATED CHATBOT RULES",
+    "char_count": 844,
+    "token_estimate": 136
+  },
+  {
+    "chunk_id": "fees_010",
+    "text": "9. FEE ACCURACY POLICY\n\nThe chatbot must follow these rules:\n\n- Never guess a course fee.\n- Never use an outdated fee as the current fee.\n- Never guarantee a discount.\n- Never guarantee installment approval.\n- Never claim a course is free without official confirmation.\n- Clearly tell the student when fee information needs verification.\n- Prioritize current official Corvit information.",
+    "category": "fees",
+    "source_file": "corvit_paid_courses_fees.txt",
+    "section_title": "9. FEE ACCURACY POLICY",
+    "char_count": 387,
+    "token_estimate": 62
+  },
+  {
+    "chunk_id": "fees_011",
+    "text": "10. GENERAL STUDENT GUIDANCE\n\nIf the student has not selected a course yet, the chatbot should\nrecommend a suitable course based on:\n\n- Student's interests\n- Previous education/background\n- Programming interest\n- Career goal\n- Beginner/intermediate/advanced level\n- Preferred learning area\n\nAfter recommending a course, the chatbot can provide:\n\n- Course outline\n- Duration\n- Timetable\n- Training mode\n- Fee information if currently available\n- Admission/application information\n- Infrastructure information",
+    "category": "fees",
+    "source_file": "corvit_paid_courses_fees.txt",
+    "section_title": "10. GENERAL STUDENT GUIDANCE",
+    "char_count": 507,
+    "token_estimate": 71
+  },
+  {
+    "chunk_id": "fees_012",
+    "text": "11. IMPORTANT CURRENT-DATA RULE\n\nTimetable, fees, admission dates, discounts, course availability and\nNAVTTC batches are time-sensitive.\n\nThe chatbot should treat these as dynamic information and should\nprefer the latest official Corvit source whenever available.\n\nLast reviewed:\nSeptember 2026\n==================================================\nEND OF FILE\n==================================================",
+    "category": "fees",
+    "source_file": "corvit_paid_courses_fees.txt",
+    "section_title": "11. IMPORTANT CURRENT-DATA RULE",
+    "char_count": 408,
+    "token_estimate": 43
+  },
+  {
+    "chunk_id": "admission_001",
+    "text": "ADMISSION - Corvit Systems (Overview & Policy)\n\nCORVIT SYSTEMS — ADMISSION & APPLICATION DATA\n==================================================\n\nDATA TYPE:\nAdmission Process, Enrollment, Application, Required Information\n\nSOURCE:\nOfficial Corvit Systems website",
+    "category": "admission",
+    "source_file": "corvit_admission_application.txt",
+    "section_title": "ADMISSION - Corvit Systems (Overview & Policy)",
+    "char_count": 262,
+    "token_estimate": 28
+  },
+  {
+    "chunk_id": "admission_002",
+    "text": "1. HOW TO APPLY\n\nStudents can enroll in Corvit courses through the official enrollment\nprocess.\n\nThe official enrollment form asks for information such as:\n\n- Student name\n- Course selection\n- Phone number\n- Email address\n- Institute/campus selection\n\nStudents should select the course they want to join and provide\ncorrect contact information.",
+    "category": "admission",
+    "source_file": "corvit_admission_application.txt",
+    "section_title": "1. HOW TO APPLY",
+    "char_count": 344,
+    "token_estimate": 53
+  },
+  {
+    "chunk_id": "admission_003",
+    "text": "2. GENERAL ADMISSION PROCESS\n\nRecommended admission flow:\n\nStep 1:\nChoose the desired course.\n\nStep 2:\nCheck whether the course is currently being offered.\n\nStep 3:\nCheck the latest timetable and available batch.\n\nStep 4:\nCheck the current course fee if it is a paid course.\n\nStep 5:\nCheck eligibility requirements where applicable.\n\nStep 6:\nSubmit the enrollment/application information.\n\nStep 7:\nCorvit admissions/campus staff can provide further information\nabout enrollment, fee payment and class commencement.",
+    "category": "admission",
+    "source_file": "corvit_admission_application.txt",
+    "section_title": "2. GENERAL ADMISSION PROCESS",
+    "char_count": 514,
+    "token_estimate": 74
+  },
+  {
+    "chunk_id": "admission_004",
+    "text": "3. INFORMATION STUDENT SHOULD PROVIDE\n\nA student may be asked for:\n\n- Full name\n- Phone number\n- Email address\n- Selected course\n- Preferred institute/campus\n\nAdditional documents may be requested depending on the course,\ncampus or program.",
+    "category": "admission",
+    "source_file": "corvit_admission_application.txt",
+    "section_title": "3. INFORMATION STUDENT SHOULD PROVIDE",
+    "char_count": 240,
+    "token_estimate": 38
+  },
+  {
+    "chunk_id": "admission_005",
+    "text": "4. NAVTTC ADMISSION\n\nNAVTTC-funded programs have their own eligibility and selection\nrequirements.\n\nFor NAVTTC programs:\n\n- Student must meet the applicable eligibility requirements.\n- Registration/application must be completed according to the\n  current NAVTTC/Corvit process.\n- Required documents may need to be submitted.\n- Test/interview may be required depending on the program.\n- Seats can be limited.\n- Selection is subject to the current program rules.\n\nThe chatbot must not guarantee NAVTTC admission.",
+    "category": "admission",
+    "source_file": "corvit_admission_application.txt",
+    "section_title": "4. NAVTTC ADMISSION",
+    "char_count": 510,
+    "token_estimate": 72
+  },
+  {
+    "chunk_id": "admission_006",
+    "text": "5. PAID COURSE ADMISSION\n\nFor normal paid courses:\n\n- Student selects a course.\n- Student checks the current batch/timetable.\n- Student confirms the current fee.\n- Student submits enrollment information.\n- Student completes the applicable payment process.\n- Student receives further instructions from Corvit.\n\nExact admission requirements can vary by course.",
+    "category": "admission",
+    "source_file": "corvit_admission_application.txt",
+    "section_title": "5. PAID COURSE ADMISSION",
+    "char_count": 358,
+    "token_estimate": 51
+  },
+  {
+    "chunk_id": "admission_007",
+    "text": "6. CAMPUSES\n\nCorvit currently lists the following campuses:\n\nLahore Campus:\n11A, D1, Ghalib Road, Gulberg III, Lahore\nPhone: 042-35762401-2\n\nIslamabad Campus:\nFirst Floor, Eastern Side, Al Malik Center,\n70 West, Jinnah Avenue, Blue Area, Islamabad\nPhone: 051-2348287\n\nPeshawar Campus:\n1st Floor, Ali Tower, Opposite Day to Day Store,\nUniversity Road, Peshawar\nPhone: 091-5701670\n\nRawalpindi Campus:\n2nd Floor, Zarwar Center, Opposite Rabi Center,\nMurree Road, Rawalpindi\nPhone: 051-4928004\n\nMuzaffarabad Campus:\nTech Era College, Bank Road, Muzaffarabad\nPhone: 03169994589",
+    "category": "admission",
+    "source_file": "corvit_admission_application.txt",
+    "section_title": "6. CAMPUSES",
+    "char_count": 572,
+    "token_estimate": 77
+  },
+  {
+    "chunk_id": "admission_008",
+    "text": "7. RAWALPINDI ENROLLMENT EXAMPLE\n\nCorvit's Rawalpindi enrollment information provides a simple\nthree-step process:\n\nStep 1 — Contact Corvit:\nCall or WhatsApp to confirm course/seat availability.\n\nStep 2 — Submit Documents:\nThe published Rawalpindi enrollment information mentions documents\nsuch as:\n\n- 2 copies of degree\n- CV\n- 2 passport-size photographs\n- CNIC\n\nStudents should confirm the latest document requirements before\nvisiting the campus.\n\nStep 3 — Attend Classes:\nStudents can attend according to the selected course's available\ndelivery mode, such as on-campus or online where offered.",
+    "category": "admission",
+    "source_file": "corvit_admission_application.txt",
+    "section_title": "7. RAWALPINDI ENROLLMENT EXAMPLE",
+    "char_count": 597,
+    "token_estimate": 86
+  },
+  {
+    "chunk_id": "admission_009",
+    "text": "8. IMPORTANT DOCUMENT RULE\n\nRequired documents can differ according to:\n\n- Course\n- Campus\n- Paid/NAVTTC program\n- Current admission policy\n\nTherefore, the chatbot should not say that a particular document is\nmandatory for every Corvit course unless the official current source\nconfirms it.",
+    "category": "admission",
+    "source_file": "corvit_admission_application.txt",
+    "section_title": "8. IMPORTANT DOCUMENT RULE",
+    "char_count": 290,
+    "token_estimate": 44
+  },
+  {
+    "chunk_id": "admission_010",
+    "text": "9. ADMISSION CHATBOT RESPONSES\n\nIf student asks:\n\n\"Admission kaise lena hai?\"\n\nRecommended response:\n\n\"Sab se pehle apna course select karein aur latest batch/timetable\ncheck karein. Phir Corvit ke enrollment process ke through apni\ndetails submit karein. Paid course ke liye current fee aur payment\nprocess confirm karein. NAVTTC course ke liye eligibility aur current\nprogram requirements bhi check karein.\"\n\nIf student asks:\n\n\"Online admission ho sakta hai?\"\n\nRecommended response:\n\n\"Corvit online enrollment information provide karta hai. Course aur\ncampus select karke enrollment details submit ki ja sakti hain.\nCurrent availability course ke according verify karein.\"\n\nIf student asks:\n\n\"Admission ke liye kya documents chahiye?\"\n\nRecommended response:\n\n\"Documents course aur campus ke according different ho sakte hain.\nRawalpindi ki published enrollment information mein degree copies,\nCV, passport-size photographs aur CNIC mention hain. Latest\nrequirements admission office se confirm karna best hai.\"",
+    "category": "admission",
+    "source_file": "corvit_admission_application.txt",
+    "section_title": "9. ADMISSION CHATBOT RESPONSES",
+    "char_count": 1012,
+    "token_estimate": 140
+  },
+  {
+    "chunk_id": "admission_011",
+    "text": "10. ADMISSION ACCURACY RULES\n\nThe chatbot MUST:\n\n- Never guarantee admission.\n- Never claim that seats are available unless current data confirms it.\n- Never invent eligibility requirements.\n- Never invent deadlines.\n- Never invent required documents.\n- Never claim that every course has the same admission process.\n- Distinguish paid admission from NAVTTC admission.\n- Use the latest available timetable and admission information.\n- Tell the student to confirm time-sensitive information with Corvit.",
+    "category": "admission",
+    "source_file": "corvit_admission_application.txt",
+    "section_title": "10. ADMISSION ACCURACY RULES",
+    "char_count": 501,
+    "token_estimate": 74
+  },
+  {
+    "chunk_id": "admission_012",
+    "text": "11. CURRENT INFORMATION WARNING\n\nAdmission dates, available batches, seats, fees, eligibility,\ndocuments and course availability can change.\n\nThe chatbot should prioritize current official Corvit information.\n\nLast reviewed:\nSeptember 2026\n==================================================\nEND OF FILE\n==================================================",
+    "category": "admission",
+    "source_file": "corvit_admission_application.txt",
+    "section_title": "11. CURRENT INFORMATION WARNING",
+    "char_count": 353,
+    "token_estimate": 34
+  },
+  {
+    "chunk_id": "infrastructure_001",
+    "text": "INFRASTRUCTURE - Corvit Systems (Overview & Policy)\n\nCORVIT SYSTEMS — INFRASTRUCTURE & FACILITIES DATA\n==================================================\n\nDATA TYPE:\nCampus Facilities, Labs, Practical Training, Learning Environment,\nTrainers, Online Training\n\nSOURCE:\nOfficial Corvit Systems website and official Corvit information\n\nIMPORTANT:\nInfrastructure and facilities can vary by campus and course.\nThe chatbot must not claim that a specific facility exists at every\ncampus unless official information confirms it.",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "INFRASTRUCTURE - Corvit Systems (Overview & Policy)",
+    "char_count": 520,
+    "token_estimate": 64
+  },
+  {
+    "chunk_id": "infrastructure_002",
+    "text": "1. TRAINING ENVIRONMENT\n\nCorvit Systems provides professional IT training using modern\ninstructional methods.\n\nThe institute focuses on practical and industry-oriented IT\neducation.\n\nMain technology areas include:\n\n- Networking\n- Routing & Switching\n- Cyber Security\n- Ethical Hacking\n- Cloud Computing\n- DevOps\n- Web Development\n- Graphic Designing\n- SEO\n- Digital Marketing\n- Operating Systems\n- Artificial Intelligence\n- Other IT technologies",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "1. TRAINING ENVIRONMENT",
+    "char_count": 445,
+    "token_estimate": 64
+  },
+  {
+    "chunk_id": "infrastructure_003",
+    "text": "2. HANDS-ON TRAINING\n\nCorvit emphasizes practical and hands-on learning.\n\nStudents can receive practical exposure through:\n\n- Hands-on lab sessions\n- Practical exercises\n- Technical demonstrations\n- Real-world learning activities\n- Course-related practical work\n\nThe exact practical activities depend on the selected course.",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "2. HANDS-ON TRAINING",
+    "char_count": 324,
+    "token_estimate": 42
+  },
+  {
+    "chunk_id": "infrastructure_004",
+    "text": "3. COMPUTER / IT LABS\n\nCorvit's training model includes practical lab-based learning for\ntechnical courses.\n\nLab activities can be relevant to areas such as:\n\n- Networking\n- Cyber Security\n- Linux\n- Cloud Computing\n- Server Administration\n- Artificial Intelligence\n- Programming\n- Web Development\n\nThe exact hardware, software and lab configuration can differ\naccording to course and campus.\n\nIMPORTANT:\nDo not claim a specific computer specification, number of computers,\nGPU, processor, RAM or other hardware unless the latest official\nCorvit source provides that information.",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "3. COMPUTER / IT LABS",
+    "char_count": 578,
+    "token_estimate": 85
+  },
+  {
+    "chunk_id": "infrastructure_005",
+    "text": "4. NETWORKING PRACTICAL TRAINING\n\nCorvit has a strong focus on networking education.\n\nNetworking-related practical learning can include:\n\n- Routing\n- Switching\n- Network configuration\n- Network troubleshooting\n- Network infrastructure\n- Cisco technologies\n- Enterprise networking concepts\n\nCorvit's CCNA information specifically highlights practical training\nand real-time/on-site training related to networking infrastructure.",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "4. NETWORKING PRACTICAL TRAINING",
+    "char_count": 427,
+    "token_estimate": 51
+  },
+  {
+    "chunk_id": "infrastructure_006",
+    "text": "5. CYBER SECURITY PRACTICAL ENVIRONMENT\n\nCyber Security training may involve practical learning using\nappropriate educational tools and laboratory environments.\n\nCourse-related technologies may include:\n\n- Kali Linux\n- VMware\n- EVE-NG\n- Security testing environments\n- Networking laboratories\n\nPractical security training should only be performed in authorized\neducational or laboratory environments.",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "5. CYBER SECURITY PRACTICAL ENVIRONMENT",
+    "char_count": 400,
+    "token_estimate": 50
+  },
+  {
+    "chunk_id": "infrastructure_007",
+    "text": "6. TRAINERS / INSTRUCTORS\n\nCorvit states that it has skilled and experienced instructors.\n\nThe institute's training model includes instructors with knowledge\nof current technologies and practical industry experience.\n\nCorvit also states that its instructors are certified by multiple\ntechnology vendors.\n\nTrainer availability depends on the course and current batch.\n\nThe chatbot must not invent a trainer's name unless the current\nofficial schedule confirms it.",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "6. TRAINERS / INSTRUCTORS",
+    "char_count": 462,
+    "token_estimate": 64
+  },
+  {
+    "chunk_id": "infrastructure_008",
+    "text": "7. ON-CAMPUS TRAINING\n\nCorvit offers onsite/on-campus classes.\n\nOn-campus training provides students with access to the institute's\nphysical learning environment and practical training activities.\n\nThe exact facilities available depend on the selected campus.",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "7. ON-CAMPUS TRAINING",
+    "char_count": 259,
+    "token_estimate": 32
+  },
+  {
+    "chunk_id": "infrastructure_009",
+    "text": "8. ONLINE / VIRTUAL TRAINING\n\nCorvit also provides online/virtual training.\n\nTraining models mentioned by Corvit include:\n\n- Instructor-Led Training (ILT)\n- Instructor-Led Online (ILO)\n- Blended Classroom / Virtual Training\n\nOnline training allows students to participate without physically\nattending the campus when the selected course/batch supports online\ndelivery.",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "8. ONLINE / VIRTUAL TRAINING",
+    "char_count": 368,
+    "token_estimate": 48
+  },
+  {
+    "chunk_id": "infrastructure_010",
+    "text": "9. BLENDED TRAINING\n\nSome Corvit training can use a blended classroom/virtual model.\n\nBlended training combines physical classroom learning and virtual\nlearning according to the course and batch arrangement.\n\nThe chatbot must verify the current delivery mode for the selected\ncourse.",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "9. BLENDED TRAINING",
+    "char_count": 283,
+    "token_estimate": 40
+  },
+  {
+    "chunk_id": "infrastructure_011",
+    "text": "10. CLASSROOM LEARNING\n\nCorvit provides classroom-based professional IT training.\n\nClassroom learning can include:\n\n- Instructor explanations\n- Demonstrations\n- Practical exercises\n- Lab sessions\n- Questions and answers\n- Course-related projects or activities\n\nExact classroom arrangements vary by campus and course.",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "10. CLASSROOM LEARNING",
+    "char_count": 316,
+    "token_estimate": 41
+  },
+  {
+    "chunk_id": "infrastructure_012",
+    "text": "11. COURSE-SPECIFIC INFRASTRUCTURE\n\nDifferent courses may require different practical environments.\n\nExamples:\n\nNETWORKING:\n- Networking equipment\n- Routing and switching practice\n- Network simulation/lab activities\n\nCYBER SECURITY:\n- Security laboratory environments\n- Linux-based security tools\n- Virtualized environments\n\nCLOUD:\n- Cloud platforms\n- Virtualization concepts\n- Cloud administration practice\n\nDEVOPS:\n- Linux environments\n- Cloud platforms\n- Automation tools\n- Development/operations tools\n\nAI:\n- Programming environments\n- Python\n- AI/ML development tools\n- Relevant software environments\n\nWEB DEVELOPMENT:\n- Programming/development environments\n- Web development tools\n- Database-related development tools\n\nIMPORTANT:\nThese are course-related training requirements and examples.\nThe chatbot must not state that every listed physical facility is\navailable at every Corvit campus.",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "11. COURSE-SPECIFIC INFRASTRUCTURE",
+    "char_count": 896,
+    "token_estimate": 112
+  },
+  {
+    "chunk_id": "infrastructure_013",
+    "text": "12. CORVIT CAMPUSES\n\nCorvit lists campuses including:\n\nLahore\nIslamabad\nRawalpindi\nPeshawar\nMuzaffarabad\n\nCampus addresses should be taken from the latest official Corvit\ncontact information.",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "12. CORVIT CAMPUSES",
+    "char_count": 191,
+    "token_estimate": 24
+  },
+  {
+    "chunk_id": "infrastructure_014",
+    "text": "13. RAWALPINDI CAMPUS\n\nRawalpindi Campus:\n\n2nd Floor, Zarwar Center,\nOpposite Rabi Center,\nMurree Road,\nRawalpindi\n\nContact:\n051-4928004\n\nCorvit's Rawalpindi information promotes:\n\n- On-campus training\n- Online training\n- Hands-on lab sessions\n- Industry-relevant trainers\n- Morning, evening and weekend options when available\n\nThe exact facilities and current batch availability should be\nconfirmed with the Rawalpindi campus.",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "13. RAWALPINDI CAMPUS",
+    "char_count": 427,
+    "token_estimate": 56
+  },
+  {
+    "chunk_id": "infrastructure_015",
+    "text": "14. LAHORE CAMPUS\n\nLahore Campus:\n\n11A, D1, Ghalib Road,\nGulberg III,\nLahore\n\nContact:\n042-35762401-2",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "14. LAHORE CAMPUS",
+    "char_count": 101,
+    "token_estimate": 14
+  },
+  {
+    "chunk_id": "infrastructure_016",
+    "text": "15. ISLAMABAD CAMPUS\n\nIslamabad Campus:\n\nFirst Floor, Eastern Side,\nAl Malik Center,\n70 West, Jinnah Avenue,\nBlue Area,\nIslamabad\n\nContact:\n051-2348287",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "15. ISLAMABAD CAMPUS",
+    "char_count": 151,
+    "token_estimate": 21
+  },
+  {
+    "chunk_id": "infrastructure_017",
+    "text": "16. PESHAWAR CAMPUS\n\nPeshawar Campus:\n\n1st Floor, Ali Tower,\nOpposite Day to Day Store,\nUniversity Road,\nPeshawar\n\nContact:\n091-5701670",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "16. PESHAWAR CAMPUS",
+    "char_count": 135,
+    "token_estimate": 19
+  },
+  {
+    "chunk_id": "infrastructure_018",
+    "text": "17. MUZAFFARABAD CAMPUS\n\nMuzaffarabad Campus:\n\nTech Era College,\nBank Road,\nMuzaffarabad\n\nContact:\n03169994589",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "17. MUZAFFARABAD CAMPUS",
+    "char_count": 110,
+    "token_estimate": 13
+  },
+  {
+    "chunk_id": "infrastructure_019",
+    "text": "18. GENERAL OPERATING / TRAINING HOURS\n\nCorvit's website lists general timings as:\n\n9:00 AM to 9:00 PM\n\nActual class timings depend on:\n\n- Course\n- Batch\n- Campus\n- Trainer\n- Training mode",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "18. GENERAL OPERATING / TRAINING HOURS",
+    "char_count": 188,
+    "token_estimate": 33
+  },
+  {
+    "chunk_id": "infrastructure_020",
+    "text": "19. INFRASTRUCTURE CHATBOT RESPONSES\n\nIf a student asks:\n\n\"Corvit mein labs hain?\"\n\nRecommended response:\n\n\"Corvit practical aur hands-on training ko emphasize karta hai.\nTechnical courses mein lab-based practical learning available ho\nsakti hai. Exact lab/facility course aur campus ke according\nconfirm karni chahiye.\"\n\n--------------------------------------------------\n\nIf a student asks:\n\n\"Online classes hoti hain?\"\n\nRecommended response:\n\n\"Ji, Corvit Instructor-Led Online aur virtual training options\nprovide karta hai. Lekin online availability course aur current\nbatch ke according verify karni chahiye.\"\n\n--------------------------------------------------\n\nIf a student asks:\n\n\"Corvit mein practical training hoti hai?\"\n\nRecommended response:\n\n\"Ji, Corvit hands-on aur practical training ko emphasize karta hai.\nNetworking aur technical courses mein practical/lab activities\ncourse ke syllabus ke according hoti hain.\"\n\n--------------------------------------------------\n\nIf a student asks:\n\n\"Rawalpindi campus mein kya facilities hain?\"\n\nRecommended response:\n\n\"Rawalpindi campus mein on-campus IT training aur practical\nlearning available hai. Specific lab equipment ya facility ke\nbare mein latest information campus se confirm karna best hai.\"",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "19. INFRASTRUCTURE CHATBOT RESPONSES",
+    "char_count": 1258,
+    "token_estimate": 154
+  },
+  {
+    "chunk_id": "infrastructure_021",
+    "text": "20. INFRASTRUCTURE ACCURACY RULES\n\nThe chatbot MUST NOT invent:\n\n- Number of computers\n- Computer specifications\n- GPU specifications\n- Internet speed\n- Number of labs\n- Number of classrooms\n- Specific networking equipment\n- Specific software licenses\n- AC facilities\n- Backup power specifications\n- Parking facilities\n- Any facility not confirmed by an official source\n\nIf exact information is unavailable, say:\n\n\"Is facility ki exact current details official source mein available\nnahin hain. Please Corvit campus se confirm karein.\"",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "20. INFRASTRUCTURE ACCURACY RULES",
+    "char_count": 535,
+    "token_estimate": 81
+  },
+  {
+    "chunk_id": "infrastructure_022",
+    "text": "21. BEST INFRASTRUCTURE RESPONSE FORMAT\n\nWhen a student asks about infrastructure, provide:\n\nCampus:\nTraining Mode:\nPractical/Lab Training:\nInstructor Support:\nOnline Training:\nCourse-Specific Facilities:\n\nOnly provide information that is confirmed by current official data.",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "21. BEST INFRASTRUCTURE RESPONSE FORMAT",
+    "char_count": 274,
+    "token_estimate": 33
+  },
+  {
+    "chunk_id": "infrastructure_023",
+    "text": "22. IMPORTANT DATA RULE\n\nInfrastructure information can differ between campuses.\n\nTherefore:\n\n- Do not assume Lahore and Rawalpindi have identical facilities.\n- Do not assume every course uses the same laboratory.\n- Do not assume online and on-campus training have identical\n  facilities.\n- Verify course-specific information where possible.\n\nLast reviewed:\nSeptember 2026\n\n==================================================\nEND OF FILE\n==================================================",
+    "category": "infrastructure",
+    "source_file": "corvit_infrastructure.txt",
+    "section_title": "22. IMPORTANT DATA RULE",
+    "char_count": 487,
+    "token_estimate": 57
+  },
+  {
+    "chunk_id": "faq_001",
+    "text": "FAQ - Corvit Systems (Overview & Policy)\n\nCORVIT SYSTEMS — FREQUENTLY ASKED QUESTIONS (FAQ)\n==================================================\n\nDATA TYPE:\nFrequently Asked Questions, Student Guidance, General Information\n\nSOURCE:\nOfficial Corvit Systems information\n\nIMPORTANT:\nFees, schedules, admissions, course availability and NAVTTC programs\ncan change. The chatbot should use the latest official information\nwhenever possible.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "FAQ - Corvit Systems (Overview & Policy)",
+    "char_count": 432,
+    "token_estimate": 50
+  },
+  {
+    "chunk_id": "faq_002",
+    "text": "1. WHAT IS CORVIT SYSTEMS?\n\nCorvit Systems is an IT training and professional certification\ntraining institute.\n\nIt provides training in areas such as:\n\n- Networking\n- Cyber Security\n- Cloud Computing\n- DevOps\n- Artificial Intelligence\n- Web Development\n- Python\n- Digital Marketing\n- SEO\n- Graphic Designing\n- Video Editing\n- E-Commerce\n- Other IT technologies",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "1. WHAT IS CORVIT SYSTEMS?",
+    "char_count": 361,
+    "token_estimate": 58
+  },
+  {
+    "chunk_id": "faq_003",
+    "text": "2. WHERE IS CORVIT LOCATED?\n\nCorvit has campuses in multiple cities, including:\n\n- Lahore\n- Islamabad\n- Rawalpindi\n- Peshawar\n- Muzaffarabad\n\nStudents should select the campus according to their location and\nthe availability of their desired course.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "2. WHERE IS CORVIT LOCATED?",
+    "char_count": 249,
+    "token_estimate": 38
+  },
+  {
+    "chunk_id": "faq_004",
+    "text": "3. DOES CORVIT OFFER ONLINE CLASSES?\n\nYes.\n\nCorvit provides online/virtual training for courses and batches where\nonline delivery is available.\n\nThe exact online availability depends on the course and current\nbatch.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "3. DOES CORVIT OFFER ONLINE CLASSES?",
+    "char_count": 215,
+    "token_estimate": 31
+  },
+  {
+    "chunk_id": "faq_005",
+    "text": "4. DOES CORVIT OFFER ON-CAMPUS CLASSES?\n\nYes.\n\nCorvit provides physical/on-campus training.\n\nThe available courses, timings and facilities can differ between\ncampuses.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "4. DOES CORVIT OFFER ON-CAMPUS CLASSES?",
+    "char_count": 167,
+    "token_estimate": 21
+  },
+  {
+    "chunk_id": "faq_006",
+    "text": "5. DOES CORVIT PROVIDE PRACTICAL TRAINING?\n\nYes.\n\nCorvit emphasizes hands-on and practical training.\n\nPractical activities depend on the selected course.\n\nTechnical courses may include practical/lab-based learning.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "5. DOES CORVIT PROVIDE PRACTICAL TRAINING?",
+    "char_count": 214,
+    "token_estimate": 26
+  },
+  {
+    "chunk_id": "faq_007",
+    "text": "6. WHAT COURSES DOES CORVIT OFFER?\n\nCourse offerings can change over time.\n\nMajor course areas include:\n\n- Artificial Intelligence\n- Machine Learning\n- Deep Learning\n- AI Robotics\n- Cyber Security\n- Ethical Hacking\n- Networking / CCNA\n- Cloud Computing\n- Microsoft Azure\n- AWS\n- DevOps\n- Linux\n- Web Development\n- Python\n- Digital Marketing\n- SEO\n- Graphic Designing\n- Video Editing\n- E-Commerce\n- Mobile App Development\n- .NET Core + React\n- Other professional IT courses",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "6. WHAT COURSES DOES CORVIT OFFER?",
+    "char_count": 472,
+    "token_estimate": 82
+  },
+  {
+    "chunk_id": "faq_008",
+    "text": "7. HOW LONG ARE COURSES?\n\nCourse duration depends on the selected course.\n\nSome Corvit professional courses are listed as 3-month programs.\n\nThe chatbot should always use the course-specific duration rather\nthan assuming that every course has the same duration.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "7. HOW LONG ARE COURSES?",
+    "char_count": 261,
+    "token_estimate": 39
+  },
+  {
+    "chunk_id": "faq_009",
+    "text": "8. HOW MUCH DOES A COURSE COST?\n\nCourse fees depend on the selected course and current batch.\n\nThe chatbot must not guess or invent a fee.\n\nRecommended answer:\n\n\"The current fee depends on the selected course and batch. Please\nconfirm the latest fee with Corvit admissions.\"",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "8. HOW MUCH DOES A COURSE COST?",
+    "char_count": 274,
+    "token_estimate": 46
+  },
+  {
+    "chunk_id": "faq_010",
+    "text": "9. CAN I PAY IN INSTALLMENTS?\n\nCorvit's FAQ states that certain deserving students may be allowed\nto pay the course fee in two equal installments.\n\nThis is not a guaranteed option for every student.\n\nStudents should confirm installment eligibility with Corvit.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "9. CAN I PAY IN INSTALLMENTS?",
+    "char_count": 260,
+    "token_estimate": 41
+  },
+  {
+    "chunk_id": "faq_011",
+    "text": "10. IS CORVIT TRAINING FREE?\n\nNot all Corvit courses are free.\n\nCorvit offers normal paid training as well as certain\nNAVTTC-funded/free programs for eligible students.\n\nThe chatbot must identify whether the student is asking about:\n\n- Normal paid training\nOR\n- A current NAVTTC-funded program.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "10. IS CORVIT TRAINING FREE?",
+    "char_count": 294,
+    "token_estimate": 45
+  },
+  {
+    "chunk_id": "faq_012",
+    "text": "11. WHAT IS NAVTTC?\n\nNAVTTC stands for National Vocational and Technical Training\nCommission.\n\nCorvit advertises certain NAVTTC-supported training programs.\n\nEligible students may be able to receive training under\ngovernment-funded programs.\n\nAvailability and eligibility depend on the current NAVTTC program.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "11. WHAT IS NAVTTC?",
+    "char_count": 309,
+    "token_estimate": 39
+  },
+  {
+    "chunk_id": "faq_013",
+    "text": "12. WHICH NAVTTC COURSES ARE AVAILABLE?\n\nCorvit has advertised NAVTTC programs in areas including:\n\n- Full Stack Web Development\n- Cyber Security\n- Artificial Intelligence\n- Graphic Designing and Video Editing\n- Digital Marketing and SEO\n- Cloud Computing AWS\n- DevOps\n\nThe current active NAVTTC batch should always be verified.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "12. WHICH NAVTTC COURSES ARE AVAILABLE?",
+    "char_count": 328,
+    "token_estimate": 51
+  },
+  {
+    "chunk_id": "faq_014",
+    "text": "13. HOW DO I APPLY FOR A COURSE?\n\nGeneral process:\n\n1. Select a course.\n2. Check course availability.\n3. Check timetable.\n4. Check eligibility if applicable.\n5. Check current fee if it is a paid course.\n6. Submit enrollment/application details.\n7. Complete the applicable payment process.\n8. Follow Corvit's admission instructions.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "13. HOW DO I APPLY FOR A COURSE?",
+    "char_count": 331,
+    "token_estimate": 51
+  },
+  {
+    "chunk_id": "faq_015",
+    "text": "14. WHAT INFORMATION IS NEEDED FOR ENROLLMENT?\n\nThe Corvit enrollment process can require information such as:\n\n- Student name\n- Course\n- Phone number\n- Email address\n- Institute/campus\n\nAdditional documents may be required depending on the course,\ncampus or program.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "14. WHAT INFORMATION IS NEEDED FOR ENROLLMENT?",
+    "char_count": 267,
+    "token_estimate": 41
+  },
+  {
+    "chunk_id": "faq_016",
+    "text": "15. WHAT DOCUMENTS ARE REQUIRED?\n\nRequired documents can vary by course and campus.\n\nFor some enrollment processes, Corvit may request items such as:\n\n- Educational documents\n- CV\n- Passport-size photographs\n- CNIC\n\nStudents should confirm the latest requirements before visiting\nthe campus.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "15. WHAT DOCUMENTS ARE REQUIRED?",
+    "char_count": 291,
+    "token_estimate": 43
+  },
+  {
+    "chunk_id": "faq_017",
+    "text": "16. ARE THERE MORNING CLASSES?\n\nMorning batches may be available for some courses.\n\nAvailability depends on the current course timetable.\n\nThe chatbot should check the latest schedule instead of promising\na morning batch.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "16. ARE THERE MORNING CLASSES?",
+    "char_count": 221,
+    "token_estimate": 33
+  },
+  {
+    "chunk_id": "faq_018",
+    "text": "17. ARE THERE EVENING CLASSES?\n\nEvening batches may be available for some courses.\n\nAvailability depends on:\n\n- Course\n- Campus\n- Current batch\n- Training mode",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "17. ARE THERE EVENING CLASSES?",
+    "char_count": 159,
+    "token_estimate": 26
+  },
+  {
+    "chunk_id": "faq_019",
+    "text": "18. ARE THERE WEEKEND CLASSES?\n\nWeekend batches may be available for selected courses.\n\nSaturday/Sunday availability should be checked using the latest\nofficial timetable.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "18. ARE THERE WEEKEND CLASSES?",
+    "char_count": 171,
+    "token_estimate": 23
+  },
+  {
+    "chunk_id": "faq_020",
+    "text": "19. WHICH COURSE IS BEST FOR AI?\n\nFor a student interested in Artificial Intelligence, Machine Learning\nor Deep Learning, a suitable option is:\n\nAI — Machine Learning & Deep Learning\n\nThe student should also consider their programming background and\ncareer goal.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "19. WHICH COURSE IS BEST FOR AI?",
+    "char_count": 262,
+    "token_estimate": 41
+  },
+  {
+    "chunk_id": "faq_021",
+    "text": "20. WHICH COURSE IS BEST FOR WEB DEVELOPMENT?\n\nFor students interested in website development:\n\nCIT — Web Development\n\nStudents interested in more advanced full-stack/software development\ncan also consider relevant full-stack or .NET/React programs when\navailable.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "20. WHICH COURSE IS BEST FOR WEB DEVELOPMENT?",
+    "char_count": 264,
+    "token_estimate": 35
+  },
+  {
+    "chunk_id": "faq_022",
+    "text": "21. WHICH COURSE IS BEST FOR CYBER SECURITY?\n\nStudents interested in cybersecurity, ethical hacking and security\ncan consider:\n\nCyber Security\n\nSecurity-related practical work should only be performed in\nauthorized educational or laboratory environments.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "21. WHICH COURSE IS BEST FOR CYBER SECURITY?",
+    "char_count": 254,
+    "token_estimate": 33
+  },
+  {
+    "chunk_id": "faq_023",
+    "text": "22. WHICH COURSE IS BEST FOR CLOUD?\n\nStudents interested in cloud computing can consider:\n\nCloud Computing — Microsoft Azure\n\nStudents interested in AWS and automation may also consider\nDevOps when suitable.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "22. WHICH COURSE IS BEST FOR CLOUD?",
+    "char_count": 207,
+    "token_estimate": 31
+  },
+  {
+    "chunk_id": "faq_024",
+    "text": "23. WHICH COURSE IS BEST FOR DEVOPS?\n\nStudents interested in:\n\n- Linux\n- AWS\n- Azure\n- Automation\n- Infrastructure\n- Development operations\n\ncan consider:\n\nDevOps",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "23. WHICH COURSE IS BEST FOR DEVOPS?",
+    "char_count": 162,
+    "token_estimate": 26
+  },
+  {
+    "chunk_id": "faq_025",
+    "text": "24. WHICH COURSE IS BEST FOR DIGITAL MARKETING?\n\nStudents interested in:\n\n- SEO\n- Online marketing\n- Search engines\n- PPC\n- YouTube marketing\n- Freelancing\n\ncan consider:\n\nDigital Marketing & SEO",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "24. WHICH COURSE IS BEST FOR DIGITAL MARKETING?",
+    "char_count": 195,
+    "token_estimate": 32
+  },
+  {
+    "chunk_id": "faq_026",
+    "text": "25. WHICH COURSE IS BEST FOR E-COMMERCE?\n\nStudents interested in:\n\n- Online stores\n- Shopify\n- WooCommerce\n- Daraz\n- Product selling\n- Online business\n\ncan consider:\n\nE-Commerce",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "25. WHICH COURSE IS BEST FOR E-COMMERCE?",
+    "char_count": 177,
+    "token_estimate": 28
+  },
+  {
+    "chunk_id": "faq_027",
+    "text": "26. WHICH COURSE IS BEST FOR PROGRAMMING?\n\nStudents who want to start programming can consider:\n\nPython\n\nPython can also provide a foundation for:\n\n- AI\n- Machine Learning\n- Data Science\n- Automation\n- Software development",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "26. WHICH COURSE IS BEST FOR PROGRAMMING?",
+    "char_count": 222,
+    "token_estimate": 36
+  },
+  {
+    "chunk_id": "faq_028",
+    "text": "27. WHICH COURSE IS BEST FOR NETWORKING?\n\nStudents interested in:\n\n- Computer networking\n- Routing\n- Switching\n- Cisco\n- Network administration\n\ncan consider:\n\nCCNA / Networking",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "27. WHICH COURSE IS BEST FOR NETWORKING?",
+    "char_count": 177,
+    "token_estimate": 27
+  },
+  {
+    "chunk_id": "faq_029",
+    "text": "28. WHICH COURSE IS BEST FOR CREATIVE WORK?\n\nStudents interested in:\n\n- Graphic design\n- Video editing\n- Visual content\n- Digital content creation\n\ncan consider:\n\nGraphic Designing & Video Editing",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "28. WHICH COURSE IS BEST FOR CREATIVE WORK?",
+    "char_count": 196,
+    "token_estimate": 31
+  },
+  {
+    "chunk_id": "faq_030",
+    "text": "29. WHAT ARE CORVIT'S GENERAL TRAINING HOURS?\n\nCorvit's general listed timings are:\n\n9:00 AM to 9:00 PM\n\nActual class timing depends on the course and current batch.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "29. WHAT ARE CORVIT'S GENERAL TRAINING HOURS?",
+    "char_count": 165,
+    "token_estimate": 27
+  },
+  {
+    "chunk_id": "faq_031",
+    "text": "30. DOES CORVIT HAVE TRAINED INSTRUCTORS?\n\nCorvit states that it has skilled and experienced instructors.\n\nThe institute also highlights instructors with professional/vendor\ncertifications.\n\nThe chatbot should not invent a trainer's name.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "30. DOES CORVIT HAVE TRAINED INSTRUCTORS?",
+    "char_count": 238,
+    "token_estimate": 31
+  },
+  {
+    "chunk_id": "faq_032",
+    "text": "31. CAN I JOIN WITHOUT TECHNICAL EXPERIENCE?\n\nSome courses may be suitable for beginners.\n\nThe best course depends on:\n\n- Educational background\n- Previous experience\n- Interest\n- Career goal\n- Programming knowledge\n\nThe chatbot should ask a few questions before making a\nrecommendation.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "31. CAN I JOIN WITHOUT TECHNICAL EXPERIENCE?",
+    "char_count": 287,
+    "token_estimate": 44
+  },
+  {
+    "chunk_id": "faq_033",
+    "text": "32. COURSE RECOMMENDATION QUESTIONS\n\nThe chatbot can ask:\n\n1. What field are you interested in?\n2. Are you interested in programming?\n3. What is your current education/background?\n4. Are you a beginner or do you already have technical knowledge?\n5. What career are you targeting?\n6. Do you prefer technical, creative or business-related work?\n7. Do you prefer online or on-campus training?\n8. Which campus are you interested in?\n\nThen recommend the most relevant course.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "32. COURSE RECOMMENDATION QUESTIONS",
+    "char_count": 470,
+    "token_estimate": 75
+  },
+  {
+    "chunk_id": "faq_034",
+    "text": "33. CAN CORVIT GUARANTEE A JOB?\n\nThe chatbot must NOT promise a guaranteed job.\n\nTraining can provide skills and knowledge, but employment depends\non the student's skills, experience, portfolio, market conditions\nand other factors.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "33. CAN CORVIT GUARANTEE A JOB?",
+    "char_count": 231,
+    "token_estimate": 34
+  },
+  {
+    "chunk_id": "faq_035",
+    "text": "34. CAN CORVIT GUARANTEE FREELANCING INCOME?\n\nThe chatbot must NOT guarantee a specific freelancing income.\n\nFreelancing results depend on:\n\n- Skills\n- Portfolio\n- Communication\n- Client demand\n- Experience\n- Competition\n- Consistency",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "34. CAN CORVIT GUARANTEE FREELANCING INCOME?",
+    "char_count": 234,
+    "token_estimate": 34
+  },
+  {
+    "chunk_id": "faq_036",
+    "text": "35. CAN CORVIT GUARANTEE ADMISSION?\n\nNo.\n\nThe chatbot should never guarantee admission.\n\nAdmission depends on the course, eligibility, available seats and\ncurrent admission process.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "35. CAN CORVIT GUARANTEE ADMISSION?",
+    "char_count": 181,
+    "token_estimate": 24
+  },
+  {
+    "chunk_id": "faq_037",
+    "text": "36. HOW CAN I FIND THE LATEST TIMETABLE?\n\nThe timetable can change frequently.\n\nStudents should check the latest official Corvit schedule for:\n\n- Course\n- Campus\n- Days\n- Time\n- Start date\n- Online/on-campus mode",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "36. HOW CAN I FIND THE LATEST TIMETABLE?",
+    "char_count": 212,
+    "token_estimate": 36
+  },
+  {
+    "chunk_id": "faq_038",
+    "text": "37. HOW CAN I FIND THE LATEST FEE?\n\nThe fee can vary according to:\n\n- Course\n- Batch\n- Campus\n- Training mode\n- Current offers\n\nIf an exact current fee is not available in the dataset, the chatbot\nshould tell the student to confirm it with Corvit.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "37. HOW CAN I FIND THE LATEST FEE?",
+    "char_count": 247,
+    "token_estimate": 48
+  },
+  {
+    "chunk_id": "faq_039",
+    "text": "38. HOW CAN I CONTACT CORVIT?\n\nStudents should use the latest official Corvit contact information.\n\nCampus-specific contact numbers may differ.\n\nFor example:\n\nRawalpindi:\n051-4928004\n\nLahore:\n042-35762401-2\n\nIslamabad:\n051-2348287\n\nPeshawar:\n091-5701670\n\nMuzaffarabad:\n03169994589\n\nAlways verify contact information before presenting it as current.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "38. HOW CAN I CONTACT CORVIT?",
+    "char_count": 348,
+    "token_estimate": 41
+  },
+  {
+    "chunk_id": "faq_040",
+    "text": "39. FAQ CHATBOT BEHAVIOR\n\nThe chatbot should:\n\n- Answer directly when reliable data is available.\n- Ask a follow-up question when the student's request is unclear.\n- Recommend courses based on student needs.\n- Mention when information is time-sensitive.\n- Prefer official Corvit information.\n- Avoid making unsupported claims.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "39. FAQ CHATBOT BEHAVIOR",
+    "char_count": 326,
+    "token_estimate": 49
+  },
+  {
+    "chunk_id": "faq_041",
+    "text": "40. INFORMATION THAT MUST NOT BE INVENTED\n\nThe chatbot must never invent:\n\n- Fees\n- Discounts\n- Admission deadlines\n- Seat availability\n- Trainer names\n- Course start dates\n- Class timings\n- Eligibility requirements\n- Campus facilities\n- Certificates\n- Job guarantees\n- Salary guarantees\n- Freelancing income\n- NAVTTC selection guarantees",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "40. INFORMATION THAT MUST NOT BE INVENTED",
+    "char_count": 338,
+    "token_estimate": 53
+  },
+  {
+    "chunk_id": "faq_042",
+    "text": "41. WHEN INFORMATION IS NOT AVAILABLE\n\nUse a transparent response such as:\n\n\"I don't have the latest confirmed information for that detail.\nPlease verify it with Corvit's official website or admissions team.\"",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "41. WHEN INFORMATION IS NOT AVAILABLE",
+    "char_count": 208,
+    "token_estimate": 32
+  },
+  {
+    "chunk_id": "faq_043",
+    "text": "42. CURRENT-DATA PRIORITY\n\nPriority order:\n\n1. Latest official Corvit information\n2. Current official course/timetable pages\n3. Current NAVTTC information for NAVTTC programs\n4. Saved dataset information\n5. General knowledge only when appropriate\n\nTime-sensitive information should be verified before being presented\nas current.",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "42. CURRENT-DATA PRIORITY",
+    "char_count": 328,
+    "token_estimate": 42
+  },
+  {
+    "chunk_id": "faq_044",
+    "text": "43. CHATBOT PURPOSE\n\nThe Corvit AI Advisor is designed to help students:\n\n- Explore Corvit courses\n- Compare course options\n- Select a suitable course\n- Understand course outlines\n- Find timetable information\n- Understand admission procedures\n- Understand paid vs NAVTTC training\n- Learn about infrastructure\n- Get general Corvit information\n- Navigate toward official information\n\nThe chatbot should act as an advisor and information assistant,\nnot as an official admission authority.\n\nLast reviewed:\nSeptember 2026\n\n==================================================\nEND OF FILE\n==================================================",
+    "category": "faq",
+    "source_file": "corvit_faq.txt",
+    "section_title": "43. CHATBOT PURPOSE",
+    "char_count": 631,
+    "token_estimate": 82
+  },
+  {
+    "chunk_id": "general_001",
+    "text": "GENERAL - Corvit Systems (Overview & Policy)\n\nCORVIT SYSTEMS — GENERAL INFORMATION\n\nDATA SOURCE:\nOfficial Corvit Systems website\n\nDATA COLLECTION DATE:\n04 September 2026",
+    "category": "general",
+    "source_file": "corvit_general.txt",
+    "section_title": "GENERAL - Corvit Systems (Overview & Policy)",
+    "char_count": 169,
+    "token_estimate": 24
+  },
+  {
+    "chunk_id": "general_002",
+    "text": "1. ABOUT CORVIT SYSTEMS\n\nCorvit Systems is an IT training institute based in Pakistan.\n\nCorvit states that it was founded in the year 2000 as an IT training institute.\n\nThe institute focuses strongly on technical and professional IT education and provides training for students, IT professionals, individuals and corporate organizations.\n\nCorvit states that it has trained more than 150,000 students in classrooms and has conducted more than 200 corporate trainings.",
+    "category": "general",
+    "source_file": "corvit_general.txt",
+    "section_title": "1. ABOUT CORVIT SYSTEMS",
+    "char_count": 466,
+    "token_estimate": 70
+  },
+  {
+    "chunk_id": "general_003",
+    "text": "2. TECHNOLOGIES AND TRAINING AREAS\n\nCorvit Systems provides training in multiple Information Technology areas, including:\n\n- Routing and Switching\n- Cyber Security\n- Ethical Hacking\n- Cloud Computing\n- DevOps\n- Web Development\n- Graphic Designing\n- Python\n- Digital Marketing\n- SEO\n- Operating Systems\n- Wireless Technologies\n- Data Centers\n- Virtualization\n- Service Provider Technologies\n- Voice and Collaboration\n- Security\n- IT Auditing\n- Video Conferencing\n- Video Surveillance\n- IT Service Management\n- Artificial Intelligence\n- Mobile Application Development\n- Emerging Technologies\n\nCorvit also mentions training related to technologies and vendors such as:\n\n- Cisco\n- Huawei\n- Juniper\n- Microsoft\n- VMware\n- Aruba\n- Red Hat\n- Palo Alto\n- Fortinet\n- F5\n- Barracuda\n- Riverbed",
+    "category": "general",
+    "source_file": "corvit_general.txt",
+    "section_title": "2. TECHNOLOGIES AND TRAINING AREAS",
+    "char_count": 783,
+    "token_estimate": 124
+  },
+  {
+    "chunk_id": "general_004",
+    "text": "3. MODES OF TRAINING\n\nCorvit provides multiple training modes:\n\n1. Classroom training\n2. One-to-One training\n3. Customer-premise training\n4. Online / Virtual Classroom training\n\nOnline training allows students and professionals who cannot attend physical classes to participate remotely.",
+    "category": "general",
+    "source_file": "corvit_general.txt",
+    "section_title": "3. MODES OF TRAINING",
+    "char_count": 287,
+    "token_estimate": 38
+  },
+  {
+    "chunk_id": "general_005",
+    "text": "4. TRAINERS\n\nCorvit states that it has certified professional trainers with practical industry experience.\n\nThe institute mentions trainers with certifications including:\n\n- CCIE\n- CCNP\n- CCDP\n- CCNA\n- HCIE\n- HCNP\n- HCNA\n- MCSE\n- MCP\n- MCITP\n- MCSA\n- VCP\n- ITIL\n- CISSP\n- CEH\n- PMP\n- CISA\n\nCorvit emphasizes practical and hands-on learning.",
+    "category": "general",
+    "source_file": "corvit_general.txt",
+    "section_title": "4. TRAINERS",
+    "char_count": 340,
+    "token_estimate": 61
+  },
+  {
+    "chunk_id": "general_006",
+    "text": "5. CORVIT'S VALUE PROPOSITION\n\nCorvit lists the following value propositions:\n\n- Experienced Trainers\n- Customized Courses\n- Affordable Fee Structure\n- Career Counseling\n- Seminars and Workshops\n- 24 x 7 Labs Access\n- High Return on Investment\n- Professional Growth\n- Help in Job Placement",
+    "category": "general",
+    "source_file": "corvit_general.txt",
+    "section_title": "5. CORVIT'S VALUE PROPOSITION",
+    "char_count": 289,
+    "token_estimate": 46
+  },
+  {
+    "chunk_id": "general_007",
+    "text": "6. FACILITIES AND TRAINING ENVIRONMENT\n\nCorvit states that it provides:\n\n- Computer laboratories\n- Equipped classrooms\n- Hands-on training\n- CCIE racks\n- 24-hour lab availability\n- Vendor-certified instructors\n- Career counseling\n- Practical training environment\n- Industrial internships\n- Job placement support",
+    "category": "general",
+    "source_file": "corvit_general.txt",
+    "section_title": "6. FACILITIES AND TRAINING ENVIRONMENT",
+    "char_count": 311,
+    "token_estimate": 43
+  },
+  {
+    "chunk_id": "general_008",
+    "text": "7. TRAINING APPROACH\n\nCorvit emphasizes:\n\n- Hands-on learning\n- Project-based learning\n- Practical skills\n- Industry-relevant training\n- Professional development\n- Career counseling\n- Latest industry trends\n- Technical knowledge\n- Real-world exposure",
+    "category": "general",
+    "source_file": "corvit_general.txt",
+    "section_title": "7. TRAINING APPROACH",
+    "char_count": 250,
+    "token_estimate": 33
+  },
+  {
+    "chunk_id": "general_009",
+    "text": "8. PHYSICAL LOCATION\n\nCorvit Systems Lahore:\n\nAddress:\n11A-D1, Ghalib Road,\nGulberg III,\nLahore, Pakistan\n\nPhone:\n+92-303-8888555\n\nEmail:\ninfo@corvit.com\n\nOpening Hours:\nMonday to Saturday\n09:00 AM to 09:00 PM",
+    "category": "general",
+    "source_file": "corvit_general.txt",
+    "section_title": "8. PHYSICAL LOCATION",
+    "char_count": 209,
+    "token_estimate": 28
+  },
+  {
+    "chunk_id": "general_010",
+    "text": "9. CORVIT'S MISSION\n\nCorvit's mission is to empower individuals and organizations with knowledge and skills needed to succeed in the rapidly changing field of Information Technology.\n\nThe institute aims to provide practical, industry-relevant IT training and help students improve their career prospects.",
+    "category": "general",
+    "source_file": "corvit_general.txt",
+    "section_title": "9. CORVIT'S MISSION",
+    "char_count": 304,
+    "token_estimate": 42
+  },
+  {
+    "chunk_id": "general_011",
+    "text": "10. CORVIT'S VISION\n\nCorvit aims to provide high-quality IT education and training through classroom, online and customized learning methods.\n\nThe institute focuses on continuous learning, practical training, professional growth and industry-relevant skills.",
+    "category": "general",
+    "source_file": "corvit_general.txt",
+    "section_title": "10. CORVIT'S VISION",
+    "char_count": 258,
+    "token_estimate": 32
+  },
+  {
+    "chunk_id": "general_012",
+    "text": "11. INFORMATION FOR CHATBOT\n\nWhen a student asks:\n\n\"What is Corvit?\"\n\nAnswer:\nCorvit Systems is an IT training institute founded in 2000 that provides professional and technical IT training in areas such as networking, cyber security, cloud computing, DevOps, web development, programming, digital marketing and other IT technologies.\n\nWhen a student asks:\n\n\"Does Corvit offer online classes?\"\n\nAnswer:\nYes. Corvit offers online / virtual classroom training in addition to classroom, one-to-one and customer-premise training.\n\nWhen a student asks:\n\n\"Where is Corvit Lahore?\"\n\nAnswer:\nCorvit Systems Lahore is located at 11A-D1, Ghalib Road, Gulberg III, Lahore, Pakistan.\n\nWhen a student asks:\n\n\"What technologies does Corvit teach?\"\n\nAnswer:\nCorvit covers areas including networking, cyber security, ethical hacking, cloud computing, DevOps, web development, Python, graphic designing, SEO, digital marketing, operating systems, artificial intelligence and mobile application development.\n\nWhen a student asks:\n\n\"Does Corvit provide practical training?\"\n\nAnswer:\nYes. Corvit emphasizes hands-on and practical training and states that its training includes real-world exposure and practical learning.\n\n==================================================\nIMPORTANT DATA NOTE\n==================================================\n\nThis information was collected from Corvit Systems' official website on\n04 September 2026.",
+    "category": "general",
+    "source_file": "corvit_general.txt",
+    "section_title": "11. INFORMATION FOR CHATBOT",
+    "char_count": 1415,
+    "token_estimate": 180
+  },
+  {
+    "chunk_id": "general_013",
+    "text": "11. INFORMATION FOR CHATBOT\n\nThis information was collected from Corvit Systems' official website on\n04 September 2026.\n\nSome information, especially course offerings, schedules, fees,\nadmission requirements and contact information, can change over time.\n\nThe chatbot should not claim that time-sensitive information is\npermanently valid. For current schedules, fees and admissions, the\nstudent should be directed to the latest official Corvit information.",
+    "category": "general",
+    "source_file": "corvit_general.txt",
+    "section_title": "11. INFORMATION FOR CHATBOT",
+    "char_count": 456,
+    "token_estimate": 61
+  }
+]

@@ -1,0 +1,245 @@
+CORVIT SYSTEMS — GENERAL INFORMATION
+
+DATA SOURCE:
+Official Corvit Systems website
+
+DATA COLLECTION DATE:
+04 September 2026
+
+==================================================
+1. ABOUT CORVIT SYSTEMS
+==================================================
+
+Corvit Systems is an IT training institute based in Pakistan.
+
+Corvit states that it was founded in the year 2000 as an IT training institute.
+
+The institute focuses strongly on technical and professional IT education and provides training for students, IT professionals, individuals and corporate organizations.
+
+Corvit states that it has trained more than 150,000 students in classrooms and has conducted more than 200 corporate trainings.
+
+==================================================
+2. TECHNOLOGIES AND TRAINING AREAS
+==================================================
+
+Corvit Systems provides training in multiple Information Technology areas, including:
+
+- Routing and Switching
+- Cyber Security
+- Ethical Hacking
+- Cloud Computing
+- DevOps
+- Web Development
+- Graphic Designing
+- Python
+- Digital Marketing
+- SEO
+- Operating Systems
+- Wireless Technologies
+- Data Centers
+- Virtualization
+- Service Provider Technologies
+- Voice and Collaboration
+- Security
+- IT Auditing
+- Video Conferencing
+- Video Surveillance
+- IT Service Management
+- Artificial Intelligence
+- Mobile Application Development
+- Emerging Technologies
+
+Corvit also mentions training related to technologies and vendors such as:
+
+- Cisco
+- Huawei
+- Juniper
+- Microsoft
+- VMware
+- Aruba
+- Red Hat
+- Palo Alto
+- Fortinet
+- F5
+- Barracuda
+- Riverbed
+
+==================================================
+3. MODES OF TRAINING
+==================================================
+
+Corvit provides multiple training modes:
+
+1. Classroom training
+2. One-to-One training
+3. Customer-premise training
+4. Online / Virtual Classroom training
+
+Online training allows students and professionals who cannot attend physical classes to participate remotely.
+
+==================================================
+4. TRAINERS
+==================================================
+
+Corvit states that it has certified professional trainers with practical industry experience.
+
+The institute mentions trainers with certifications including:
+
+- CCIE
+- CCNP
+- CCDP
+- CCNA
+- HCIE
+- HCNP
+- HCNA
+- MCSE
+- MCP
+- MCITP
+- MCSA
+- VCP
+- ITIL
+- CISSP
+- CEH
+- PMP
+- CISA
+
+Corvit emphasizes practical and hands-on learning.
+
+==================================================
+5. CORVIT'S VALUE PROPOSITION
+==================================================
+
+Corvit lists the following value propositions:
+
+- Experienced Trainers
+- Customized Courses
+- Affordable Fee Structure
+- Career Counseling
+- Seminars and Workshops
+- 24 x 7 Labs Access
+- High Return on Investment
+- Professional Growth
+- Help in Job Placement
+
+==================================================
+6. FACILITIES AND TRAINING ENVIRONMENT
+==================================================
+
+Corvit states that it provides:
+
+- Computer laboratories
+- Equipped classrooms
+- Hands-on training
+- CCIE racks
+- 24-hour lab availability
+- Vendor-certified instructors
+- Career counseling
+- Practical training environment
+- Industrial internships
+- Job placement support
+
+==================================================
+7. TRAINING APPROACH
+==================================================
+
+Corvit emphasizes:
+
+- Hands-on learning
+- Project-based learning
+- Practical skills
+- Industry-relevant training
+- Professional development
+- Career counseling
+- Latest industry trends
+- Technical knowledge
+- Real-world exposure
+
+==================================================
+8. PHYSICAL LOCATION
+==================================================
+
+Corvit Systems Lahore:
+
+Address:
+11A-D1, Ghalib Road,
+Gulberg III,
+Lahore, Pakistan
+
+Phone:
++92-303-8888555
+
+Email:
+info@corvit.com
+
+Opening Hours:
+Monday to Saturday
+09:00 AM to 09:00 PM
+
+==================================================
+9. CORVIT'S MISSION
+==================================================
+
+Corvit's mission is to empower individuals and organizations with knowledge and skills needed to succeed in the rapidly changing field of Information Technology.
+
+The institute aims to provide practical, industry-relevant IT training and help students improve their career prospects.
+
+==================================================
+10. CORVIT'S VISION
+==================================================
+
+Corvit aims to provide high-quality IT education and training through classroom, online and customized learning methods.
+
+The institute focuses on continuous learning, practical training, professional growth and industry-relevant skills.
+
+==================================================
+11. INFORMATION FOR CHATBOT
+==================================================
+
+When a student asks:
+
+"What is Corvit?"
+
+Answer:
+Corvit Systems is an IT training institute founded in 2000 that provides professional and technical IT training in areas such as networking, cyber security, cloud computing, DevOps, web development, programming, digital marketing and other IT technologies.
+
+When a student asks:
+
+"Does Corvit offer online classes?"
+
+Answer:
+Yes. Corvit offers online / virtual classroom training in addition to classroom, one-to-one and customer-premise training.
+
+When a student asks:
+
+"Where is Corvit Lahore?"
+
+Answer:
+Corvit Systems Lahore is located at 11A-D1, Ghalib Road, Gulberg III, Lahore, Pakistan.
+
+When a student asks:
+
+"What technologies does Corvit teach?"
+
+Answer:
+Corvit covers areas including networking, cyber security, ethical hacking, cloud computing, DevOps, web development, Python, graphic designing, SEO, digital marketing, operating systems, artificial intelligence and mobile application development.
+
+When a student asks:
+
+"Does Corvit provide practical training?"
+
+Answer:
+Yes. Corvit emphasizes hands-on and practical training and states that its training includes real-world exposure and practical learning.
+
+==================================================
+IMPORTANT DATA NOTE
+==================================================
+
+This information was collected from Corvit Systems' official website on
+04 September 2026.
+
+Some information, especially course offerings, schedules, fees,
+admission requirements and contact information, can change over time.
+
+The chatbot should not claim that time-sensitive information is
+permanently valid. For current schedules, fees and admissions, the
+student should be directed to the latest official Corvit information.

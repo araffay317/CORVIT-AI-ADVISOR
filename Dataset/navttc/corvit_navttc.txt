@@ -1,0 +1,371 @@
+CORVIT SYSTEMS — NAVTTC INFORMATION
+====================================
+
+DATA SOURCE:
+Official Corvit Systems website
+
+DATA COLLECTION DATE:
+04 September 2026
+
+
+==================================================
+1. WHAT IS NAVTTC?
+==================================================
+
+NAVTTC stands for National Vocational and Technical
+Training Commission.
+
+NAVTTC is a Government of Pakistan organization
+responsible for promoting and supporting technical and
+vocational education and training.
+
+Corvit Systems describes itself as a NAVTTC-approved
+training institute.
+
+
+==================================================
+2. NAVTTC TRAINING AT CORVIT
+==================================================
+
+Corvit Systems offers NAVTTC-supported technical and
+vocational training programs.
+
+Corvit states that its NAVTTC programs are funded by
+the Government of Pakistan.
+
+For eligible students, these programs are offered
+without tuition fees.
+
+The availability of a particular program can depend
+on the current NAVTTC project, batch and seats.
+
+
+==================================================
+3. NAVTTC COURSES LISTED BY CORVIT
+==================================================
+
+The following programs are listed on Corvit's current
+NAVTTC page:
+
+1. Full Stack Web Development
+
+2. Cyber Security
+
+3. Artificial Intelligence
+
+4. Graphic Designing and Video Editing
+
+5. Digital Marketing and SEO
+
+6. Cloud Computing AWS
+
+7. DevOps
+
+
+==================================================
+4. NAVTTC COURSE BENEFITS
+==================================================
+
+According to Corvit, NAVTTC programs can provide:
+
+- Free training for eligible students
+- Government-funded training
+- Practical / hands-on training
+- Assessments
+- NAVTTC certification
+- Market-relevant technical skills
+- Career development opportunities
+- Job-oriented skills
+- Freelancing opportunities
+- Real-project exposure
+
+
+==================================================
+5. NAVTTC CERTIFICATION
+==================================================
+
+Corvit states that students who successfully complete
+the relevant NAVTTC program receive an official NAVTTC
+certificate.
+
+The certificate is described by Corvit as being
+recognized across Pakistan.
+
+
+==================================================
+6. GENERAL ELIGIBILITY
+==================================================
+
+Eligibility requirements can vary according to the
+specific NAVTTC program and current NAVTTC project.
+
+Corvit's current NAVTTC page states that Pakistani
+students who meet the basic education and age
+requirements set by NAVTTC can apply.
+
+Corvit also states that most courses require at least
+Intermediate education.
+
+IMPORTANT:
+
+The chatbot must NOT tell every student that the same
+eligibility criteria apply to every course.
+
+Instead, it should say:
+
+"Eligibility can vary by course and current NAVTTC
+requirements. Please check the latest eligibility
+requirements for the specific course."
+
+
+==================================================
+7. NAVTTC ADMISSION PROCESS
+==================================================
+
+Corvit describes the following general process:
+
+STEP 1:
+Check the currently available NAVTTC courses.
+
+STEP 2:
+Select the course that matches your interests and
+career goals.
+
+STEP 3:
+Check whether you meet the eligibility requirements.
+
+STEP 4:
+Complete the NAVTTC registration/application form
+online or visit the Corvit Lahore campus.
+
+STEP 5:
+Submit the required documents.
+
+STEP 6:
+Appear for any required interview or test.
+
+STEP 7:
+After successful enrollment, start the training.
+
+
+==================================================
+8. REQUIRED DOCUMENTS
+==================================================
+
+The exact required documents can vary according to
+the current NAVTTC program.
+
+Students should check the latest admission instructions
+before submitting an application.
+
+The chatbot should NOT invent a fixed document list
+unless that list is present in the current official
+source.
+
+
+==================================================
+9. SEAT AVAILABILITY
+==================================================
+
+Corvit states that NAVTTC seats are limited and in
+high demand.
+
+Students are encouraged to register early when a
+relevant batch is open.
+
+
+==================================================
+10. NAVTTC VS PAID TRAINING
+==================================================
+
+NAVTTC TRAINING:
+
+- Government-supported/funded program
+- Free tuition for eligible students
+- Eligibility requirements apply
+- Course availability depends on current NAVTTC
+  programs/batches
+- NAVTTC certification may be provided after
+  successful completion
+- Seats may be limited
+
+
+PAID TRAINING:
+
+- Student pays the course fee
+- Course availability depends on Corvit's current
+  paid-course offerings
+- Fee depends on the selected course
+- Schedule depends on the current batch
+- Certification depends on the specific course/program
+
+
+==================================================
+11. HOW CHATBOT SHOULD EXPLAIN FREE VS PAID
+==================================================
+
+If a student asks:
+
+"Corvit mein free courses hain?"
+
+Answer:
+
+"Yes. Corvit currently lists NAVTTC-supported programs
+that are free for eligible students. These include areas
+such as Artificial Intelligence, Cyber Security, Full
+Stack Web Development, Digital Marketing & SEO, Cloud
+Computing AWS, DevOps, and Graphic Designing & Video
+Editing. Availability depends on the current NAVTTC
+batch and eligibility."
+
+
+If a student asks:
+
+"Free course konsa hai?"
+
+Answer:
+
+"Corvit's NAVTTC page currently lists several free
+programs. Tell me your area of interest—for example AI,
+Cyber Security, Web Development, Cloud or Digital
+Marketing—and I can help you choose a suitable option."
+
+
+If a student asks:
+
+"Paid course aur NAVTTC course mein kya difference hai?"
+
+Answer:
+
+"NAVTTC programs are government-supported and are free
+for eligible students, while paid courses require the
+student to pay the course fee. NAVTTC courses also have
+specific eligibility and batch requirements."
+
+
+==================================================
+12. COURSE RECOMMENDATION USING NAVTTC
+==================================================
+
+If the student is interested in Artificial Intelligence:
+
+Recommended:
+Artificial Intelligence
+
+Reason:
+Suitable for students interested in AI and related
+technical fields.
+
+
+If the student is interested in websites:
+
+Recommended:
+Full Stack Web Development
+
+Reason:
+Suitable for students who want to learn complete
+web-development skills and build web applications.
+
+
+If the student is interested in hacking/security:
+
+Recommended:
+Cyber Security
+
+Reason:
+Suitable for students interested in cyber security
+and information security.
+
+
+If the student is interested in online business,
+marketing or SEO:
+
+Recommended:
+Digital Marketing and SEO
+
+Reason:
+Suitable for students interested in digital marketing,
+SEO, online business and related digital skills.
+
+
+If the student is interested in cloud technology:
+
+Recommended:
+Cloud Computing AWS
+
+Reason:
+Suitable for students interested in cloud computing,
+cloud infrastructure and AWS.
+
+
+If the student is interested in DevOps:
+
+Recommended:
+DevOps
+
+Reason:
+Suitable for students interested in software
+development operations, automation and deployment.
+
+
+If the student is interested in design/video:
+
+Recommended:
+Graphic Designing and Video Editing
+
+Reason:
+Suitable for students interested in visual design,
+creative work, graphics and video editing.
+
+
+==================================================
+13. IMPORTANT CHATBOT RULES
+==================================================
+
+RULE 1:
+Never tell a student that a NAVTTC course is available
+unless it exists in the latest dataset.
+
+RULE 2:
+Never guarantee admission.
+
+RULE 3:
+Never guarantee that a student is eligible without
+checking the relevant course requirements.
+
+RULE 4:
+Never claim that every NAVTTC course has identical
+eligibility requirements.
+
+RULE 5:
+Never invent application deadlines.
+
+RULE 6:
+Never invent fees.
+
+RULE 7:
+For changing information such as batches, seats,
+deadlines and eligibility, use the latest available
+official Corvit/NAVTTC information.
+
+RULE 8:
+If the chatbot does not have current information, it
+should clearly say that the student should verify the
+latest information from Corvit.
+
+
+==================================================
+14. SOURCE
+==================================================
+
+Primary source:
+
+Corvit Systems official website
+NAVTTC Free Courses page
+
+Data collected:
+04 September 2026
+
+This dataset should be updated whenever Corvit publishes
+new NAVTTC programs, batches, eligibility requirements,
+admission dates or other important changes.

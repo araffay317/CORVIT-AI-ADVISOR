@@ -1,0 +1,655 @@
+CORVIT SYSTEMS — FREQUENTLY ASKED QUESTIONS (FAQ)
+==================================================
+
+DATA TYPE:
+Frequently Asked Questions, Student Guidance, General Information
+
+SOURCE:
+Official Corvit Systems information
+
+IMPORTANT:
+Fees, schedules, admissions, course availability and NAVTTC programs
+can change. The chatbot should use the latest official information
+whenever possible.
+
+--------------------------------------------------
+1. WHAT IS CORVIT SYSTEMS?
+--------------------------------------------------
+
+Corvit Systems is an IT training and professional certification
+training institute.
+
+It provides training in areas such as:
+
+- Networking
+- Cyber Security
+- Cloud Computing
+- DevOps
+- Artificial Intelligence
+- Web Development
+- Python
+- Digital Marketing
+- SEO
+- Graphic Designing
+- Video Editing
+- E-Commerce
+- Other IT technologies
+
+--------------------------------------------------
+2. WHERE IS CORVIT LOCATED?
+--------------------------------------------------
+
+Corvit has campuses in multiple cities, including:
+
+- Lahore
+- Islamabad
+- Rawalpindi
+- Peshawar
+- Muzaffarabad
+
+Students should select the campus according to their location and
+the availability of their desired course.
+
+--------------------------------------------------
+3. DOES CORVIT OFFER ONLINE CLASSES?
+--------------------------------------------------
+
+Yes.
+
+Corvit provides online/virtual training for courses and batches where
+online delivery is available.
+
+The exact online availability depends on the course and current
+batch.
+
+--------------------------------------------------
+4. DOES CORVIT OFFER ON-CAMPUS CLASSES?
+--------------------------------------------------
+
+Yes.
+
+Corvit provides physical/on-campus training.
+
+The available courses, timings and facilities can differ between
+campuses.
+
+--------------------------------------------------
+5. DOES CORVIT PROVIDE PRACTICAL TRAINING?
+--------------------------------------------------
+
+Yes.
+
+Corvit emphasizes hands-on and practical training.
+
+Practical activities depend on the selected course.
+
+Technical courses may include practical/lab-based learning.
+
+--------------------------------------------------
+6. WHAT COURSES DOES CORVIT OFFER?
+--------------------------------------------------
+
+Course offerings can change over time.
+
+Major course areas include:
+
+- Artificial Intelligence
+- Machine Learning
+- Deep Learning
+- AI Robotics
+- Cyber Security
+- Ethical Hacking
+- Networking / CCNA
+- Cloud Computing
+- Microsoft Azure
+- AWS
+- DevOps
+- Linux
+- Web Development
+- Python
+- Digital Marketing
+- SEO
+- Graphic Designing
+- Video Editing
+- E-Commerce
+- Mobile App Development
+- .NET Core + React
+- Other professional IT courses
+
+--------------------------------------------------
+7. HOW LONG ARE COURSES?
+--------------------------------------------------
+
+Course duration depends on the selected course.
+
+Some Corvit professional courses are listed as 3-month programs.
+
+The chatbot should always use the course-specific duration rather
+than assuming that every course has the same duration.
+
+--------------------------------------------------
+8. HOW MUCH DOES A COURSE COST?
+--------------------------------------------------
+
+Course fees depend on the selected course and current batch.
+
+The chatbot must not guess or invent a fee.
+
+Recommended answer:
+
+"The current fee depends on the selected course and batch. Please
+confirm the latest fee with Corvit admissions."
+
+--------------------------------------------------
+9. CAN I PAY IN INSTALLMENTS?
+--------------------------------------------------
+
+Corvit's FAQ states that certain deserving students may be allowed
+to pay the course fee in two equal installments.
+
+This is not a guaranteed option for every student.
+
+Students should confirm installment eligibility with Corvit.
+
+--------------------------------------------------
+10. IS CORVIT TRAINING FREE?
+--------------------------------------------------
+
+Not all Corvit courses are free.
+
+Corvit offers normal paid training as well as certain
+NAVTTC-funded/free programs for eligible students.
+
+The chatbot must identify whether the student is asking about:
+
+- Normal paid training
+OR
+- A current NAVTTC-funded program.
+
+--------------------------------------------------
+11. WHAT IS NAVTTC?
+--------------------------------------------------
+
+NAVTTC stands for National Vocational and Technical Training
+Commission.
+
+Corvit advertises certain NAVTTC-supported training programs.
+
+Eligible students may be able to receive training under
+government-funded programs.
+
+Availability and eligibility depend on the current NAVTTC program.
+
+--------------------------------------------------
+12. WHICH NAVTTC COURSES ARE AVAILABLE?
+--------------------------------------------------
+
+Corvit has advertised NAVTTC programs in areas including:
+
+- Full Stack Web Development
+- Cyber Security
+- Artificial Intelligence
+- Graphic Designing and Video Editing
+- Digital Marketing and SEO
+- Cloud Computing AWS
+- DevOps
+
+The current active NAVTTC batch should always be verified.
+
+--------------------------------------------------
+13. HOW DO I APPLY FOR A COURSE?
+--------------------------------------------------
+
+General process:
+
+1. Select a course.
+2. Check course availability.
+3. Check timetable.
+4. Check eligibility if applicable.
+5. Check current fee if it is a paid course.
+6. Submit enrollment/application details.
+7. Complete the applicable payment process.
+8. Follow Corvit's admission instructions.
+
+--------------------------------------------------
+14. WHAT INFORMATION IS NEEDED FOR ENROLLMENT?
+--------------------------------------------------
+
+The Corvit enrollment process can require information such as:
+
+- Student name
+- Course
+- Phone number
+- Email address
+- Institute/campus
+
+Additional documents may be required depending on the course,
+campus or program.
+
+--------------------------------------------------
+15. WHAT DOCUMENTS ARE REQUIRED?
+--------------------------------------------------
+
+Required documents can vary by course and campus.
+
+For some enrollment processes, Corvit may request items such as:
+
+- Educational documents
+- CV
+- Passport-size photographs
+- CNIC
+
+Students should confirm the latest requirements before visiting
+the campus.
+
+--------------------------------------------------
+16. ARE THERE MORNING CLASSES?
+--------------------------------------------------
+
+Morning batches may be available for some courses.
+
+Availability depends on the current course timetable.
+
+The chatbot should check the latest schedule instead of promising
+a morning batch.
+
+--------------------------------------------------
+17. ARE THERE EVENING CLASSES?
+--------------------------------------------------
+
+Evening batches may be available for some courses.
+
+Availability depends on:
+
+- Course
+- Campus
+- Current batch
+- Training mode
+
+--------------------------------------------------
+18. ARE THERE WEEKEND CLASSES?
+--------------------------------------------------
+
+Weekend batches may be available for selected courses.
+
+Saturday/Sunday availability should be checked using the latest
+official timetable.
+
+--------------------------------------------------
+19. WHICH COURSE IS BEST FOR AI?
+--------------------------------------------------
+
+For a student interested in Artificial Intelligence, Machine Learning
+or Deep Learning, a suitable option is:
+
+AI — Machine Learning & Deep Learning
+
+The student should also consider their programming background and
+career goal.
+
+--------------------------------------------------
+20. WHICH COURSE IS BEST FOR WEB DEVELOPMENT?
+--------------------------------------------------
+
+For students interested in website development:
+
+CIT — Web Development
+
+Students interested in more advanced full-stack/software development
+can also consider relevant full-stack or .NET/React programs when
+available.
+
+--------------------------------------------------
+21. WHICH COURSE IS BEST FOR CYBER SECURITY?
+--------------------------------------------------
+
+Students interested in cybersecurity, ethical hacking and security
+can consider:
+
+Cyber Security
+
+Security-related practical work should only be performed in
+authorized educational or laboratory environments.
+
+--------------------------------------------------
+22. WHICH COURSE IS BEST FOR CLOUD?
+--------------------------------------------------
+
+Students interested in cloud computing can consider:
+
+Cloud Computing — Microsoft Azure
+
+Students interested in AWS and automation may also consider
+DevOps when suitable.
+
+--------------------------------------------------
+23. WHICH COURSE IS BEST FOR DEVOPS?
+--------------------------------------------------
+
+Students interested in:
+
+- Linux
+- AWS
+- Azure
+- Automation
+- Infrastructure
+- Development operations
+
+can consider:
+
+DevOps
+
+--------------------------------------------------
+24. WHICH COURSE IS BEST FOR DIGITAL MARKETING?
+--------------------------------------------------
+
+Students interested in:
+
+- SEO
+- Online marketing
+- Search engines
+- PPC
+- YouTube marketing
+- Freelancing
+
+can consider:
+
+Digital Marketing & SEO
+
+--------------------------------------------------
+25. WHICH COURSE IS BEST FOR E-COMMERCE?
+--------------------------------------------------
+
+Students interested in:
+
+- Online stores
+- Shopify
+- WooCommerce
+- Daraz
+- Product selling
+- Online business
+
+can consider:
+
+E-Commerce
+
+--------------------------------------------------
+26. WHICH COURSE IS BEST FOR PROGRAMMING?
+--------------------------------------------------
+
+Students who want to start programming can consider:
+
+Python
+
+Python can also provide a foundation for:
+
+- AI
+- Machine Learning
+- Data Science
+- Automation
+- Software development
+
+--------------------------------------------------
+27. WHICH COURSE IS BEST FOR NETWORKING?
+--------------------------------------------------
+
+Students interested in:
+
+- Computer networking
+- Routing
+- Switching
+- Cisco
+- Network administration
+
+can consider:
+
+CCNA / Networking
+
+--------------------------------------------------
+28. WHICH COURSE IS BEST FOR CREATIVE WORK?
+--------------------------------------------------
+
+Students interested in:
+
+- Graphic design
+- Video editing
+- Visual content
+- Digital content creation
+
+can consider:
+
+Graphic Designing & Video Editing
+
+--------------------------------------------------
+29. WHAT ARE CORVIT'S GENERAL TRAINING HOURS?
+--------------------------------------------------
+
+Corvit's general listed timings are:
+
+9:00 AM to 9:00 PM
+
+Actual class timing depends on the course and current batch.
+
+--------------------------------------------------
+30. DOES CORVIT HAVE TRAINED INSTRUCTORS?
+--------------------------------------------------
+
+Corvit states that it has skilled and experienced instructors.
+
+The institute also highlights instructors with professional/vendor
+certifications.
+
+The chatbot should not invent a trainer's name.
+
+--------------------------------------------------
+31. CAN I JOIN WITHOUT TECHNICAL EXPERIENCE?
+--------------------------------------------------
+
+Some courses may be suitable for beginners.
+
+The best course depends on:
+
+- Educational background
+- Previous experience
+- Interest
+- Career goal
+- Programming knowledge
+
+The chatbot should ask a few questions before making a
+recommendation.
+
+--------------------------------------------------
+32. COURSE RECOMMENDATION QUESTIONS
+--------------------------------------------------
+
+The chatbot can ask:
+
+1. What field are you interested in?
+2. Are you interested in programming?
+3. What is your current education/background?
+4. Are you a beginner or do you already have technical knowledge?
+5. What career are you targeting?
+6. Do you prefer technical, creative or business-related work?
+7. Do you prefer online or on-campus training?
+8. Which campus are you interested in?
+
+Then recommend the most relevant course.
+
+--------------------------------------------------
+33. CAN CORVIT GUARANTEE A JOB?
+--------------------------------------------------
+
+The chatbot must NOT promise a guaranteed job.
+
+Training can provide skills and knowledge, but employment depends
+on the student's skills, experience, portfolio, market conditions
+and other factors.
+
+--------------------------------------------------
+34. CAN CORVIT GUARANTEE FREELANCING INCOME?
+--------------------------------------------------
+
+The chatbot must NOT guarantee a specific freelancing income.
+
+Freelancing results depend on:
+
+- Skills
+- Portfolio
+- Communication
+- Client demand
+- Experience
+- Competition
+- Consistency
+
+--------------------------------------------------
+35. CAN CORVIT GUARANTEE ADMISSION?
+--------------------------------------------------
+
+No.
+
+The chatbot should never guarantee admission.
+
+Admission depends on the course, eligibility, available seats and
+current admission process.
+
+--------------------------------------------------
+36. HOW CAN I FIND THE LATEST TIMETABLE?
+--------------------------------------------------
+
+The timetable can change frequently.
+
+Students should check the latest official Corvit schedule for:
+
+- Course
+- Campus
+- Days
+- Time
+- Start date
+- Online/on-campus mode
+
+--------------------------------------------------
+37. HOW CAN I FIND THE LATEST FEE?
+--------------------------------------------------
+
+The fee can vary according to:
+
+- Course
+- Batch
+- Campus
+- Training mode
+- Current offers
+
+If an exact current fee is not available in the dataset, the chatbot
+should tell the student to confirm it with Corvit.
+
+--------------------------------------------------
+38. HOW CAN I CONTACT CORVIT?
+--------------------------------------------------
+
+Students should use the latest official Corvit contact information.
+
+Campus-specific contact numbers may differ.
+
+For example:
+
+Rawalpindi:
+051-4928004
+
+Lahore:
+042-35762401-2
+
+Islamabad:
+051-2348287
+
+Peshawar:
+091-5701670
+
+Muzaffarabad:
+03169994589
+
+Always verify contact information before presenting it as current.
+
+--------------------------------------------------
+39. FAQ CHATBOT BEHAVIOR
+--------------------------------------------------
+
+The chatbot should:
+
+- Answer directly when reliable data is available.
+- Ask a follow-up question when the student's request is unclear.
+- Recommend courses based on student needs.
+- Mention when information is time-sensitive.
+- Prefer official Corvit information.
+- Avoid making unsupported claims.
+
+--------------------------------------------------
+40. INFORMATION THAT MUST NOT BE INVENTED
+--------------------------------------------------
+
+The chatbot must never invent:
+
+- Fees
+- Discounts
+- Admission deadlines
+- Seat availability
+- Trainer names
+- Course start dates
+- Class timings
+- Eligibility requirements
+- Campus facilities
+- Certificates
+- Job guarantees
+- Salary guarantees
+- Freelancing income
+- NAVTTC selection guarantees
+
+--------------------------------------------------
+41. WHEN INFORMATION IS NOT AVAILABLE
+--------------------------------------------------
+
+Use a transparent response such as:
+
+"I don't have the latest confirmed information for that detail.
+Please verify it with Corvit's official website or admissions team."
+
+--------------------------------------------------
+42. CURRENT-DATA PRIORITY
+--------------------------------------------------
+
+Priority order:
+
+1. Latest official Corvit information
+2. Current official course/timetable pages
+3. Current NAVTTC information for NAVTTC programs
+4. Saved dataset information
+5. General knowledge only when appropriate
+
+Time-sensitive information should be verified before being presented
+as current.
+
+--------------------------------------------------
+43. CHATBOT PURPOSE
+--------------------------------------------------
+
+The Corvit AI Advisor is designed to help students:
+
+- Explore Corvit courses
+- Compare course options
+- Select a suitable course
+- Understand course outlines
+- Find timetable information
+- Understand admission procedures
+- Understand paid vs NAVTTC training
+- Learn about infrastructure
+- Get general Corvit information
+- Navigate toward official information
+
+The chatbot should act as an advisor and information assistant,
+not as an official admission authority.
+
+Last reviewed:
+September 2026
+
+==================================================
+END OF FILE
+==================================================

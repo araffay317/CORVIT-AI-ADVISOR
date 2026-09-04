@@ -1,0 +1,459 @@
+CORVIT SYSTEMS — INFRASTRUCTURE & FACILITIES DATA
+==================================================
+
+DATA TYPE:
+Campus Facilities, Labs, Practical Training, Learning Environment,
+Trainers, Online Training
+
+SOURCE:
+Official Corvit Systems website and official Corvit information
+
+IMPORTANT:
+Infrastructure and facilities can vary by campus and course.
+The chatbot must not claim that a specific facility exists at every
+campus unless official information confirms it.
+
+--------------------------------------------------
+1. TRAINING ENVIRONMENT
+--------------------------------------------------
+
+Corvit Systems provides professional IT training using modern
+instructional methods.
+
+The institute focuses on practical and industry-oriented IT
+education.
+
+Main technology areas include:
+
+- Networking
+- Routing & Switching
+- Cyber Security
+- Ethical Hacking
+- Cloud Computing
+- DevOps
+- Web Development
+- Graphic Designing
+- SEO
+- Digital Marketing
+- Operating Systems
+- Artificial Intelligence
+- Other IT technologies
+
+--------------------------------------------------
+2. HANDS-ON TRAINING
+--------------------------------------------------
+
+Corvit emphasizes practical and hands-on learning.
+
+Students can receive practical exposure through:
+
+- Hands-on lab sessions
+- Practical exercises
+- Technical demonstrations
+- Real-world learning activities
+- Course-related practical work
+
+The exact practical activities depend on the selected course.
+
+--------------------------------------------------
+3. COMPUTER / IT LABS
+--------------------------------------------------
+
+Corvit's training model includes practical lab-based learning for
+technical courses.
+
+Lab activities can be relevant to areas such as:
+
+- Networking
+- Cyber Security
+- Linux
+- Cloud Computing
+- Server Administration
+- Artificial Intelligence
+- Programming
+- Web Development
+
+The exact hardware, software and lab configuration can differ
+according to course and campus.
+
+IMPORTANT:
+Do not claim a specific computer specification, number of computers,
+GPU, processor, RAM or other hardware unless the latest official
+Corvit source provides that information.
+
+--------------------------------------------------
+4. NETWORKING PRACTICAL TRAINING
+--------------------------------------------------
+
+Corvit has a strong focus on networking education.
+
+Networking-related practical learning can include:
+
+- Routing
+- Switching
+- Network configuration
+- Network troubleshooting
+- Network infrastructure
+- Cisco technologies
+- Enterprise networking concepts
+
+Corvit's CCNA information specifically highlights practical training
+and real-time/on-site training related to networking infrastructure.
+
+--------------------------------------------------
+5. CYBER SECURITY PRACTICAL ENVIRONMENT
+--------------------------------------------------
+
+Cyber Security training may involve practical learning using
+appropriate educational tools and laboratory environments.
+
+Course-related technologies may include:
+
+- Kali Linux
+- VMware
+- EVE-NG
+- Security testing environments
+- Networking laboratories
+
+Practical security training should only be performed in authorized
+educational or laboratory environments.
+
+--------------------------------------------------
+6. TRAINERS / INSTRUCTORS
+--------------------------------------------------
+
+Corvit states that it has skilled and experienced instructors.
+
+The institute's training model includes instructors with knowledge
+of current technologies and practical industry experience.
+
+Corvit also states that its instructors are certified by multiple
+technology vendors.
+
+Trainer availability depends on the course and current batch.
+
+The chatbot must not invent a trainer's name unless the current
+official schedule confirms it.
+
+--------------------------------------------------
+7. ON-CAMPUS TRAINING
+--------------------------------------------------
+
+Corvit offers onsite/on-campus classes.
+
+On-campus training provides students with access to the institute's
+physical learning environment and practical training activities.
+
+The exact facilities available depend on the selected campus.
+
+--------------------------------------------------
+8. ONLINE / VIRTUAL TRAINING
+--------------------------------------------------
+
+Corvit also provides online/virtual training.
+
+Training models mentioned by Corvit include:
+
+- Instructor-Led Training (ILT)
+- Instructor-Led Online (ILO)
+- Blended Classroom / Virtual Training
+
+Online training allows students to participate without physically
+attending the campus when the selected course/batch supports online
+delivery.
+
+--------------------------------------------------
+9. BLENDED TRAINING
+--------------------------------------------------
+
+Some Corvit training can use a blended classroom/virtual model.
+
+Blended training combines physical classroom learning and virtual
+learning according to the course and batch arrangement.
+
+The chatbot must verify the current delivery mode for the selected
+course.
+
+--------------------------------------------------
+10. CLASSROOM LEARNING
+--------------------------------------------------
+
+Corvit provides classroom-based professional IT training.
+
+Classroom learning can include:
+
+- Instructor explanations
+- Demonstrations
+- Practical exercises
+- Lab sessions
+- Questions and answers
+- Course-related projects or activities
+
+Exact classroom arrangements vary by campus and course.
+
+--------------------------------------------------
+11. COURSE-SPECIFIC INFRASTRUCTURE
+--------------------------------------------------
+
+Different courses may require different practical environments.
+
+Examples:
+
+NETWORKING:
+- Networking equipment
+- Routing and switching practice
+- Network simulation/lab activities
+
+CYBER SECURITY:
+- Security laboratory environments
+- Linux-based security tools
+- Virtualized environments
+
+CLOUD:
+- Cloud platforms
+- Virtualization concepts
+- Cloud administration practice
+
+DEVOPS:
+- Linux environments
+- Cloud platforms
+- Automation tools
+- Development/operations tools
+
+AI:
+- Programming environments
+- Python
+- AI/ML development tools
+- Relevant software environments
+
+WEB DEVELOPMENT:
+- Programming/development environments
+- Web development tools
+- Database-related development tools
+
+IMPORTANT:
+These are course-related training requirements and examples.
+The chatbot must not state that every listed physical facility is
+available at every Corvit campus.
+
+--------------------------------------------------
+12. CORVIT CAMPUSES
+--------------------------------------------------
+
+Corvit lists campuses including:
+
+Lahore
+Islamabad
+Rawalpindi
+Peshawar
+Muzaffarabad
+
+Campus addresses should be taken from the latest official Corvit
+contact information.
+
+--------------------------------------------------
+13. RAWALPINDI CAMPUS
+--------------------------------------------------
+
+Rawalpindi Campus:
+
+2nd Floor, Zarwar Center,
+Opposite Rabi Center,
+Murree Road,
+Rawalpindi
+
+Contact:
+051-4928004
+
+Corvit's Rawalpindi information promotes:
+
+- On-campus training
+- Online training
+- Hands-on lab sessions
+- Industry-relevant trainers
+- Morning, evening and weekend options when available
+
+The exact facilities and current batch availability should be
+confirmed with the Rawalpindi campus.
+
+--------------------------------------------------
+14. LAHORE CAMPUS
+--------------------------------------------------
+
+Lahore Campus:
+
+11A, D1, Ghalib Road,
+Gulberg III,
+Lahore
+
+Contact:
+042-35762401-2
+
+--------------------------------------------------
+15. ISLAMABAD CAMPUS
+--------------------------------------------------
+
+Islamabad Campus:
+
+First Floor, Eastern Side,
+Al Malik Center,
+70 West, Jinnah Avenue,
+Blue Area,
+Islamabad
+
+Contact:
+051-2348287
+
+--------------------------------------------------
+16. PESHAWAR CAMPUS
+--------------------------------------------------
+
+Peshawar Campus:
+
+1st Floor, Ali Tower,
+Opposite Day to Day Store,
+University Road,
+Peshawar
+
+Contact:
+091-5701670
+
+--------------------------------------------------
+17. MUZAFFARABAD CAMPUS
+--------------------------------------------------
+
+Muzaffarabad Campus:
+
+Tech Era College,
+Bank Road,
+Muzaffarabad
+
+Contact:
+03169994589
+
+--------------------------------------------------
+18. GENERAL OPERATING / TRAINING HOURS
+--------------------------------------------------
+
+Corvit's website lists general timings as:
+
+9:00 AM to 9:00 PM
+
+Actual class timings depend on:
+
+- Course
+- Batch
+- Campus
+- Trainer
+- Training mode
+
+--------------------------------------------------
+19. INFRASTRUCTURE CHATBOT RESPONSES
+--------------------------------------------------
+
+If a student asks:
+
+"Corvit mein labs hain?"
+
+Recommended response:
+
+"Corvit practical aur hands-on training ko emphasize karta hai.
+Technical courses mein lab-based practical learning available ho
+sakti hai. Exact lab/facility course aur campus ke according
+confirm karni chahiye."
+
+--------------------------------------------------
+
+If a student asks:
+
+"Online classes hoti hain?"
+
+Recommended response:
+
+"Ji, Corvit Instructor-Led Online aur virtual training options
+provide karta hai. Lekin online availability course aur current
+batch ke according verify karni chahiye."
+
+--------------------------------------------------
+
+If a student asks:
+
+"Corvit mein practical training hoti hai?"
+
+Recommended response:
+
+"Ji, Corvit hands-on aur practical training ko emphasize karta hai.
+Networking aur technical courses mein practical/lab activities
+course ke syllabus ke according hoti hain."
+
+--------------------------------------------------
+
+If a student asks:
+
+"Rawalpindi campus mein kya facilities hain?"
+
+Recommended response:
+
+"Rawalpindi campus mein on-campus IT training aur practical
+learning available hai. Specific lab equipment ya facility ke
+bare mein latest information campus se confirm karna best hai."
+
+--------------------------------------------------
+20. INFRASTRUCTURE ACCURACY RULES
+--------------------------------------------------
+
+The chatbot MUST NOT invent:
+
+- Number of computers
+- Computer specifications
+- GPU specifications
+- Internet speed
+- Number of labs
+- Number of classrooms
+- Specific networking equipment
+- Specific software licenses
+- AC facilities
+- Backup power specifications
+- Parking facilities
+- Any facility not confirmed by an official source
+
+If exact information is unavailable, say:
+
+"Is facility ki exact current details official source mein available
+nahin hain. Please Corvit campus se confirm karein."
+
+--------------------------------------------------
+21. BEST INFRASTRUCTURE RESPONSE FORMAT
+--------------------------------------------------
+
+When a student asks about infrastructure, provide:
+
+Campus:
+Training Mode:
+Practical/Lab Training:
+Instructor Support:
+Online Training:
+Course-Specific Facilities:
+
+Only provide information that is confirmed by current official data.
+
+--------------------------------------------------
+22. IMPORTANT DATA RULE
+--------------------------------------------------
+
+Infrastructure information can differ between campuses.
+
+Therefore:
+
+- Do not assume Lahore and Rawalpindi have identical facilities.
+- Do not assume every course uses the same laboratory.
+- Do not assume online and on-campus training have identical
+  facilities.
+- Verify course-specific information where possible.
+
+Last reviewed:
+September 2026
+
+==================================================
+END OF FILE
+==================================================

@@ -1,0 +1,241 @@
+CORVIT SYSTEMS — ADMISSION & APPLICATION DATA
+==================================================
+
+DATA TYPE:
+Admission Process, Enrollment, Application, Required Information
+
+SOURCE:
+Official Corvit Systems website
+
+--------------------------------------------------
+1. HOW TO APPLY
+--------------------------------------------------
+
+Students can enroll in Corvit courses through the official enrollment
+process.
+
+The official enrollment form asks for information such as:
+
+- Student name
+- Course selection
+- Phone number
+- Email address
+- Institute/campus selection
+
+Students should select the course they want to join and provide
+correct contact information.
+
+--------------------------------------------------
+2. GENERAL ADMISSION PROCESS
+--------------------------------------------------
+
+Recommended admission flow:
+
+Step 1:
+Choose the desired course.
+
+Step 2:
+Check whether the course is currently being offered.
+
+Step 3:
+Check the latest timetable and available batch.
+
+Step 4:
+Check the current course fee if it is a paid course.
+
+Step 5:
+Check eligibility requirements where applicable.
+
+Step 6:
+Submit the enrollment/application information.
+
+Step 7:
+Corvit admissions/campus staff can provide further information
+about enrollment, fee payment and class commencement.
+
+--------------------------------------------------
+3. INFORMATION STUDENT SHOULD PROVIDE
+--------------------------------------------------
+
+A student may be asked for:
+
+- Full name
+- Phone number
+- Email address
+- Selected course
+- Preferred institute/campus
+
+Additional documents may be requested depending on the course,
+campus or program.
+
+--------------------------------------------------
+4. NAVTTC ADMISSION
+--------------------------------------------------
+
+NAVTTC-funded programs have their own eligibility and selection
+requirements.
+
+For NAVTTC programs:
+
+- Student must meet the applicable eligibility requirements.
+- Registration/application must be completed according to the
+  current NAVTTC/Corvit process.
+- Required documents may need to be submitted.
+- Test/interview may be required depending on the program.
+- Seats can be limited.
+- Selection is subject to the current program rules.
+
+The chatbot must not guarantee NAVTTC admission.
+
+--------------------------------------------------
+5. PAID COURSE ADMISSION
+--------------------------------------------------
+
+For normal paid courses:
+
+- Student selects a course.
+- Student checks the current batch/timetable.
+- Student confirms the current fee.
+- Student submits enrollment information.
+- Student completes the applicable payment process.
+- Student receives further instructions from Corvit.
+
+Exact admission requirements can vary by course.
+
+--------------------------------------------------
+6. CAMPUSES
+--------------------------------------------------
+
+Corvit currently lists the following campuses:
+
+Lahore Campus:
+11A, D1, Ghalib Road, Gulberg III, Lahore
+Phone: 042-35762401-2
+
+Islamabad Campus:
+First Floor, Eastern Side, Al Malik Center,
+70 West, Jinnah Avenue, Blue Area, Islamabad
+Phone: 051-2348287
+
+Peshawar Campus:
+1st Floor, Ali Tower, Opposite Day to Day Store,
+University Road, Peshawar
+Phone: 091-5701670
+
+Rawalpindi Campus:
+2nd Floor, Zarwar Center, Opposite Rabi Center,
+Murree Road, Rawalpindi
+Phone: 051-4928004
+
+Muzaffarabad Campus:
+Tech Era College, Bank Road, Muzaffarabad
+Phone: 03169994589
+
+--------------------------------------------------
+7. RAWALPINDI ENROLLMENT EXAMPLE
+--------------------------------------------------
+
+Corvit's Rawalpindi enrollment information provides a simple
+three-step process:
+
+Step 1 — Contact Corvit:
+Call or WhatsApp to confirm course/seat availability.
+
+Step 2 — Submit Documents:
+The published Rawalpindi enrollment information mentions documents
+such as:
+
+- 2 copies of degree
+- CV
+- 2 passport-size photographs
+- CNIC
+
+Students should confirm the latest document requirements before
+visiting the campus.
+
+Step 3 — Attend Classes:
+Students can attend according to the selected course's available
+delivery mode, such as on-campus or online where offered.
+
+--------------------------------------------------
+8. IMPORTANT DOCUMENT RULE
+--------------------------------------------------
+
+Required documents can differ according to:
+
+- Course
+- Campus
+- Paid/NAVTTC program
+- Current admission policy
+
+Therefore, the chatbot should not say that a particular document is
+mandatory for every Corvit course unless the official current source
+confirms it.
+
+--------------------------------------------------
+9. ADMISSION CHATBOT RESPONSES
+--------------------------------------------------
+
+If student asks:
+
+"Admission kaise lena hai?"
+
+Recommended response:
+
+"Sab se pehle apna course select karein aur latest batch/timetable
+check karein. Phir Corvit ke enrollment process ke through apni
+details submit karein. Paid course ke liye current fee aur payment
+process confirm karein. NAVTTC course ke liye eligibility aur current
+program requirements bhi check karein."
+
+If student asks:
+
+"Online admission ho sakta hai?"
+
+Recommended response:
+
+"Corvit online enrollment information provide karta hai. Course aur
+campus select karke enrollment details submit ki ja sakti hain.
+Current availability course ke according verify karein."
+
+If student asks:
+
+"Admission ke liye kya documents chahiye?"
+
+Recommended response:
+
+"Documents course aur campus ke according different ho sakte hain.
+Rawalpindi ki published enrollment information mein degree copies,
+CV, passport-size photographs aur CNIC mention hain. Latest
+requirements admission office se confirm karna best hai."
+
+--------------------------------------------------
+10. ADMISSION ACCURACY RULES
+--------------------------------------------------
+
+The chatbot MUST:
+
+- Never guarantee admission.
+- Never claim that seats are available unless current data confirms it.
+- Never invent eligibility requirements.
+- Never invent deadlines.
+- Never invent required documents.
+- Never claim that every course has the same admission process.
+- Distinguish paid admission from NAVTTC admission.
+- Use the latest available timetable and admission information.
+- Tell the student to confirm time-sensitive information with Corvit.
+
+--------------------------------------------------
+11. CURRENT INFORMATION WARNING
+--------------------------------------------------
+
+Admission dates, available batches, seats, fees, eligibility,
+documents and course availability can change.
+
+The chatbot should prioritize current official Corvit information.
+
+Last reviewed:
+September 2026
+==================================================
+END OF FILE
+==================================================

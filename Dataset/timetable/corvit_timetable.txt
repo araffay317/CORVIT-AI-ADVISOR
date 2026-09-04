@@ -1,0 +1,562 @@
+CORVIT SYSTEMS — TIMETABLE & CLASS SCHEDULE DATA
+==================================================
+
+DATA TYPE:
+Class Timings, Batches, Schedule, Online/On-Campus
+
+SOURCE:
+Official Corvit Systems website and official Corvit schedule pages
+
+IMPORTANT:
+Timetable information is TIME-SENSITIVE.
+
+Class timings, starting dates, trainers, course availability,
+campus availability and online/on-campus options can change.
+
+The chatbot must always prefer the latest official timetable.
+
+--------------------------------------------------
+1. GENERAL CORVIT TIMINGS
+--------------------------------------------------
+
+Corvit Systems general operating/training hours are listed as:
+
+9:00 AM to 9:00 PM
+
+Actual class timing depends on the course, batch, trainer and campus.
+
+--------------------------------------------------
+2. TRAINING MODES
+--------------------------------------------------
+
+Depending on the course and batch, Corvit may offer:
+
+- On-Campus classes
+- Online classes
+- Live virtual sessions
+- Weekend batches
+- Weekday batches
+- Morning batches
+- Evening batches
+
+Availability varies by course and campus.
+
+--------------------------------------------------
+3. RAWALPINDI — JULY 2026 SCHEDULE SNAPSHOT
+--------------------------------------------------
+
+NOTE:
+
+The following is a July 2026 schedule snapshot published by Corvit.
+It must NOT be presented by the chatbot as the current September 2026
+timetable unless a current official source confirms it.
+
+--------------------------------------------------
+CCNA 200-301 — MORNING
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+11:00 AM – 12:00 PM
+
+Mode:
+On-Campus / Online
+
+Start:
+13 July 2026
+
+--------------------------------------------------
+CCNA 200-301 — EVENING
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+6:00 PM – 7:00 PM
+
+Start:
+7 July 2026
+
+--------------------------------------------------
+CCNA 200-301 — WEEKEND
+--------------------------------------------------
+
+Days:
+Saturday / Sunday
+
+Time:
+12:00 PM – 2:00 PM
+
+Start:
+18 July 2026
+
+--------------------------------------------------
+CCNP ENCOR
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+7:00 PM – 8:00 PM
+
+Start:
+20 July 2026
+
+--------------------------------------------------
+IBM QRADAR — SIEM
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+9:00 PM – 10:00 PM
+
+Mode:
+Online Only
+
+Start:
+13 July 2026
+
+--------------------------------------------------
+SOC ANALYST
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+6:00 PM – 7:00 PM
+
+Start:
+20 July 2026
+
+--------------------------------------------------
+CERTIFIED ETHICAL HACKER — CEH
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+6:00 PM – 7:00 PM
+
+Start:
+16 July 2026
+
+Mode:
+On-Campus / Online
+
+--------------------------------------------------
+CEH — WEEKEND
+--------------------------------------------------
+
+Days:
+Saturday / Sunday
+
+Time:
+12:00 PM – 2:00 PM
+
+Start:
+11 July 2026
+
+Mode:
+On-Campus / Online
+
+--------------------------------------------------
+AI FOR CYBER SECURITY
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+3:00 PM – 5:00 PM
+
+Start:
+20 July 2026
+
+--------------------------------------------------
+MICROSOFT AZURE 104
+--------------------------------------------------
+
+Days:
+Monday, Wednesday & Friday
+
+Time:
+9:00 PM – 10:00 PM
+
+Mode:
+Online Only
+
+Start:
+13 July 2026
+
+--------------------------------------------------
+AWS SAA-C03
+--------------------------------------------------
+
+Course:
+AWS Solutions Architect
+
+Days:
+Tuesday, Thursday & Saturday
+
+Time:
+9:00 PM – 10:00 PM
+
+Start:
+14 July 2026
+
+--------------------------------------------------
+MICROSOFT SERVER ADMINISTRATION
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+3:00 PM – 4:00 PM
+
+Start:
+16 July 2026
+
+--------------------------------------------------
+DATA ANALYTICS
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+6:00 PM – 7:00 PM
+
+Start:
+6 July 2026
+
+--------------------------------------------------
+PYTHON PROGRAMMING
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+5:00 PM – 6:00 PM
+
+Start:
+15 July 2026
+
+--------------------------------------------------
+ARTIFICIAL INTELLIGENCE
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+12:00 PM – 1:00 PM
+
+Start:
+15 July 2026
+
+--------------------------------------------------
+FULL STACK PYTHON
+--------------------------------------------------
+
+Course:
+Full Stack Python — Basic to Expert Data Science
+
+Days:
+Saturday / Sunday
+
+Time:
+10:00 AM – 12:00 PM
+
+Start:
+18 July 2026
+
+--------------------------------------------------
+ROBOTICS FOR KIDS
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+10:00 AM – 11:00 AM
+AND
+6:00 PM – 8:00 PM
+
+Start:
+16 July 2026
+
+--------------------------------------------------
+GENERATIVE AI / AGENTIC AI
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+12:00 PM – 1:00 PM
+
+Start:
+15 July 2026
+
+--------------------------------------------------
+DATA VISUALIZATION WITH BUSINESS INTELLIGENCE
+--------------------------------------------------
+
+Days:
+Saturday / Sunday
+
+Time:
+10:00 AM – 12:00 PM
+
+Start:
+18 July 2026
+
+--------------------------------------------------
+PMP WITH PRIMAVERA AND MS PROJECT
+--------------------------------------------------
+
+Days:
+Saturday / Sunday
+
+Time:
+12:00 PM – 2:00 PM
+
+Start:
+25 July 2026
+
+--------------------------------------------------
+PRIMAVERA P6
+--------------------------------------------------
+
+Days:
+Saturday / Sunday
+
+Time:
+10:00 AM – 12:00 PM
+
+Start:
+25 July 2026
+
+--------------------------------------------------
+MS PROJECT
+--------------------------------------------------
+
+Days:
+Saturday / Sunday
+
+Time:
+2:00 PM – 4:00 PM
+
+Start:
+25 July 2026
+
+--------------------------------------------------
+BASIC TO ADVANCED IT
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+3:00 PM – 4:00 PM
+
+Mode:
+On-Campus
+
+Start:
+6 July 2026
+
+--------------------------------------------------
+FULL STACK WEB DEVELOPMENT
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+4:00 PM – 5:00 PM
+
+Start:
+20 July 2026
+
+--------------------------------------------------
+GRAPHIC DESIGNING & VIDEO EDITING
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+1:00 PM – 2:00 PM
+
+Mode:
+On-Campus
+
+Start:
+20 July 2026
+
+--------------------------------------------------
+DIGITAL MARKETING & SEO
+--------------------------------------------------
+
+Days:
+Monday – Thursday
+
+Time:
+2:00 PM – 3:00 PM
+
+Mode:
+On-Campus
+
+Start:
+20 July 2026
+
+--------------------------------------------------
+4. CURRENT SCHEDULE RULE
+--------------------------------------------------
+
+The chatbot must NOT assume that July 2026 batches are still active.
+
+If a student asks:
+
+"What is the current timetable?"
+
+The chatbot should use the latest official Corvit schedule available.
+
+If current timetable data is unavailable:
+
+"The timetable can change according to the current batch. Please
+confirm the latest schedule with Corvit before enrollment."
+
+--------------------------------------------------
+5. STUDENT TIMETABLE QUESTIONS
+--------------------------------------------------
+
+If student asks:
+
+"Morning classes hain?"
+
+The chatbot should search/check the current schedule and list
+currently available morning batches.
+
+If student asks:
+
+"Evening class chahiye."
+
+The chatbot should check current evening batches.
+
+If student asks:
+
+"Weekend course hai?"
+
+The chatbot should check current Saturday/Sunday batches.
+
+If student asks:
+
+"Online class available hai?"
+
+The chatbot should check whether the selected course currently
+offers online training.
+
+--------------------------------------------------
+6. TIMETABLE RESPONSE FORMAT
+--------------------------------------------------
+
+When providing a timetable, the chatbot should show:
+
+Course:
+Days:
+Time:
+Start Date:
+Trainer:
+Mode:
+Campus:
+
+If any field is unavailable, do not invent it.
+
+--------------------------------------------------
+7. TIMETABLE ACCURACY RULES
+--------------------------------------------------
+
+The chatbot MUST:
+
+- Never invent a class timing.
+- Never invent a starting date.
+- Never claim a seat is available without current confirmation.
+- Never treat an old schedule as a current schedule.
+- Never assume every course has morning/evening/weekend batches.
+- Never assume every course is available online.
+- Check campus-specific information where possible.
+
+--------------------------------------------------
+8. CAMPUS-SPECIFIC INFORMATION
+--------------------------------------------------
+
+Corvit lists campuses including:
+
+- Lahore
+- Islamabad
+- Rawalpindi
+- Peshawar
+- Muzaffarabad
+
+Timetables can differ between campuses.
+
+Therefore, if a student asks for a timetable without specifying
+a campus, the chatbot should ask:
+
+"Which Corvit campus are you interested in?"
+
+Possible options:
+
+- Lahore
+- Islamabad
+- Rawalpindi
+- Peshawar
+- Muzaffarabad
+- Online
+
+--------------------------------------------------
+9. BEST CHATBOT BEHAVIOR
+--------------------------------------------------
+
+Student:
+"AI ka timetable kya hai?"
+
+Chatbot:
+"AI ke batches campus aur current schedule ke according change ho
+sakte hain. Aap Lahore, Islamabad, Rawalpindi ya Online mein se
+kaunsa option chahte hain?"
+
+Student:
+"Rawalpindi."
+
+Chatbot:
+"Main Rawalpindi ka latest available AI schedule check karke
+timing, days aur start date bataunga."
+
+--------------------------------------------------
+10. IMPORTANT
+--------------------------------------------------
+
+Timetable is dynamic data.
+
+Always prioritize the latest official Corvit schedule over older
+saved schedule information.
+
+Last reviewed:
+September 2026
+
+==================================================
+END OF FILE
+==================================================

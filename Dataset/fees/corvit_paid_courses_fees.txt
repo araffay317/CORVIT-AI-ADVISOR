@@ -1,0 +1,254 @@
+CORVIT SYSTEMS — PAID COURSES & FEES DATA
+==================================================
+
+DATA TYPE:
+Paid Courses, Fees, Payment Methods, Installments
+
+SOURCE:
+Official Corvit Systems website and FAQ
+
+IMPORTANT:
+Fees and course availability can change according to course, batch,
+campus, timing, and current offers. The chatbot must NOT invent or
+guess a fee.
+
+--------------------------------------------------
+1. PAID COURSES
+--------------------------------------------------
+
+Corvit Systems offers professional IT training programs and
+certification-oriented courses in different technology areas.
+
+Common training areas include:
+
+- Networking
+- CCNA
+- Cyber Security
+- Ethical Hacking
+- Cloud Computing
+- Microsoft Azure
+- AWS
+- DevOps
+- Linux
+- RHCSA
+- Web Development
+- Python
+- Artificial Intelligence
+- Machine Learning
+- Deep Learning
+- Digital Marketing
+- SEO
+- Graphic Designing
+- Video Editing
+- E-Commerce
+- Mobile App Development
+- Other professional IT certifications
+
+The exact list of currently active paid courses may change over time.
+
+--------------------------------------------------
+2. COURSE FEE
+--------------------------------------------------
+
+Corvit's website provides course/training information, but a complete
+public and permanently fixed numeric fee list is not available for
+every course.
+
+Therefore:
+
+- Do not assume that every course has the same fee.
+- Do not provide an old fee as the current fee.
+- Do not make up a fee if the exact current fee is unavailable.
+- Fee can depend on the selected course and current batch.
+- Students should verify the latest fee directly with Corvit before
+  admission/payment.
+
+Recommended chatbot response when exact fee is unavailable:
+
+"The fee depends on the selected course and current batch. Corvit's
+latest fee should be confirmed with the campus/admissions team. I can
+help you identify the course, duration, timetable and admission
+requirements first."
+
+--------------------------------------------------
+3. PAYMENT METHOD
+--------------------------------------------------
+
+According to Corvit's FAQ:
+
+For in-campus students:
+
+- Payment can be made through cash or cheque.
+
+For online students:
+
+- Payment can be made through the available online payment methods,
+  including bank/payment arrangements mentioned by Corvit.
+
+Students should confirm the currently accepted payment method before
+making payment.
+
+--------------------------------------------------
+4. INSTALLMENT FACILITY
+--------------------------------------------------
+
+Corvit's FAQ states that:
+
+- Course fee is generally payable at the beginning of the course.
+- In certain cases, deserving students may be allowed to pay the fee
+  in two equal installments.
+- Installment availability should be confirmed with Corvit.
+
+The chatbot must NOT promise installments to every student.
+
+Recommended chatbot response:
+
+"Corvit may allow two equal installments for certain deserving
+students. Please confirm your eligibility with the Corvit campus
+before admission."
+
+--------------------------------------------------
+5. CORPORATE TRAINING PAYMENT
+--------------------------------------------------
+
+For corporate training, Corvit states that payment is generally
+required in advance.
+
+The chatbot should distinguish corporate training from normal
+individual student admission.
+
+--------------------------------------------------
+6. ONLINE VS ON-CAMPUS TRAINING
+--------------------------------------------------
+
+Corvit provides both physical/on-campus and online/virtual training
+for different programs.
+
+Availability depends on the specific course and current batch.
+
+The chatbot should always check the latest course/batch information
+before claiming that a particular course is currently available
+online or on campus.
+
+--------------------------------------------------
+7. PAID VS NAVTTC
+--------------------------------------------------
+
+PAID TRAINING:
+
+- Student pays the course/training fee.
+- Fee depends on course and current batch.
+- Payment rules depend on Corvit's current policy.
+- Installments may be available in certain cases.
+
+NAVTTC TRAINING:
+
+- NAVTTC programs advertised by Corvit may be government-funded/free
+  for eligible students.
+- Eligibility requirements apply.
+- Seats may be limited.
+- Admission depends on the current NAVTTC program and selection
+  process.
+
+IMPORTANT:
+A course appearing in Corvit's normal course list does NOT
+automatically mean that it is currently available as a free NAVTTC
+course.
+
+--------------------------------------------------
+8. FEE-RELATED CHATBOT RULES
+--------------------------------------------------
+
+If a student asks:
+
+"Fee kitni hai?"
+
+The chatbot should first identify:
+
+1. Course name
+2. Campus/online preference
+3. Current batch if known
+
+If the exact current fee is not available in the dataset:
+
+"The current fee depends on the course and batch. Please confirm the
+latest fee with Corvit admissions."
+
+Never invent a numeric fee.
+
+If a student asks:
+
+"Installment ho sakti hai?"
+
+Answer:
+
+"Corvit's FAQ mentions that certain deserving students may be allowed
+to pay in two equal installments. Please confirm with Corvit before
+enrollment."
+
+If a student asks:
+
+"Kya ye course free hai?"
+
+The chatbot should determine whether the student is asking about:
+
+- Normal paid Corvit training
+OR
+- A current NAVTTC-funded program.
+
+Do not call a normal paid course free unless a current official source
+confirms it.
+
+--------------------------------------------------
+9. FEE ACCURACY POLICY
+--------------------------------------------------
+
+The chatbot must follow these rules:
+
+- Never guess a course fee.
+- Never use an outdated fee as the current fee.
+- Never guarantee a discount.
+- Never guarantee installment approval.
+- Never claim a course is free without official confirmation.
+- Clearly tell the student when fee information needs verification.
+- Prioritize current official Corvit information.
+
+--------------------------------------------------
+10. GENERAL STUDENT GUIDANCE
+--------------------------------------------------
+
+If the student has not selected a course yet, the chatbot should
+recommend a suitable course based on:
+
+- Student's interests
+- Previous education/background
+- Programming interest
+- Career goal
+- Beginner/intermediate/advanced level
+- Preferred learning area
+
+After recommending a course, the chatbot can provide:
+
+- Course outline
+- Duration
+- Timetable
+- Training mode
+- Fee information if currently available
+- Admission/application information
+- Infrastructure information
+
+--------------------------------------------------
+11. IMPORTANT CURRENT-DATA RULE
+--------------------------------------------------
+
+Timetable, fees, admission dates, discounts, course availability and
+NAVTTC batches are time-sensitive.
+
+The chatbot should treat these as dynamic information and should
+prefer the latest official Corvit source whenever available.
+
+Last reviewed:
+September 2026
+==================================================
+END OF FILE
+==================================================

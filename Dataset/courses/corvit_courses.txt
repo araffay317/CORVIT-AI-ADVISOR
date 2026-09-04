@@ -1,0 +1,596 @@
+CORVIT SYSTEMS — COURSE INFORMATION & COURSE OUTLINES
+======================================================
+
+DATA TYPE:
+Courses, Course Duration, Technologies, Topics, Career Guidance
+
+SOURCE:
+Official Corvit Systems course information
+
+IMPORTANT:
+Course availability, batch dates, timings and fees can change.
+A course appearing in the course information does not automatically
+mean that the course is currently open for admission.
+
+------------------------------------------------------
+1. ARTIFICIAL INTELLIGENCE
+   MACHINE LEARNING & DEEP LEARNING
+------------------------------------------------------
+
+Duration:
+3 Months
+
+Main Area:
+Artificial Intelligence, Machine Learning and Deep Learning
+
+Topics / Skills:
+
+- Artificial Intelligence fundamentals
+- Machine Learning
+- Deep Learning
+- Natural Language Processing (NLP)
+- Python programming
+- Azure AI
+- Linux
+- Anaconda
+- VS Code
+- PyCharm
+- AI development concepts
+
+Suitable For:
+
+- Students interested in Artificial Intelligence
+- Students interested in Machine Learning
+- Students interested in Deep Learning
+- Students interested in Python and AI development
+- Students interested in AI/ML careers
+
+Recommended Background:
+
+Basic programming knowledge can be helpful, but students should
+confirm the latest course requirements before enrollment.
+
+------------------------------------------------------
+2. ARTIFICIAL INTELLIGENCE — ROBOTICS
+------------------------------------------------------
+
+Duration:
+3 Months
+
+Main Area:
+Artificial Intelligence and Robotics
+
+Topics / Skills:
+
+- Artificial Intelligence
+- Robotics concepts
+- Programming
+- Machine Learning
+- Computer Vision
+- Git
+- HTML
+- CSS
+- JavaScript
+- Cloud concepts
+- AI and robotics development
+
+Suitable For:
+
+- Students interested in Robotics
+- Students interested in AI
+- Students interested in programming
+- Students interested in Computer Vision
+- Students interested in automation
+
+------------------------------------------------------
+3. CIT — WEB DEVELOPMENT
+------------------------------------------------------
+
+Duration:
+3 Months
+
+Main Area:
+Web Development
+
+Topics / Skills:
+
+- World Wide Web fundamentals
+- Website development
+- HTML
+- CSS
+- Bootstrap
+- Forms
+- Tables
+- Multimedia
+- Web page structure
+- Laravel
+- CRUD operations
+- Database-related web development
+- Gallery development
+- Website projects
+
+Suitable For:
+
+- Beginners interested in web development
+- Students who want to create websites
+- Students interested in frontend/backend development
+- Students interested in freelancing
+
+------------------------------------------------------
+4. DIGITAL MARKETING & SEO
+------------------------------------------------------
+
+Duration:
+3 Months
+
+Main Area:
+Digital Marketing and Search Engine Optimization
+
+Topics / Skills:
+
+- Digital Marketing fundamentals
+- Search Engine Optimization (SEO)
+- Search engines
+- Keyword research
+- On-page SEO
+- Technical SEO
+- Google Search Console
+- Google Analytics
+- PPC / Paid advertising
+- YouTube marketing
+- Digital marketing strategies
+- Freelancing
+
+Suitable For:
+
+- Students interested in online marketing
+- Students interested in SEO
+- Students interested in freelancing
+- Students interested in social media and online business
+
+------------------------------------------------------
+5. CLOUD COMPUTING — MICROSOFT AZURE
+------------------------------------------------------
+
+Duration:
+3 Months
+
+Main Area:
+Cloud Computing and Microsoft Azure
+
+Topics / Skills:
+
+- Networking fundamentals
+- Virtualization
+- Cloud Computing
+- Microsoft Azure
+- Azure services
+- Cloud security
+- Azure Active Directory
+- Cloud infrastructure
+- Cloud administration concepts
+
+Suitable For:
+
+- Students interested in Cloud Computing
+- Students interested in Microsoft Azure
+- Students interested in cloud administration
+- IT/networking students
+
+------------------------------------------------------
+6. DEVOPS
+------------------------------------------------------
+
+Main Area:
+Development Operations, Automation and Cloud
+
+Topics / Skills:
+
+- Infrastructure concepts
+- Agile methodology
+- Ubuntu / Linux
+- Networking
+- AWS
+- Microsoft Azure
+- Bash
+- PowerShell
+- Python
+- YAML
+- Automation
+- DevOps practices
+- Cloud-related technologies
+
+Suitable For:
+
+- Students interested in DevOps
+- Students interested in Cloud Computing
+- Students interested in Linux
+- Students interested in automation
+- IT professionals and developers
+
+------------------------------------------------------
+7. CYBER SECURITY
+------------------------------------------------------
+
+Main Area:
+Cyber Security and Information Security
+
+Topics / Skills:
+
+- Cybersecurity fundamentals
+- Information Security
+- Hacking concepts
+- Footprinting
+- Scanning
+- Penetration Testing concepts
+- Security assessment concepts
+- VMware
+- EVE-NG
+- Kali Linux
+- Network security concepts
+
+Suitable For:
+
+- Students interested in Cyber Security
+- Students interested in ethical hacking
+- Students interested in network security
+- Students interested in penetration testing
+
+IMPORTANT:
+Security topics should be understood and practiced only in
+authorized educational/lab environments.
+
+------------------------------------------------------
+8. E-COMMERCE
+------------------------------------------------------
+
+Main Area:
+E-Commerce and Online Business
+
+Topics / Skills:
+
+- Local E-Commerce
+- Inventory management
+- Logistics
+- Digital Marketing
+- Social Media
+- SEO
+- Daraz
+- Shopify
+- WooCommerce
+- Product launching
+- Online business
+- Freelancing
+
+Suitable For:
+
+- Students interested in online business
+- Students interested in E-Commerce
+- Students interested in Shopify
+- Students interested in Daraz
+- Students interested in freelancing
+
+------------------------------------------------------
+9. GRAPHIC DESIGNING & VIDEO EDITING
+------------------------------------------------------
+
+Main Area:
+Graphic Design and Video Editing
+
+Students interested in visual content creation can consider this
+area.
+
+Potential career directions include:
+
+- Graphic Designer
+- Video Editor
+- Social Media Content Creator
+- Digital Content Creator
+- Freelancing
+
+The exact current syllabus and software should be confirmed from
+the latest Corvit course information.
+
+------------------------------------------------------
+10. MOBILE APP DEVELOPMENT
+------------------------------------------------------
+
+Main Area:
+Mobile Application Development
+
+Suitable For:
+
+- Students interested in mobile applications
+- Students interested in programming
+- Students interested in software development
+
+The exact current syllabus, technology stack and duration should be
+confirmed from the latest Corvit course information.
+
+------------------------------------------------------
+11. PYTHON
+------------------------------------------------------
+
+Main Area:
+Python Programming
+
+Suitable For:
+
+- Beginners interested in programming
+- Students interested in Python
+- Students planning to enter AI/ML
+- Students interested in automation
+- Students interested in software development
+
+Python can also be useful as a foundation for:
+
+- Artificial Intelligence
+- Machine Learning
+- Data Science
+- Automation
+- Backend Development
+
+The exact current Python course syllabus should be confirmed from
+the latest Corvit information.
+
+------------------------------------------------------
+12. .NET CORE + REACT
+------------------------------------------------------
+
+Main Area:
+Web / Software Development
+
+Technology Areas:
+
+- .NET Core
+- React
+- Web application development
+- Frontend development
+- Backend development
+
+Suitable For:
+
+- Students interested in full-stack development
+- Students interested in modern web applications
+- Students interested in software development
+
+------------------------------------------------------
+13. CCNA / NETWORKING
+------------------------------------------------------
+
+Main Area:
+Computer Networking
+
+Common areas associated with networking training include:
+
+- Networking fundamentals
+- Routing
+- Switching
+- Network configuration
+- Network troubleshooting
+- Cisco technologies
+- CCNA preparation
+
+Suitable For:
+
+- Students interested in networking
+- Students interested in system administration
+- Students interested in network engineering
+- Students interested in IT infrastructure
+
+------------------------------------------------------
+14. COURSE RECOMMENDATION LOGIC
+------------------------------------------------------
+
+The chatbot should recommend a course based on the student's:
+
+- Interest
+- Career goal
+- Educational background
+- Previous technical knowledge
+- Programming interest
+- Beginner/intermediate/advanced level
+- Preferred field
+
+Examples:
+
+If student says:
+"I want to learn AI."
+
+Recommend:
+Artificial Intelligence — Machine Learning & Deep Learning
+
+If student says:
+"I want to make websites."
+
+Recommend:
+CIT — Web Development
+
+If student says:
+"I am interested in hacking and security."
+
+Recommend:
+Cyber Security
+
+If student says:
+"I want to learn cloud."
+
+Recommend:
+Cloud Computing / Microsoft Azure
+
+If student says:
+"I want to learn AWS, Linux and automation."
+
+Recommend:
+DevOps
+
+If student says:
+"I want to sell products online."
+
+Recommend:
+E-Commerce
+
+If student says:
+"I want to earn through SEO and online marketing."
+
+Recommend:
+Digital Marketing & SEO
+
+If student says:
+"I want to make mobile apps."
+
+Recommend:
+Mobile App Development
+
+If student says:
+"I want to learn programming first."
+
+Recommend:
+Python or an appropriate beginner programming course.
+
+------------------------------------------------------
+15. BEGINNER STUDENT GUIDANCE
+------------------------------------------------------
+
+If a student has no technical background:
+
+1. Ask about their interest.
+2. Ask about their career goal.
+3. Ask whether they like programming.
+4. Ask whether they prefer creative work, business, security,
+   networking, cloud or AI.
+5. Recommend an appropriate beginner-friendly course.
+6. Explain why the course is suitable.
+7. Provide duration and outline if available.
+8. Provide latest timetable and fee only when current data is
+   available.
+
+------------------------------------------------------
+16. COURSE SELECTION EXAMPLES
+------------------------------------------------------
+
+Interest:
+AI / Machine Learning
+
+Recommendation:
+AI — Machine Learning & Deep Learning
+
+Interest:
+Robotics / Computer Vision
+
+Recommendation:
+AI — Robotics
+
+Interest:
+Website Development
+
+Recommendation:
+CIT — Web Development
+
+Interest:
+SEO / Digital Marketing
+
+Recommendation:
+Digital Marketing & SEO
+
+Interest:
+Cloud / Azure
+
+Recommendation:
+Cloud Computing — Microsoft Azure
+
+Interest:
+DevOps / AWS / Linux
+
+Recommendation:
+DevOps
+
+Interest:
+Cybersecurity / Ethical Hacking
+
+Recommendation:
+Cyber Security
+
+Interest:
+Online Store / Shopify / Daraz
+
+Recommendation:
+E-Commerce
+
+Interest:
+Networking / Cisco
+
+Recommendation:
+CCNA / Networking
+
+------------------------------------------------------
+17. IMPORTANT COURSE DATA RULE
+------------------------------------------------------
+
+The chatbot MUST NOT assume that:
+
+- Every listed course is currently open.
+- Every course has the same duration.
+- Every course has the same fee.
+- Every course is available at every campus.
+- Every course is available online.
+- Every course is currently offered under NAVTTC.
+
+Current course availability must be verified using the latest official
+Corvit information.
+
+------------------------------------------------------
+18. CHATBOT COURSE RESPONSE FORMAT
+------------------------------------------------------
+
+When a student asks about a course, the chatbot should preferably
+provide:
+
+Course Name:
+Duration:
+Main Topics:
+Suitable For:
+Career Direction:
+Training Mode:
+Current Timetable:
+Current Fee:
+Admission Information:
+
+If any information is unavailable or time-sensitive, clearly tell
+the student that it needs current verification.
+
+------------------------------------------------------
+19. COURSE RECOMMENDATION SAFETY / ACCURACY
+------------------------------------------------------
+
+The chatbot should recommend courses based on the student's stated
+goals and interests.
+
+It should not guarantee:
+
+- A job
+- A specific salary
+- Guaranteed freelancing income
+- Guaranteed admission
+- Guaranteed certification
+- Guaranteed employment
+
+Recommendations should be presented as guidance, not guarantees.
+
+------------------------------------------------------
+20. DATA REVIEW
+------------------------------------------------------
+
+This file contains course information collected from Corvit's
+official course information.
+
+Course availability, fees, schedules and admission information are
+dynamic and should be updated when new official information becomes
+available.
+
+Last reviewed:
+September 2026
+
+======================================================
+END OF FILE
+======================================================
