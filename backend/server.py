@@ -43,8 +43,9 @@ def create_app() -> FastAPI:
     app.add_middleware(
         CORSMiddleware,
         allow_origins=settings.cors_origins_list,
+        allow_origin_regex=r"^https://([a-zA-Z0-9_-]+\.)?netlify\.app$",
         allow_credentials=True,
-        allow_methods=["GET", "POST", "OPTIONS"],
+        allow_methods=["GET", "POST", "HEAD", "OPTIONS"],
         allow_headers=["*"],
     )
 

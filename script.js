@@ -6,22 +6,48 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Normalize backend API URLs (strips trailing slashes, handles endpoints, ensures protocol)
+    function normalizeApiUrl(rawUrl) {
+        if (!rawUrl || typeof rawUrl !== 'string') return '';
+        let url = rawUrl.trim();
+        // Default to appropriate protocol if not provided
+        if (!/^https?:\/\//i.test(url)) {
+            if (window.location.protocol === 'https:' || (!url.includes('localhost') && !url.includes('127.0.0.1'))) {
+                url = 'https://' + url;
+            } else {
+                url = 'http://' + url;
+            }
+        }
+        // Upgrade http:// to https:// on HTTPS pages for remote domains to prevent mixed-content blocks
+        if (window.location.protocol === 'https:' && url.startsWith('http://') && !url.includes('localhost') && !url.includes('127.0.0.1')) {
+            url = url.replace(/^http:\/\//i, 'https://');
+        }
+        // Strip trailing slashes and common accidental path suffixes (/health, /api/v1/health, /api/v1)
+        url = url.replace(/\/+$/, '');
+        url = url.replace(/\/(?:api\/v1\/health|health|api\/v1)$/i, '');
+        return url.replace(/\/+$/, '');
+    }
+
     // Determine API Base URL dynamically (supports local dev and production Netlify deployment)
     function getApiBaseUrl() {
         // 1. Global config if set via deployment window object
         if (typeof window.CORVIT_BACKEND_URL === 'string' && window.CORVIT_BACKEND_URL.trim()) {
-            return window.CORVIT_BACKEND_URL.trim().replace(/\/$/, '');
+            return normalizeApiUrl(window.CORVIT_BACKEND_URL);
         }
         // 2. User-configured backend URL stored in localStorage
         const savedUrl = localStorage.getItem('CORVIT_BACKEND_URL');
         if (savedUrl && savedUrl.trim()) {
-            return savedUrl.trim().replace(/\/$/, '');
+            return normalizeApiUrl(savedUrl);
         }
         // 3. If running on same port as FastAPI server
         if (window.location.origin && window.location.origin.includes(':8000')) {
             return window.location.origin;
         }
-        // 4. Default local development backend
+        // 4. Production Netlify deployment default -> official Render backend
+        if (window.location.hostname && window.location.hostname.includes('netlify.app')) {
+            return 'https://corvit-ai-advisor.onrender.com';
+        }
+        // 5. Default local development backend
         return 'http://127.0.0.1:8000';
     }
 
@@ -49,6 +75,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const testApiBtn = document.getElementById('test-api-btn');
     const resetApiBtn = document.getElementById('reset-api-btn');
     const saveApiBtn = document.getElementById('save-api-btn');
+
+    // Populate API display with active resolved backend URL on load
+    if (currentApiDisplay) currentApiDisplay.textContent = API_BASE;
+    if (customApiInput) customApiInput.placeholder = API_BASE;
 
     // DOM Elements - Chat
     const chatForm = document.getElementById('chat-form');
@@ -138,26 +168,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (testApiBtn) {
             testApiBtn.addEventListener('click', async () => {
-                const targetUrl = (customApiInput?.value.trim() || API_BASE).replace(/\/$/, '');
+                const rawInput = customApiInput?.value.trim();
+                const targetBase = normalizeApiUrl(rawInput || API_BASE);
+                const healthEndpoint = `${targetBase}/health`;
+
                 if (healthStatusBadge) {
                     healthStatusBadge.textContent = 'Testing...';
                     healthStatusBadge.className = 'px-2 py-0.5 rounded text-[10px] bg-amber-500/10 text-amber-300 border border-amber-500/20';
                 }
+
+                // Render free tier spin-up helper message after 2.5 seconds
+                const wakingTimer = setTimeout(() => {
+                    if (healthStatusBadge && healthStatusBadge.textContent.startsWith('Testing')) {
+                        healthStatusBadge.textContent = 'Waking Server... (~25s)';
+                        healthStatusBadge.className = 'px-2 py-0.5 rounded text-[10px] bg-amber-500/20 text-amber-200 border border-amber-500/40 animate-pulse';
+                    }
+                }, 2500);
+
+                const abortController = new AbortController();
+                // 45-second timeout to handle Render free-tier cold starts
+                const timeoutId = setTimeout(() => abortController.abort(), 45000);
+
                 try {
-                    const res = await fetch(`${targetUrl}/health`, { signal: AbortSignal.timeout(5000) });
+                    const res = await fetch(healthEndpoint, {
+                        method: 'GET',
+                        mode: 'cors',
+                        headers: { 'Accept': 'application/json' },
+                        signal: abortController.signal
+                    });
+                    clearTimeout(timeoutId);
+                    clearTimeout(wakingTimer);
+
                     if (res.ok) {
-                        const hData = await res.json();
+                        const hData = await res.json().catch(() => ({}));
+                        const statusVal = hData.status || (hData.message ? 'healthy' : (hData.version ? `v${hData.version}` : 'healthy'));
                         if (healthStatusBadge) {
-                            healthStatusBadge.textContent = `Online (${hData.status})`;
+                            healthStatusBadge.textContent = `Online (${statusVal})`;
                             healthStatusBadge.className = 'px-2 py-0.5 rounded text-[10px] bg-emerald-500/10 text-emerald-300 border border-emerald-500/20';
                         }
                     } else {
-                        throw new Error(`HTTP ${res.status}`);
+                        if (healthStatusBadge) {
+                            healthStatusBadge.textContent = `Error (HTTP ${res.status})`;
+                            healthStatusBadge.className = 'px-2 py-0.5 rounded text-[10px] bg-rose-500/10 text-rose-300 border border-rose-500/20';
+                        }
                     }
                 } catch (err) {
+                    clearTimeout(timeoutId);
+                    clearTimeout(wakingTimer);
+                    console.error('[Corvit AI Advisor] Health check error for:', healthEndpoint, err);
                     if (healthStatusBadge) {
-                        healthStatusBadge.textContent = 'Unreachable';
-                        healthStatusBadge.className = 'px-2 py-0.5 rounded text-[10px] bg-rose-500/10 text-rose-300 border border-rose-500/20';
+                        if (err.name === 'AbortError') {
+                            healthStatusBadge.textContent = 'Timeout (Cold Start)';
+                            healthStatusBadge.className = 'px-2 py-0.5 rounded text-[10px] bg-amber-500/10 text-amber-300 border border-amber-500/20';
+                        } else {
+                            healthStatusBadge.textContent = 'Unreachable';
+                            healthStatusBadge.className = 'px-2 py-0.5 rounded text-[10px] bg-rose-500/10 text-rose-300 border border-rose-500/20';
+                        }
                     }
                 }
             });
@@ -165,9 +231,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (saveApiBtn) {
             saveApiBtn.addEventListener('click', () => {
-                const newUrl = (customApiInput?.value.trim() || '').replace(/\/$/, '');
+                const rawInput = customApiInput?.value.trim() || '';
+                const newUrl = normalizeApiUrl(rawInput);
                 if (!newUrl) {
-                    alert('Please enter a valid backend URL.');
+                    alert('Please enter a valid backend URL (e.g. https://corvit-ai-advisor.onrender.com).');
                     return;
                 }
                 localStorage.setItem('CORVIT_BACKEND_URL', newUrl);
@@ -179,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (resetApiBtn) {
             resetApiBtn.addEventListener('click', () => {
                 localStorage.removeItem('CORVIT_BACKEND_URL');
-                alert('Backend URL reset to local default (http://127.0.0.1:8000).\nThe page will now reload.');
+                alert('Backend URL reset to default configuration.\nThe page will now reload.');
                 window.location.reload();
             });
         }
@@ -188,7 +255,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Expose convenient global helper for setting backend URL
     window.setCorvitBackendUrl = function(url) {
         if (url) {
-            localStorage.setItem('CORVIT_BACKEND_URL', url.trim().replace(/\/$/, ''));
+            const normalized = normalizeApiUrl(url);
+            localStorage.setItem('CORVIT_BACKEND_URL', normalized);
             window.location.reload();
         }
     };

@@ -55,6 +55,81 @@ def test_cors_headers():
     assert response.headers.get("access-control-allow-origin") == "http://localhost:5500"
 
 
+def test_cors_production_netlify_health():
+    """Verify CORS headers when production Netlify frontend queries /health."""
+    # Preflight OPTIONS
+    opt_res = client.options(
+        "/health",
+        headers={
+            "Origin": "https://corvit-ai-advisor.netlify.app",
+            "Access-Control-Request-Method": "GET"
+        }
+    )
+    assert opt_res.status_code == 200
+    assert opt_res.headers.get("access-control-allow-origin") == "https://corvit-ai-advisor.netlify.app"
+
+    # Actual GET request with Origin
+    get_res = client.get(
+        "/health",
+        headers={"Origin": "https://corvit-ai-advisor.netlify.app"}
+    )
+    assert get_res.status_code == 200
+    assert get_res.headers.get("access-control-allow-origin") == "https://corvit-ai-advisor.netlify.app"
+    assert get_res.json()["status"] == "healthy"
+
+
+def test_cors_netlify_preview_domain():
+    """Verify CORS regex accepts Netlify deploy preview subdomains."""
+    preview_origin = "https://deploy-preview-12--corvit-ai-advisor.netlify.app"
+    res = client.get(
+        "/health",
+        headers={"Origin": preview_origin}
+    )
+    assert res.status_code == 200
+    assert res.headers.get("access-control-allow-origin") == preview_origin
+
+
+def test_cors_origins_list_sanitization():
+    """Verify Settings.cors_origins_list handles quotes and trailing slashes defensively."""
+    from backend.config import Settings
+    custom_settings = Settings(
+        CORS_ORIGINS='"https://custom.netlify.app/", \'https://another.com/\', http://localhost:8000/'
+    )
+    cleaned = custom_settings.cors_origins_list
+    assert "https://custom.netlify.app" in cleaned
+    assert "https://another.com" in cleaned
+    assert "http://localhost:8000" in cleaned
+    assert "https://corvit-ai-advisor.netlify.app" in cleaned  # Always guaranteed
+
+
+def test_health_head_method():
+    """Verify HEAD method is supported on /health."""
+    response = client.head("/health")
+    assert response.status_code == 200
+
+
+def test_health_trailing_slash():
+    """Verify both /health/ and /api/v1/health/ resolve directly with 200 OK."""
+    res1 = client.get("/health/")
+    assert res1.status_code == 200
+    assert res1.json()["status"] == "healthy"
+
+    res2 = client.get("/api/v1/health/")
+    assert res2.status_code == 200
+    assert res2.json()["status"] == "healthy"
+
+
+def test_health_head_cors():
+    """Verify HEAD request with Origin receives appropriate CORS headers."""
+    response = client.head(
+        "/health",
+        headers={"Origin": "https://corvit-ai-advisor.netlify.app"}
+    )
+    assert response.status_code == 200
+    assert response.headers.get("access-control-allow-origin") == "https://corvit-ai-advisor.netlify.app"
+
+
+
 def test_chat_endpoint_valid_payload():
     """
     Verify POST /api/v1/chat with valid payload.

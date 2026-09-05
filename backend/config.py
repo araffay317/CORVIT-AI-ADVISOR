@@ -25,7 +25,7 @@ class Settings(BaseSettings):
     BACKEND_HOST: str = Field(default="0.0.0.0", description="Host address to bind to")
     BACKEND_PORT: int = Field(default=8000, description="Port number to listen on")
     CORS_ORIGINS: str = Field(
-        default="http://localhost:5500,http://127.0.0.1:5500,http://localhost:3000,http://localhost:8000",
+        default="https://corvit-ai-advisor.netlify.app,http://localhost:5500,http://127.0.0.1:5500,http://localhost:3000,http://localhost:8000",
         description="Comma-separated list of allowed CORS origins"
     )
 
@@ -35,7 +35,16 @@ class Settings(BaseSettings):
     @property
     def cors_origins_list(self) -> List[str]:
         """Parse comma-separated CORS_ORIGINS into a clean list of allowed origins."""
-        return [origin.strip() for origin in self.CORS_ORIGINS.split(",") if origin.strip()]
+        origins: List[str] = []
+        for origin in self.CORS_ORIGINS.split(","):
+            cleaned = origin.strip().strip('"\'').rstrip("/")
+            if cleaned:
+                origins.append(cleaned)
+        # Always guarantee that production Netlify frontend origin is authorized
+        prod_netlify = "https://corvit-ai-advisor.netlify.app"
+        if prod_netlify not in origins:
+            origins.append(prod_netlify)
+        return origins
 
     @property
     def dataset_dir(self) -> Path:

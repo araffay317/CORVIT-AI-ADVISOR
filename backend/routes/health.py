@@ -6,8 +6,10 @@ from backend.schemas import HealthResponse
 router = APIRouter(tags=["Health"])
 
 
-@router.get("/health", response_model=HealthResponse)
-@router.get("/api/v1/health", response_model=HealthResponse)
+@router.api_route("/health", methods=["GET", "HEAD"], response_model=HealthResponse)
+@router.api_route("/health/", methods=["GET", "HEAD"], response_model=HealthResponse)
+@router.api_route("/api/v1/health", methods=["GET", "HEAD"], response_model=HealthResponse)
+@router.api_route("/api/v1/health/", methods=["GET", "HEAD"], response_model=HealthResponse)
 async def get_health() -> HealthResponse:
     """Return health and active configuration status without sensitive system internals."""
     return HealthResponse(
