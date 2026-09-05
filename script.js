@@ -36,10 +36,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabChatBtn = document.getElementById('tab-chat-btn');
     const tabRecommendBtn = document.getElementById('tab-recommend-btn');
     const tabContactsBtn = document.getElementById('tab-contacts-btn');
+    const tabApiBtn = document.getElementById('tab-api-btn');
     const chatSection = document.getElementById('chat-section');
     const recommendSection = document.getElementById('recommend-section');
     const contactsModal = document.getElementById('contacts-modal');
     const closeContactsBtn = document.getElementById('close-contacts-btn');
+    const apiModal = document.getElementById('api-modal');
+    const closeApiModalBtn = document.getElementById('close-api-modal-btn');
+    const customApiInput = document.getElementById('custom-api-input');
+    const currentApiDisplay = document.getElementById('current-api-display');
+    const healthStatusBadge = document.getElementById('health-status-badge');
+    const testApiBtn = document.getElementById('test-api-btn');
+    const resetApiBtn = document.getElementById('reset-api-btn');
+    const saveApiBtn = document.getElementById('save-api-btn');
 
     // DOM Elements - Chat
     const chatForm = document.getElementById('chat-form');
@@ -106,6 +115,83 @@ document.addEventListener('DOMContentLoaded', () => {
             contactsModal.classList.add('hidden');
         }
     });
+
+    // API Server Modal Handlers
+    if (tabApiBtn && apiModal) {
+        tabApiBtn.addEventListener('click', () => {
+            if (customApiInput) customApiInput.value = API_BASE;
+            if (currentApiDisplay) currentApiDisplay.textContent = API_BASE;
+            apiModal.classList.remove('hidden');
+        });
+
+        if (closeApiModalBtn) {
+            closeApiModalBtn.addEventListener('click', () => {
+                apiModal.classList.add('hidden');
+            });
+        }
+
+        apiModal.addEventListener('click', (e) => {
+            if (e.target === apiModal) {
+                apiModal.classList.add('hidden');
+            }
+        });
+
+        if (testApiBtn) {
+            testApiBtn.addEventListener('click', async () => {
+                const targetUrl = (customApiInput?.value.trim() || API_BASE).replace(/\/$/, '');
+                if (healthStatusBadge) {
+                    healthStatusBadge.textContent = 'Testing...';
+                    healthStatusBadge.className = 'px-2 py-0.5 rounded text-[10px] bg-amber-500/10 text-amber-300 border border-amber-500/20';
+                }
+                try {
+                    const res = await fetch(`${targetUrl}/health`, { signal: AbortSignal.timeout(5000) });
+                    if (res.ok) {
+                        const hData = await res.json();
+                        if (healthStatusBadge) {
+                            healthStatusBadge.textContent = `Online (${hData.status})`;
+                            healthStatusBadge.className = 'px-2 py-0.5 rounded text-[10px] bg-emerald-500/10 text-emerald-300 border border-emerald-500/20';
+                        }
+                    } else {
+                        throw new Error(`HTTP ${res.status}`);
+                    }
+                } catch (err) {
+                    if (healthStatusBadge) {
+                        healthStatusBadge.textContent = 'Unreachable';
+                        healthStatusBadge.className = 'px-2 py-0.5 rounded text-[10px] bg-rose-500/10 text-rose-300 border border-rose-500/20';
+                    }
+                }
+            });
+        }
+
+        if (saveApiBtn) {
+            saveApiBtn.addEventListener('click', () => {
+                const newUrl = (customApiInput?.value.trim() || '').replace(/\/$/, '');
+                if (!newUrl) {
+                    alert('Please enter a valid backend URL.');
+                    return;
+                }
+                localStorage.setItem('CORVIT_BACKEND_URL', newUrl);
+                alert(`Backend URL updated to: ${newUrl}\nThe page will now reload to apply changes.`);
+                window.location.reload();
+            });
+        }
+
+        if (resetApiBtn) {
+            resetApiBtn.addEventListener('click', () => {
+                localStorage.removeItem('CORVIT_BACKEND_URL');
+                alert('Backend URL reset to local default (http://127.0.0.1:8000).\nThe page will now reload.');
+                window.location.reload();
+            });
+        }
+    }
+
+    // Expose convenient global helper for setting backend URL
+    window.setCorvitBackendUrl = function(url) {
+        if (url) {
+            localStorage.setItem('CORVIT_BACKEND_URL', url.trim().replace(/\/$/, ''));
+            window.location.reload();
+        }
+    };
 
     // ============================================================
     // 2. CHAT FUNCTIONALITY

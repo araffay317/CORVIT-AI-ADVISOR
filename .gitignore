@@ -34,6 +34,7 @@ dist/
 build/
 *.egg-info/
 *.egg
+*.zip
 
 # Local Log Files
 *.log

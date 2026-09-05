@@ -7,7 +7,10 @@ import re
 import time
 import logging
 from typing import Optional, Dict, List
-from duckduckgo_search import DDGS
+try:
+    from ddgs import DDGS
+except ImportError:
+    from duckduckgo_search import DDGS
 
 from backend.config import settings
 

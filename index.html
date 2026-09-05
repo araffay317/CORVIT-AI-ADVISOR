@@ -41,6 +41,9 @@
                 <button id="tab-contacts-btn" class="nav-tab text-slate-400 hover:text-slate-200 px-3 sm:px-4 py-1.5 rounded-lg font-medium transition-all duration-200" aria-selected="false" aria-controls="contacts-modal">
                     📍 Campuses
                 </button>
+                <button id="tab-api-btn" class="nav-tab text-slate-400 hover:text-slate-200 px-3 sm:px-4 py-1.5 rounded-lg font-medium transition-all duration-200" aria-selected="false" aria-controls="api-modal" title="Configure Backend API Server URL">
+                    ⚙️ API URL
+                </button>
             </nav>
 
             <!-- Status Indicator -->
@@ -393,6 +396,63 @@
 
                 <div class="bg-slate-950 p-3 rounded-xl border border-slate-800/80 text-[11px] text-slate-400 text-center">
                     Note: For real-time seat availability and registration forms, visit your nearest campus or call during regular business hours.
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- SECTION 4: BACKEND API CONFIGURATION MODAL                   -->
+        <!-- ============================================================ -->
+        <div id="api-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
+            <div class="glass-panel rounded-2xl border border-slate-800 max-w-lg w-full p-6 shadow-2xl space-y-5 relative animate-fade-in">
+                <div class="flex items-start justify-between border-b border-slate-800 pb-3">
+                    <div>
+                        <h3 class="text-lg font-bold font-outfit text-white">Backend API Server Settings</h3>
+                        <p class="text-xs text-slate-400">Configure target FastAPI server for local dev or production host</p>
+                    </div>
+                    <button id="close-api-modal-btn" class="text-slate-400 hover:text-white p-1 rounded-lg text-lg">✕</button>
+                </div>
+
+                <div class="space-y-4 text-xs">
+                    <div>
+                        <label for="custom-api-input" class="block font-medium text-slate-300 mb-1">
+                            FastAPI Backend URL
+                        </label>
+                        <input
+                            type="url"
+                            id="custom-api-input"
+                            placeholder="http://127.0.0.1:8000"
+                            class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                        />
+                        <p class="text-[11px] text-slate-400 mt-1">
+                            Default local URL is <code class="text-blue-400 font-mono">http://127.0.0.1:8000</code>. For production (e.g. Render, Railway, Fly.io), enter your deployed backend URL.
+                        </p>
+                    </div>
+
+                    <div id="api-status-box" class="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 text-[11px] text-slate-300 space-y-1">
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-400">Current Target:</span>
+                            <span id="current-api-display" class="font-mono text-blue-400 font-medium">http://127.0.0.1:8000</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-400">Server Health:</span>
+                            <span id="health-status-badge" class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-400">Not Tested</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-2 pt-2">
+                        <button id="test-api-btn" type="button" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium transition flex items-center gap-1.5">
+                            <span>🔍 Test Health (/health)</span>
+                        </button>
+                        <div class="flex items-center gap-2">
+                            <button id="reset-api-btn" type="button" class="px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-slate-200 transition">
+                                Reset Default
+                            </button>
+                            <button id="save-api-btn" type="button" class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition">
+                                Save & Apply
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

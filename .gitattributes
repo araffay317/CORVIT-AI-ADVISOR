@@ -1,0 +1,6 @@
+# Auto-detect text files and normalize line endings for code and documentation
+* text=auto
+
+# CRITICAL: Treat all files in Dataset as binary to prevent any line-ending conversions (CRLF <-> LF)
+# and guarantee SHA-256 byte-for-byte immutability across all operating systems and git configurations.
+Dataset/** -text

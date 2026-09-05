@@ -1,4 +1,9 @@
 # Netlify Configuration for CORVIT AI Advisor Frontend
+# NOTE: Netlify hosts the client static assets (index.html, style.css, script.js).
+# The Python ASGI backend (FastAPI/Uvicorn) must be hosted on a dedicated Python host
+# (e.g. Render, Railway, Fly.io, or VPS) and its URL configured in the frontend
+# via the "API URL" navigation modal, window.CORVIT_BACKEND_URL, or localStorage.
+
 [build]
   publish = "."
 
@@ -8,3 +13,12 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Optional: If you deploy your backend to a public host and wish to proxy /api/*
+# requests through Netlify directly to avoid cross-origin configurations,
+# uncomment and supply your actual backend host:
+# [[redirects]]
+#   from = "/api/*"
+#   to = "https://your-deployed-backend-host.example.com/api/:splat"
+#   status = 200
+#   force = true

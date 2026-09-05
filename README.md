@@ -156,28 +156,58 @@ Returns top 2–3 recommendations with match scores, durations, outline scopes, 
 
 ---
 
-## 🌐 Production Deployment
+## 🌐 Production Deployment Architecture
 
-### Frontend (Netlify)
-1. Netlify serves static files from the repository root (`publish = "."` via `netlify.toml`).
-2. In production, configure your deployed backend URL:
-   * Define `window.CORVIT_BACKEND_URL = "https://your-fastapi-backend.example.com";` in `index.html`, OR
-   * Enter it into the frontend application storage via `localStorage.setItem('CORVIT_BACKEND_URL', 'https://your-fastapi-backend.example.com')`.
-3. The frontend communicates with the remote FastAPI backend without client-side secrets.
+```text
+┌──────────────────────────────────────┐       HTTPS        ┌──────────────────────────────────────┐
+│  Netlify Static Frontend             │ ─────────────────► │  Python ASGI Backend                 │
+│  - index.html, style.css, script.js  │    API Requests    │  - FastAPI, Uvicorn, RAG, Groq LLM  │
+│  - Zero secrets stored in client     │                    │  - Hosted on Render, Railway, etc.   │
+└──────────────────────────────────────┘                    └──────────────────────────────────────┘
+```
 
-### Backend (Cloud / Container Hosting)
-1. Deploy the FastAPI application to your chosen hosting provider (e.g. Render, Railway, Fly.io, or AWS EC2).
-2. Set environment variables on the hosting platform (`GROQ_API_KEY`, `CORS_ORIGINS=https://your-netlify-site.netlify.app`).
-3. Start the application with:
+### 1. Frontend Hosting (Netlify)
+Netlify serves the client application directly from the repository root (`publish = "."` via `netlify.toml`).
+Because Netlify is a static Jamstack host, it does not execute Python ASGI servers. To connect the frontend to your deployed backend:
+* **Option A (Interactive UI - Recommended)**: Click the **⚙️ API URL** tab in the navigation header, enter your deployed FastAPI URL (e.g. `https://your-api.onrender.com`), test the `/health` endpoint, and click **Save & Apply**.
+* **Option B (Global Window Config)**: Define `window.CORVIT_BACKEND_URL = "https://your-api.onrender.com";` in `index.html`.
+* **Option C (Netlify Proxy Redirect)**: Uncomment the `[[redirects]]` section in `netlify.toml` to transparently route `/api/*` to your backend host.
+
+### 2. Backend Hosting (Render, Railway, Fly.io, or VPS)
+1. Deploy the FastAPI repository to your preferred Python ASGI host.
+2. Configure environment variables in your hosting provider's dashboard:
+   ```env
+   GROQ_API_KEY=your_actual_groq_api_key
+   PRIMARY_MODEL=openai/gpt-oss-120b
+   FALLBACK_MODEL=llama-3.1-8b-instant
+   CORS_ORIGINS=https://your-site.netlify.app,http://localhost:5500
+   ENABLE_ONLINE_RESEARCH=true
+   ```
+3. Set the start command:
    ```bash
    uvicorn backend.server:app --host 0.0.0.0 --port $PORT
    ```
 
 ---
 
+## 📦 Academic / Teacher Submission Package
+
+To generate a clean ZIP archive for evaluation that strictly excludes virtual environments, real secrets, and cache folders:
+```bash
+.\.venv\Scripts\python.exe scripts/export_clean_submission.py
+```
+This utility automatically:
+1. Verifies the SHA-256 integrity of all 8 original Dataset files.
+2. Excludes `.env`, `.venv/`, `__pycache__/`, `.pytest_cache/`, and `.git/`.
+3. Preserves `.env.example`, documentation, test suite, and full source code.
+4. Generates `CORVIT-AI-ADVISOR-SUBMISSION.zip` and audits it against credential leaks.
+
+---
+
 ## 🧪 Automated Testing
-Run the complete test suite:
+Run the complete automated test suite:
 ```bash
 .\.venv\Scripts\pytest.exe backend/tests/ -v
 ```
 All 63 automated unit and integration tests validate the entire system across Phases 2, 3, 4, 5, Final Phase A, and Final Phase B.
+
