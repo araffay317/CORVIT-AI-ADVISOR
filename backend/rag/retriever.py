@@ -2,6 +2,7 @@
 Hybrid BM25/TF-IDF Retrieval Engine for Corvit AI Advisor.
 Operates deterministically over the ingested Corvit dataset chunks with category-intent ranking.
 """
+import re
 import time
 import logging
 from typing import List, Optional, Dict, Set
@@ -36,7 +37,11 @@ CATEGORY_KEYWORD_MAP: Dict[str, Set[str]] = {
     "navttc": {"navttc", "free", "government", "scholarship", "funded", "vocational", "technical education"},
     "admission": {"admission", "apply", "enroll", "enrollment", "registration", "procedure", "process", "eligibility", "documents"},
     "infrastructure": {"lab", "labs", "facility", "facilities", "cisco", "rack", "racks", "router", "routers", "switch", "switches", "hardware", "classroom", "training environment"},
-    "courses": {"course", "courses", "outline", "syllabus", "topics", "curriculum", "duration", "prerequisites", "learn", "study"},
+    "courses": {
+        "course", "courses", "outline", "syllabus", "topics", "curriculum",
+        "duration", "prerequisites", "learn", "study", "offer", "offered",
+        "offers", "offering", "available", "program", "programs", "track", "tracks"
+    },
     "general": {"about", "history", "vision", "mission", "head office", "branches", "campuses"},
     "faq": {"question", "faq", "frequently asked", "general information"}
 }
@@ -93,7 +98,7 @@ class CorvitRetriever:
         Identify if query contains strong keyword indicators for any of the 8 categories.
         Acts strictly as a ranking aid, not a hard filter.
         """
-        tokens = set(query.lower().split())
+        tokens = set(re.sub(r"[^\w\s]", " ", query.lower()).split())
         matched_category = None
         max_matches = 0
 
@@ -123,8 +128,13 @@ class CorvitRetriever:
         if not clean_query:
             return []
 
+        clean_lower = clean_query.lower()
+        expanded_query = clean_query
+        if "offered" in clean_lower and "offer" not in clean_lower.split():
+            expanded_query += " offer"
+
         # Transform query into TF-IDF vector space
-        query_vec = self.vectorizer.transform([clean_query])
+        query_vec = self.vectorizer.transform([expanded_query])
 
         # Compute raw cosine similarity against all chunks
         raw_similarities = cosine_similarity(query_vec, self.tfidf_matrix).flatten()
@@ -132,12 +142,25 @@ class CorvitRetriever:
         # Check for category intent ranking aid
         intent_cat = self.detect_category_intent(clean_query)
 
+        # Check if query is asking generally about what courses/programs Corvit offers
+        is_general_course_query = bool(
+            re.search(r"\b(what|which|list|tell|available|all)\b", clean_lower) and
+            re.search(r"\b(courses?|programs?)\b", clean_lower) and
+            re.search(r"\b(offer(ed|s|ing)?|available|provide|have)\b", clean_lower)
+        )
+
         # Apply category ranking aid to raw scores
         adjusted_scores = []
         for idx, score in enumerate(raw_similarities):
             adj_score = float(score)
-            if intent_cat and self.chunks[idx].category == intent_cat:
+            chunk = self.chunks[idx]
+            if intent_cat and chunk.category == intent_cat:
                 adj_score *= self.category_boost
+
+            # If user asks generally what courses/programs are offered, boost authoritative faq_007 chunk
+            if is_general_course_query and chunk.chunk_id == "faq_007":
+                adj_score *= (self.category_boost * 1.5)
+
             adjusted_scores.append((idx, adj_score, float(score)))
 
         # Sort descending by adjusted score
