@@ -10,458 +10,569 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Tailwind CSS CDN -->
+    <script>
+        tailwind = {
+            config: {
+                darkMode: 'class',
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['Inter', 'system-ui', 'sans-serif'],
+                            outfit: ['Outfit', 'Inter', 'system-ui', 'sans-serif']
+                        }
+                    }
+                }
+            }
+        };
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Immediate early theme application to guarantee clean default Light/White theme without flash
+        (function() {
+            try {
+                const saved = localStorage.getItem('corvit_theme') || 'light';
+                let isDark = false;
+                if (saved === 'dark') {
+                    isDark = true;
+                } else if (saved === 'system') {
+                    isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                }
+                if (isDark) {
+                    document.documentElement.classList.add('dark');
+                    document.documentElement.classList.remove('light');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    document.documentElement.classList.add('light');
+                }
+            } catch (e) {}
+        })();
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans min-h-full flex flex-col selection:bg-blue-500 selection:text-white">
-    <!-- Navigation Header -->
-    <header class="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-slate-800/80 px-4 sm:px-6 py-3 transition-colors duration-200">
-        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
-            <!-- Brand -->
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-400 flex items-center justify-center font-bold text-xl text-white shadow-lg shadow-blue-500/20 ring-1 ring-white/20">
-                    C
-                </div>
-                <div>
-                    <h1 class="text-lg sm:text-xl font-bold font-outfit tracking-tight bg-gradient-to-r from-blue-400 via-indigo-200 to-white bg-clip-text text-transparent">
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 font-sans h-full overflow-hidden transition-colors duration-200 selection:bg-blue-500 selection:text-white">
+    <div class="flex h-full w-full overflow-hidden">
+        <!-- ============================================================ -->
+        <!-- LEFT VERTICAL SIDEBAR                                        -->
+        <!-- ============================================================ -->
+        <aside id="sidebar" class="w-72 flex-shrink-0 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 flex flex-col h-full z-40 fixed md:static inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition-transform duration-200 ease-in-out shadow-lg md:shadow-none">
+            <!-- Sidebar Top: Official Logo & Brand Header -->
+            <div class="p-4 border-b border-slate-200 dark:border-slate-800/80 flex items-center gap-3 bg-white dark:bg-slate-900">
+                <img id="corvit-logo" src="assets/logo.png" alt="Corvit Systems Official Logo" class="h-10 sm:h-11 w-auto max-w-[48px] object-contain flex-shrink-0" />
+                <div class="overflow-hidden">
+                    <h1 class="text-base sm:text-lg font-extrabold font-outfit text-slate-900 dark:text-white tracking-wide truncate leading-tight uppercase">
                         Corvit AI Advisor
                     </h1>
-                    <p class="text-xs text-slate-400 hidden sm:block">Academic & Professional Career Guidance</p>
+                    <p class="text-[11px] text-slate-500 dark:text-slate-400 truncate font-medium">Academic & Professional Career Guidance</p>
                 </div>
             </div>
 
-            <!-- Navigation Tabs -->
-            <nav class="flex items-center gap-1 sm:gap-2 bg-slate-900/90 p-1 rounded-xl border border-slate-800 text-xs sm:text-sm" aria-label="Main Navigation">
-                <button id="tab-chat-btn" class="nav-tab active-tab px-3 sm:px-4 py-1.5 rounded-lg font-medium transition-all duration-200" aria-selected="true" aria-controls="chat-section">
-                    💬 Chat Advisor
+            <!-- Navigation Tabs List (Order: Course Matcher -> ChatAdvisor -> Campuses -> API URL) -->
+            <div class="flex-1 overflow-y-auto p-3 space-y-1.5" aria-label="Main Navigation">
+                <!-- 1. Course Matcher -->
+                <button id="tab-recommend-btn" class="nav-tab w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-medium transition text-left" aria-selected="false" aria-controls="recommend-section">
+                    <span class="text-base flex-shrink-0">🎯</span>
+                    <span class="truncate">Course Matcher</span>
                 </button>
-                <button id="tab-recommend-btn" class="nav-tab text-slate-400 hover:text-slate-200 px-3 sm:px-4 py-1.5 rounded-lg font-medium transition-all duration-200" aria-selected="false" aria-controls="recommend-section">
-                    🎯 Course Matcher
-                </button>
-                <button id="tab-contacts-btn" class="nav-tab text-slate-400 hover:text-slate-200 px-3 sm:px-4 py-1.5 rounded-lg font-medium transition-all duration-200" aria-selected="false" aria-controls="contacts-modal">
-                    📍 Campuses
-                </button>
-                <button id="tab-api-btn" class="nav-tab text-slate-400 hover:text-slate-200 px-3 sm:px-4 py-1.5 rounded-lg font-medium transition-all duration-200" aria-selected="false" aria-controls="api-modal" title="Configure Backend API Server URL">
-                    ⚙️ API URL
-                </button>
-            </nav>
 
-            <!-- Status Indicator -->
-            <div class="hidden md:flex items-center gap-2">
-                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    Verified Corvit Knowledge Base
-                </span>
+                <!-- 2. ChatAdvisor (Positioned in middle, directly above Chat History) -->
+                <button id="tab-chat-btn" class="nav-tab active-tab w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-semibold transition text-left" aria-selected="true" aria-controls="chat-section">
+                    <span class="text-base flex-shrink-0">💬</span>
+                    <span class="truncate">ChatAdvisor</span>
+                </button>
+
+                <!-- ChatAdvisor-Specific Sub-Controls (visible ONLY when ChatAdvisor is selected) -->
+                <div id="chatadvisor-sub-controls" class="pl-3 pr-1 py-2 space-y-2.5 border-l-2 border-blue-500/40 ml-4 my-1">
+                    <button id="sidebar-new-chat-btn" type="button" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg bg-blue-50 hover:bg-blue-100 dark:bg-blue-600/10 dark:hover:bg-blue-600/20 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-500/20 text-xs font-semibold transition shadow-sm">
+                        <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                        <span>+ New Chat</span>
+                    </button>
+                    <div class="space-y-1">
+                        <div class="flex items-center justify-between text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider px-1">
+                            <span>Chat History</span>
+                        </div>
+                        <div id="sidebar-chat-history-list" class="space-y-1 max-h-48 overflow-y-auto pr-1 no-scrollbar">
+                            <!-- Injected dynamically by script.js -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Campuses -->
+                <button id="tab-contacts-btn" class="nav-tab w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-medium transition text-left" aria-selected="false" aria-controls="contacts-modal">
+                    <span class="text-base flex-shrink-0">📍</span>
+                    <span class="truncate">Campuses</span>
+                </button>
+
+                <!-- 4. API URL -->
+                <button id="tab-api-btn" class="nav-tab w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-medium transition text-left" aria-selected="false" aria-controls="api-modal" title="Configure Backend API Server URL">
+                    <span class="text-base flex-shrink-0">⚙️</span>
+                    <span class="truncate">API URL</span>
+                </button>
             </div>
-        </div>
-    </header>
 
-    <!-- Main Content Area -->
-    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 flex flex-col">
+            <!-- Theme Mode Selection in Sidebar -->
+            <div class="px-3.5 py-2.5 border-t border-slate-200 dark:border-slate-800/80 bg-slate-50/70 dark:bg-slate-900/50">
+                <div class="flex items-center justify-between text-xs text-slate-600 dark:text-slate-400 mb-1.5 font-medium">
+                    <span class="flex items-center gap-1.5 font-semibold text-[11px] uppercase tracking-wider">
+                        <span>🎨</span> Theme Mode
+                    </span>
+                    <span id="active-theme-label" class="text-[11px] font-bold text-blue-600 dark:text-blue-400 uppercase">Light</span>
+                </div>
+                <div class="grid grid-cols-3 gap-1 bg-slate-200/80 dark:bg-slate-800/90 p-1 rounded-lg text-xs" role="radiogroup" aria-label="Theme Mode Selection">
+                    <button type="button" class="sidebar-theme-btn flex items-center justify-center gap-1 py-1 rounded font-medium transition text-slate-700 dark:text-slate-300" data-theme="light" title="Light Theme">
+                        <span>☀️</span> Light
+                    </button>
+                    <button type="button" class="sidebar-theme-btn flex items-center justify-center gap-1 py-1 rounded font-medium transition text-slate-700 dark:text-slate-300" data-theme="dark" title="Dark Theme">
+                        <span>🌙</span> Dark
+                    </button>
+                    <button type="button" class="sidebar-theme-btn flex items-center justify-center gap-1 py-1 rounded font-medium transition text-slate-700 dark:text-slate-300" data-theme="system" title="System Auto Theme">
+                        <span>💻</span> Auto
+                    </button>
+                </div>
+            </div>
+
+            <!-- Sidebar Footer (pinned to absolute bottom) -->
+            <div class="mt-auto border-t border-slate-200 dark:border-slate-800/80 p-3.5 text-center bg-slate-100/70 dark:bg-slate-900/90">
+                <div class="text-xs sm:text-[13px] font-bold tracking-widest text-slate-700 dark:text-slate-300 uppercase font-mono">
+                    DEVELOPED BY ABDUL RAFFAY
+                </div>
+            </div>
+        </aside>
+
+        <!-- Mobile Sidebar Backdrop Overlay -->
+        <div id="mobile-sidebar-backdrop" class="hidden md:hidden fixed inset-0 z-30 bg-black/60 backdrop-blur-sm"></div>
+
         <!-- ============================================================ -->
-        <!-- SECTION 1: CHAT ADVISOR INTERFACE                            -->
+        <!-- MAIN / RIGHT CONTENT AREA                                    -->
         <!-- ============================================================ -->
-        <section id="chat-section" class="flex-1 flex flex-col h-[calc(100vh-8.5rem)] max-h-[880px] glass-panel rounded-2xl border border-slate-800/80 shadow-2xl overflow-hidden relative">
-            <!-- Chat Header / Controls -->
-            <div class="px-4 sm:px-6 py-3 bg-slate-900/60 border-b border-slate-800/70 flex items-center justify-between gap-2">
+        <div class="flex-1 flex flex-col h-full overflow-hidden min-w-0">
+            <!-- Main Header / Top Bar -->
+            <header class="h-14 border-b border-slate-200 dark:border-slate-800/80 bg-white/90 dark:bg-slate-950/80 backdrop-blur-md px-4 sm:px-6 flex items-center justify-between gap-3 flex-shrink-0 transition-colors duration-200">
+                <div class="flex items-center gap-3">
+                    <button id="mobile-sidebar-toggle" class="md:hidden p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition" aria-label="Toggle Navigation">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                    <h2 id="main-view-title" class="text-base font-bold font-outfit text-slate-900 dark:text-white">Chat Advisor</h2>
+                </div>
                 <div class="flex items-center gap-2">
-                    <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
-                    <span class="text-xs sm:text-sm font-medium text-slate-300">Corvit Student Advisory Session</span>
-                    <span id="active-model-badge" class="hidden sm:inline-flex text-[11px] px-2 py-0.5 rounded bg-blue-500/10 text-blue-300 border border-blue-500/20">
+                    <!-- Top Bar Theme Switcher -->
+                    <div class="flex items-center bg-slate-100 dark:bg-slate-800 p-0.5 rounded-lg border border-slate-200 dark:border-slate-700 text-xs mr-1" role="group" aria-label="Theme Mode Selection">
+                        <button type="button" class="topbar-theme-btn px-2 py-1 rounded-md text-xs font-medium transition flex items-center gap-1" data-theme="light" title="Light Theme">
+                            <span>☀️</span><span class="hidden sm:inline">Light</span>
+                        </button>
+                        <button type="button" class="topbar-theme-btn px-2 py-1 rounded-md text-xs font-medium transition flex items-center gap-1" data-theme="dark" title="Dark Theme">
+                            <span>🌙</span><span class="hidden sm:inline">Dark</span>
+                        </button>
+                        <button type="button" class="topbar-theme-btn px-2 py-1 rounded-md text-xs font-medium transition flex items-center gap-1" data-theme="system" title="System Auto Theme">
+                            <span>💻</span><span class="hidden sm:inline">Auto</span>
+                        </button>
+                    </div>
+
+                    <span id="active-model-badge" class="text-[11px] px-2.5 py-1 rounded bg-blue-50 dark:bg-blue-500/10 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-500/20 font-medium">
                         Primary: GPT-OSS-120B
                     </span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <button id="clear-chat-btn" title="Clear conversation history and start fresh" class="text-xs px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 transition flex items-center gap-1">
-                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
-                        <span>New Chat</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Suggestion Chips -->
-            <div id="suggestion-bar" class="px-4 sm:px-6 py-2 bg-slate-950/40 border-b border-slate-800/50 flex items-center gap-2 overflow-x-auto no-scrollbar text-xs">
-                <span class="text-slate-400 whitespace-nowrap font-medium flex items-center gap-1">
-                    💡 Quick questions:
-                </span>
-                <button class="chip-btn whitespace-nowrap px-3 py-1 rounded-full bg-slate-900 hover:bg-blue-950/80 text-slate-300 hover:text-blue-200 border border-slate-800 hover:border-blue-700/60 transition">
-                    What IT courses are offered?
-                </button>
-                <button class="chip-btn whitespace-nowrap px-3 py-1 rounded-full bg-slate-900 hover:bg-blue-950/80 text-slate-300 hover:text-blue-200 border border-slate-800 hover:border-blue-700/60 transition">
-                    CCNA routing and switching outline
-                </button>
-                <button class="chip-btn whitespace-nowrap px-3 py-1 rounded-full bg-slate-900 hover:bg-blue-950/80 text-slate-300 hover:text-blue-200 border border-slate-800 hover:border-blue-700/60 transition">
-                    NAVTTC free training programs
-                </button>
-                <button class="chip-btn whitespace-nowrap px-3 py-1 rounded-full bg-slate-900 hover:bg-blue-950/80 text-slate-300 hover:text-blue-200 border border-slate-800 hover:border-blue-700/60 transition">
-                    Paid course fee payment procedures
-                </button>
-                <button class="chip-btn whitespace-nowrap px-3 py-1 rounded-full bg-slate-900 hover:bg-blue-950/80 text-slate-300 hover:text-blue-200 border border-slate-800 hover:border-blue-700/60 transition">
-                    Latest schedule & batch timings
-                </button>
-            </div>
-
-            <!-- Messages Stream Area -->
-            <div id="chat-messages" class="flex-1 overflow-y-auto px-4 sm:px-6 py-6 space-y-6 scroll-smooth" role="log" aria-live="polite">
-                <!-- Welcome Assistant Message -->
-                <div class="flex items-start gap-3 max-w-3xl message-assistant animate-fade-in">
-                    <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-600 flex-shrink-0 flex items-center justify-center text-xs font-bold text-white shadow-md">
-                        AI
-                    </div>
-                    <div class="flex-1">
-                        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl rounded-tl-sm p-4 sm:p-5 shadow-lg space-y-3">
-                            <p class="text-sm sm:text-base leading-relaxed text-slate-200 font-medium">
-                                Welcome to the <span class="text-blue-400 font-semibold">Corvit AI Advisor</span>. I provide verified academic guidance directly from the official Corvit Systems knowledge base.
-                            </p>
-                            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                                You can ask about IT courses (CCNA, Python, AI, Cyber Security, Cloud), NAVTTC free training programs, batch schedules, fees, or use our Course Matcher to find the right career track.
-                            </p>
-                            <div class="pt-2 border-t border-slate-800/80 flex flex-wrap gap-2 text-xs text-slate-400">
-                                <span class="flex items-center gap-1">🏛️ Founded 2000</span>
-                                <span class="text-slate-600">•</span>
-                                <span class="flex items-center gap-1">📍 Lahore, Islamabad, Rawalpindi, Peshawar</span>
-                                <span class="text-slate-600">•</span>
-                                <span class="flex items-center gap-1">🎓 150,000+ Alumni</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Typing / Loading Indicator -->
-            <div id="typing-indicator" class="hidden px-4 sm:px-6 py-3 bg-slate-950/60 border-t border-slate-800/40 flex items-center gap-3 text-xs text-slate-400">
-                <div class="flex items-center gap-1">
-                    <span class="w-2 h-2 rounded-full bg-blue-400 animate-bounce" style="animation-delay: 0s"></span>
-                    <span class="w-2 h-2 rounded-full bg-indigo-400 animate-bounce" style="animation-delay: 0.15s"></span>
-                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-bounce" style="animation-delay: 0.3s"></span>
-                </div>
-                <span id="typing-status-text">Consulting verified Corvit knowledge base...</span>
-            </div>
-
-            <!-- Error Banner -->
-            <div id="chat-error-banner" class="hidden px-4 py-2.5 bg-rose-950/80 border-t border-rose-800 text-rose-200 text-xs flex items-center justify-between gap-2">
-                <div class="flex items-center gap-2">
-                    <svg class="w-4 h-4 text-rose-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
-                    <span id="chat-error-text">An error occurred while connecting to the server.</span>
-                </div>
-                <button id="dismiss-error-btn" class="text-rose-300 hover:text-white text-xs font-semibold px-2 py-0.5">✕</button>
-            </div>
-
-            <!-- Chat Input Form -->
-            <div class="p-3 sm:p-4 bg-slate-900/80 border-t border-slate-800/80">
-                <form id="chat-form" class="flex items-center gap-2 sm:gap-3" autocomplete="off">
-                    <div class="relative flex-1">
-                        <textarea
-                            id="chat-input"
-                            rows="1"
-                            placeholder="Ask a question about Corvit courses, batch schedules, fees, or NAVTTC..."
-                            class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition resize-none max-h-32"
-                            required
-                            aria-label="Student Query Input"
-                        ></textarea>
-                    </div>
-                    <button
-                        type="submit"
-                        id="send-btn"
-                        class="px-5 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-medium text-sm flex items-center justify-center gap-2 shadow-lg shadow-blue-500/25 transition disabled:opacity-50 disabled:cursor-not-allowed flex-shrink-0"
-                        aria-label="Send Message"
-                    >
-                        <span>Send</span>
-                        <svg class="w-4 h-4 transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
-                    </button>
-                </form>
-                <div class="mt-2 flex items-center justify-between text-[11px] text-slate-400 px-1">
-                    <span>Press Enter to send, Shift+Enter for new line</span>
-                    <label class="flex items-center gap-1.5 cursor-pointer text-slate-400 hover:text-slate-300 select-none">
-                        <input type="checkbox" id="allow-web-research-check" checked class="rounded bg-slate-900 border-slate-700 text-blue-500 focus:ring-blue-500">
-                        <span>Allow Secondary Web Verification (site:corvit.com)</span>
-                    </label>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================ -->
-        <!-- SECTION 2: COURSE RECOMMENDATION WIZARD                      -->
-        <!-- ============================================================ -->
-        <section id="recommend-section" class="hidden flex-1 flex flex-col space-y-6">
-            <!-- Wizard Header Banner -->
-            <div class="glass-panel rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-xl bg-gradient-to-br from-slate-900 via-slate-950 to-blue-950/30">
-                <div class="max-w-3xl">
-                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-3">
-                        Career Path Recommendation Engine
+                    <span class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/20">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                        Verified Knowledge Base
                     </span>
-                    <h2 class="text-2xl sm:text-3xl font-bold font-outfit tracking-tight text-white mb-2">
-                        Find Your Best-Fit IT Training Track
-                    </h2>
-                    <p class="text-sm sm:text-base text-slate-400">
-                        Our intelligent recommendation engine dynamically scores Corvit's verified course catalog against your educational background, skill level, interests, and career ambitions.
-                    </p>
                 </div>
-            </div>
+            </header>
 
-            <!-- Form & Results Layout -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                <!-- Input Profile Form -->
-                <div class="lg:col-span-5 glass-panel rounded-2xl p-6 border border-slate-800 shadow-lg space-y-5">
-                    <h3 class="text-base font-semibold font-outfit text-slate-200 border-b border-slate-800 pb-3 flex items-center gap-2">
-                        <span>👤</span> Student Profile
-                    </h3>
-
-                    <form id="recommendation-form" class="space-y-4">
-                        <!-- Background -->
-                        <div>
-                            <label for="rec-background" class="block text-xs font-medium text-slate-300 mb-1.5">
-                                Educational / Professional Background *
-                            </label>
-                            <input
-                                type="text"
-                                id="rec-background"
-                                placeholder="e.g. Intermediate, Matric, BSCS, Non-IT Graduate"
-                                class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-3.5 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
-                                required
-                            />
-                        </div>
-
-                        <!-- Experience Level -->
-                        <div>
-                            <label class="block text-xs font-medium text-slate-300 mb-1.5">
-                                Experience Level *
-                            </label>
-                            <div class="grid grid-cols-3 gap-2 text-xs">
-                                <label class="level-radio-card cursor-pointer p-2.5 rounded-xl border border-slate-700 bg-slate-950 text-center hover:border-slate-500 transition block">
-                                    <input type="radio" name="rec-level" value="Beginner" class="sr-only" checked>
-                                    <span class="block font-semibold">Beginner</span>
-                                    <span class="text-[10px] text-slate-400">New to IT</span>
-                                </label>
-                                <label class="level-radio-card cursor-pointer p-2.5 rounded-xl border border-slate-700 bg-slate-950 text-center hover:border-slate-500 transition block">
-                                    <input type="radio" name="rec-level" value="Intermediate" class="sr-only">
-                                    <span class="block font-semibold">Intermediate</span>
-                                    <span class="text-[10px] text-slate-400">Some hands-on</span>
-                                </label>
-                                <label class="level-radio-card cursor-pointer p-2.5 rounded-xl border border-slate-700 bg-slate-950 text-center hover:border-slate-500 transition block">
-                                    <input type="radio" name="rec-level" value="Advanced" class="sr-only">
-                                    <span class="block font-semibold">Advanced</span>
-                                    <span class="text-[10px] text-slate-400">Professional</span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <!-- Areas of Interest -->
-                        <div>
-                            <label class="block text-xs font-medium text-slate-300 mb-1.5">
-                                Areas of Interest (Select one or more) *
-                            </label>
-                            <div class="flex flex-wrap gap-1.5" id="interest-pills-container">
-                                <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-700 bg-slate-950 text-slate-300 hover:border-blue-500 transition" data-val="Networking">
-                                    Networking & Cisco
-                                </button>
-                                <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-700 bg-slate-950 text-slate-300 hover:border-blue-500 transition" data-val="Routing">
-                                    Routing & Switching
-                                </button>
-                                <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-700 bg-slate-950 text-slate-300 hover:border-blue-500 transition" data-val="Artificial Intelligence">
-                                    Artificial Intelligence
-                                </button>
-                                <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-700 bg-slate-950 text-slate-300 hover:border-blue-500 transition" data-val="Machine Learning">
-                                    Machine Learning
-                                </button>
-                                <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-700 bg-slate-950 text-slate-300 hover:border-blue-500 transition" data-val="Cyber Security">
-                                    Cyber Security
-                                </button>
-                                <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-700 bg-slate-950 text-slate-300 hover:border-blue-500 transition" data-val="Cloud Computing">
-                                    Cloud & Azure
-                                </button>
-                                <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-700 bg-slate-950 text-slate-300 hover:border-blue-500 transition" data-val="Python">
-                                    Python Programming
-                                </button>
-                                <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-700 bg-slate-950 text-slate-300 hover:border-blue-500 transition" data-val="Web Development">
-                                    Web Development
-                                </button>
-                                <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-700 bg-slate-950 text-slate-300 hover:border-blue-500 transition" data-val="DevOps">
-                                    DevOps & Automation
-                                </button>
-                            </div>
-                            <input type="hidden" id="rec-interests" required>
-                        </div>
-
-                        <!-- Career Goal -->
-                        <div>
-                            <label for="rec-goal" class="block text-xs font-medium text-slate-300 mb-1.5">
-                                Desired Career Goal (Optional)
-                            </label>
-                            <input
-                                type="text"
-                                id="rec-goal"
-                                placeholder="e.g. Network Support Engineer, AI Specialist, SOC Analyst"
-                                class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-3.5 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition"
-                            />
-                        </div>
-
-                        <!-- Submit Button -->
-                        <div class="pt-2">
-                            <button
-                                type="submit"
-                                id="get-recommendations-btn"
-                                class="w-full py-3 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-semibold text-sm shadow-lg shadow-blue-500/20 transition flex items-center justify-center gap-2"
-                            >
-                                <span>Calculate Top Recommendations</span>
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-
-                <!-- Output Recommendations Display -->
-                <div class="lg:col-span-7 flex flex-col space-y-4">
-                    <!-- Loading State -->
-                    <div id="rec-loading" class="hidden glass-panel rounded-2xl p-8 border border-slate-800 text-center space-y-3">
-                        <div class="inline-block w-8 h-8 border-4 border-blue-500/30 border-t-blue-500 rounded-full animate-spin"></div>
-                        <p class="text-sm text-slate-300 font-medium">Analyzing curriculum chunks from Corvit Knowledge Base...</p>
-                    </div>
-
-                    <!-- Placeholder Empty State -->
-                    <div id="rec-placeholder" class="glass-panel rounded-2xl p-8 sm:p-12 border border-slate-800 text-center space-y-3">
-                        <div class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-2xl mx-auto text-slate-400">
-                            🎓
-                        </div>
-                        <h4 class="text-base font-semibold text-slate-200">Personalized Recommendations Will Appear Here</h4>
-                        <p class="text-xs text-slate-400 max-w-sm mx-auto">
-                            Fill in your background, experience, and interests on the left to calculate the top 2–3 matching courses from Corvit's verified course catalog.
-                        </p>
-                    </div>
-
-                    <!-- Results List -->
-                    <div id="rec-results" class="hidden space-y-4">
-                        <div class="flex items-center justify-between px-1">
-                            <h4 class="text-sm font-semibold text-slate-300 uppercase tracking-wider">Top Recommended Tracks</h4>
-                            <span id="rec-student-summary" class="text-xs text-slate-400 truncate max-w-xs"></span>
-                        </div>
-                        <div id="rec-cards-container" class="space-y-4">
-                            <!-- Injected dynamically -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================ -->
-        <!-- SECTION 3: CAMPUSES & CONTACTS MODAL                         -->
-        <!-- ============================================================ -->
-        <div id="contacts-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
-            <div class="glass-panel rounded-2xl border border-slate-800 max-w-2xl w-full p-6 sm:p-8 shadow-2xl space-y-6 relative animate-fade-in max-h-[90vh] overflow-y-auto">
-                <div class="flex items-start justify-between border-b border-slate-800 pb-4">
-                    <div>
-                        <h3 class="text-xl font-bold font-outfit text-white">Corvit Systems — Official Campuses</h3>
-                        <p class="text-xs text-slate-400">Verified locations & contact details directly from Corvit's knowledge base</p>
-                    </div>
-                    <button id="close-contacts-btn" class="text-slate-400 hover:text-white p-1 rounded-lg text-lg">✕</button>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-                    <!-- Lahore -->
-                    <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl space-y-1.5">
-                        <div class="flex items-center justify-between">
-                            <h4 class="font-semibold text-blue-400 text-sm">Lahore Campus (Head Office)</h4>
-                            <span class="px-2 py-0.5 rounded bg-blue-500/10 text-blue-300 text-[10px]">Head Office</span>
-                        </div>
-                        <p class="text-slate-300">11A-D1, Ghalib Road, Gulberg III, Lahore</p>
-                        <p class="text-slate-400">Phone: <span class="text-slate-200">042-35762401-2 / +92-303-8888555</span></p>
-                        <p class="text-slate-400">Email: <span class="text-slate-200">info@corvit.com</span></p>
-                        <p class="text-slate-500 text-[11px]">Hours: Mon – Sat, 9:00 AM – 9:00 PM</p>
-                    </div>
-
-                    <!-- Islamabad -->
-                    <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl space-y-1.5">
-                        <h4 class="font-semibold text-indigo-400 text-sm">Islamabad Campus</h4>
-                        <p class="text-slate-300">First Floor, Al Malik Center, 70 West, Jinnah Avenue, Blue Area</p>
-                        <p class="text-slate-400">Phone: <span class="text-slate-200">051-2348287</span></p>
-                        <p class="text-slate-500 text-[11px]">Comprehensive IT labs and training classrooms</p>
-                    </div>
-
-                    <!-- Rawalpindi -->
-                    <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl space-y-1.5">
-                        <h4 class="font-semibold text-cyan-400 text-sm">Rawalpindi Campus</h4>
-                        <p class="text-slate-300">2nd Floor, Zarwar Center, Opposite Rabi Center, Murree Road</p>
-                        <p class="text-slate-400">Phone: <span class="text-slate-200">051-4928004</span></p>
-                        <p class="text-slate-500 text-[11px]">On-campus IT training & physical labs</p>
-                    </div>
-
-                    <!-- Peshawar -->
-                    <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl space-y-1.5">
-                        <h4 class="font-semibold text-emerald-400 text-sm">Peshawar Campus</h4>
-                        <p class="text-slate-300">1st Floor, Ali Tower, University Road, Peshawar</p>
-                        <p class="text-slate-400">Phone: <span class="text-slate-200">091-5701670</span></p>
-                        <p class="text-slate-500 text-[11px]">Regional training center for KP</p>
-                    </div>
-                </div>
-
-                <div class="bg-slate-950 p-3 rounded-xl border border-slate-800/80 text-[11px] text-slate-400 text-center">
-                    Note: For real-time seat availability and registration forms, visit your nearest campus or call during regular business hours.
-                </div>
-            </div>
-        </div>
-
-        <!-- ============================================================ -->
-        <!-- SECTION 4: BACKEND API CONFIGURATION MODAL                   -->
-        <!-- ============================================================ -->
-        <div id="api-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
-            <div class="glass-panel rounded-2xl border border-slate-800 max-w-lg w-full p-6 shadow-2xl space-y-5 relative animate-fade-in">
-                <div class="flex items-start justify-between border-b border-slate-800 pb-3">
-                    <div>
-                        <h3 class="text-lg font-bold font-outfit text-white">Backend API Server Settings</h3>
-                        <p class="text-xs text-slate-400">Configure target FastAPI server for local dev or production host</p>
-                    </div>
-                    <button id="close-api-modal-btn" class="text-slate-400 hover:text-white p-1 rounded-lg text-lg">✕</button>
-                </div>
-
-                <div class="space-y-4 text-xs">
-                    <div>
-                        <label for="custom-api-input" class="block font-medium text-slate-300 mb-1">
-                            FastAPI Backend URL
-                        </label>
-                        <input
-                            type="url"
-                            id="custom-api-input"
-                            placeholder="http://127.0.0.1:8000"
-                            class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                        />
-                        <p class="text-[11px] text-slate-400 mt-1">
-                            Default local URL is <code class="text-blue-400 font-mono">http://127.0.0.1:8000</code>. For production (e.g. Render, Railway, Fly.io), enter your deployed backend URL.
-                        </p>
-                    </div>
-
-                    <div id="api-status-box" class="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 text-[11px] text-slate-300 space-y-1">
-                        <div class="flex items-center justify-between">
-                            <span class="text-slate-400">Current Target:</span>
-                            <span id="current-api-display" class="font-mono text-blue-400 font-medium">http://127.0.0.1:8000</span>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-slate-400">Server Health:</span>
-                            <span id="health-status-badge" class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-400">Not Tested</span>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-between gap-2 pt-2">
-                        <button id="test-api-btn" type="button" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium transition flex items-center gap-1.5">
-                            <span>🔍 Test Health (/health)</span>
-                        </button>
+            <!-- Main Content Panels -->
+            <main class="flex-1 overflow-hidden flex flex-col relative p-3 sm:p-4">
+                <!-- ============================================================ -->
+                <!-- SECTION 1: CHAT ADVISOR INTERFACE                            -->
+                <!-- ============================================================ -->
+                <section id="chat-section" class="flex-1 flex flex-col h-full glass-panel rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md dark:shadow-2xl overflow-hidden relative">
+                    <!-- Chat Sub-Header (Visible "New Chat" removed to eliminate duplicate; hidden button preserved for tests) -->
+                    <div class="px-4 sm:px-6 py-2.5 bg-slate-100/80 dark:bg-slate-900/60 border-b border-slate-200 dark:border-slate-800/70 flex items-center justify-between gap-2">
                         <div class="flex items-center gap-2">
-                            <button id="reset-api-btn" type="button" class="px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-slate-200 transition">
-                                Reset Default
-                            </button>
-                            <button id="save-api-btn" type="button" class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold transition">
-                                Save & Apply
-                            </button>
+                            <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                            <span class="text-xs font-semibold text-slate-700 dark:text-slate-300">Student Advisory Session</span>
+                        </div>
+                        <!-- Hidden clear-chat-btn preserved for internal JS & automated test DOM contract -->
+                        <button id="clear-chat-btn" class="hidden" title="Clear chat" aria-hidden="true" tabindex="-1"></button>
+                    </div>
+
+                    <!-- Messages Stream Area -->
+                    <div id="chat-messages" class="flex-1 overflow-y-auto px-4 sm:px-6 py-4 space-y-4 scroll-smooth" role="log" aria-live="polite">
+                        <!-- Welcome Assistant Message -->
+                        <div class="flex items-start gap-2.5 max-w-3xl message-assistant animate-fade-in">
+                            <div class="w-7 h-7 rounded-lg bg-blue-600 flex-shrink-0 flex items-center justify-center text-[11px] font-bold text-white shadow-sm">
+                                AI
+                            </div>
+                            <div class="flex-1">
+                                <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl rounded-tl-sm p-4 sm:p-5 shadow-sm space-y-2.5">
+                                    <p class="text-[13.5px] sm:text-sm leading-relaxed text-slate-800 dark:text-slate-200 font-medium">
+                                        Welcome to the <span class="text-blue-600 dark:text-blue-400 font-semibold">Corvit AI Advisor</span>. I provide verified academic guidance directly from the official Corvit Systems knowledge base.
+                                    </p>
+                                    <p class="text-xs sm:text-[13px] text-slate-600 dark:text-slate-400 leading-relaxed">
+                                        You can ask about IT courses (CCNA, Python, AI, Cyber Security, Cloud), NAVTTC free training programs, batch schedules, fees, or use our Course Matcher to find the right career track.
+                                    </p>
+                                    <div class="pt-2 border-t border-slate-200 dark:border-slate-800/80 flex flex-wrap gap-2 text-xs text-slate-500 dark:text-slate-400">
+                                        <span class="flex items-center gap-1">🏛️ Founded 2000</span>
+                                        <span class="text-slate-300 dark:text-slate-700">•</span>
+                                        <span class="flex items-center gap-1">📍 Lahore, Islamabad, Rawalpindi, Peshawar</span>
+                                        <span class="text-slate-300 dark:text-slate-700">•</span>
+                                        <span class="flex items-center gap-1">🎓 150,000+ Alumni</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </main>
 
-    <!-- Footer -->
-    <footer class="border-t border-slate-800/80 py-4 px-6 text-center text-xs text-slate-500">
-        <p>Corvit AI Advisor — Powered by Grounded Retrieval & Groq LLM Runtime. Verified against Corvit Systems Knowledge Base.</p>
-    </footer>
+                    <!-- Typing / Loading Indicator -->
+                    <div id="typing-indicator" class="hidden px-4 sm:px-6 py-2.5 bg-slate-100/80 dark:bg-slate-950/60 border-t border-slate-200 dark:border-slate-800/40 flex items-center gap-2.5 text-xs text-slate-500 dark:text-slate-400">
+                        <div class="flex items-center gap-1">
+                            <span class="w-2 h-2 rounded-full bg-blue-500 animate-bounce" style="animation-delay: 0s"></span>
+                            <span class="w-2 h-2 rounded-full bg-indigo-500 animate-bounce" style="animation-delay: 0.15s"></span>
+                            <span class="w-2 h-2 rounded-full bg-cyan-500 animate-bounce" style="animation-delay: 0.3s"></span>
+                        </div>
+                        <span id="typing-status-text">Consulting verified Corvit knowledge base...</span>
+                    </div>
+
+                    <!-- Error Banner -->
+                    <div id="chat-error-banner" class="hidden px-4 py-2 bg-rose-50 dark:bg-rose-950/80 border-t border-rose-200 dark:border-rose-800 text-rose-700 dark:text-rose-200 text-xs flex items-center justify-between gap-2">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-rose-500 dark:text-rose-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                            <span id="chat-error-text">An error occurred while connecting to the server.</span>
+                        </div>
+                        <button id="dismiss-error-btn" class="text-rose-600 dark:text-rose-300 hover:text-rose-900 dark:hover:text-white text-xs font-semibold px-2 py-0.5">✕</button>
+                    </div>
+
+                    <!-- Bottom Input Section: Quick Questions -> Chat Input -> Send / Input Controls -->
+                    <div class="p-3 sm:p-4 bg-slate-50 dark:bg-slate-900/80 border-t border-slate-200 dark:border-slate-800/80 space-y-2.5">
+                        <!-- 1. Quick Questions Directly Above Input Area -->
+                        <div id="suggestion-bar" class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5 text-xs">
+                            <span class="text-slate-500 dark:text-slate-400 whitespace-nowrap font-semibold flex items-center gap-1 text-[11px] uppercase tracking-wider">
+                                💡 Quick questions:
+                            </span>
+                            <button type="button" class="chip-btn whitespace-nowrap px-3 py-1 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-300 border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-500 shadow-sm transition text-xs font-medium">
+                                What IT courses are offered?
+                            </button>
+                            <button type="button" class="chip-btn whitespace-nowrap px-3 py-1 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-300 border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-500 shadow-sm transition text-xs font-medium">
+                                CCNA routing and switching outline
+                            </button>
+                            <button type="button" class="chip-btn whitespace-nowrap px-3 py-1 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-300 border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-500 shadow-sm transition text-xs font-medium">
+                                NAVTTC free training programs
+                            </button>
+                            <button type="button" class="chip-btn whitespace-nowrap px-3 py-1 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-300 border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-500 shadow-sm transition text-xs font-medium">
+                                Paid course fee payment procedures
+                            </button>
+                            <button type="button" class="chip-btn whitespace-nowrap px-3 py-1 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-300 border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-500 shadow-sm transition text-xs font-medium">
+                                Latest schedule & batch timings
+                            </button>
+                        </div>
+
+                        <!-- 2. Chat Input & 3. Send / Input Controls -->
+                        <form id="chat-form" class="space-y-2" autocomplete="off">
+                            <div class="relative flex items-center">
+                                <textarea
+                                    id="chat-input"
+                                    rows="1"
+                                    placeholder="Ask a question about Corvit courses, batch schedules, fees, or NAVTTC..."
+                                    class="w-full bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700/80 rounded-xl px-4 py-2.5 text-[13.5px] sm:text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition resize-none max-h-32 shadow-sm"
+                                    required
+                                    aria-label="Student Query Input"
+                                ></textarea>
+                            </div>
+                            <div class="flex items-center justify-between gap-2 pt-0.5">
+                                <label class="flex items-center gap-1.5 cursor-pointer text-xs text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 select-none">
+                                    <input type="checkbox" id="allow-web-research-check" checked class="rounded border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-blue-600 focus:ring-blue-500">
+                                    <span class="text-[11px] sm:text-xs">Allow secondary web verification (<code class="font-mono text-blue-600 dark:text-blue-400">site:corvit.com</code>)</span>
+                                </label>
+                                <button
+                                    type="submit"
+                                    id="send-btn"
+                                    class="px-5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-blue-500/20 transition disabled:opacity-50 disabled:cursor-not-allowed flex-shrink-0"
+                                    aria-label="Send Message"
+                                >
+                                    <span>Send</span>
+                                    <svg class="w-3.5 h-3.5 transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 2: COURSE RECOMMENDATION WIZARD                      -->
+                <!-- ============================================================ -->
+                <section id="recommend-section" class="hidden flex-1 overflow-y-auto space-y-6 pr-1">
+                    <!-- Wizard Header Banner -->
+                    <div class="glass-panel rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-xl bg-gradient-to-br from-blue-50/50 via-white to-indigo-50/30 dark:from-slate-900 dark:via-slate-950 dark:to-blue-950/30">
+                        <div class="max-w-3xl">
+                            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 dark:bg-indigo-500/10 text-blue-700 dark:text-indigo-400 border border-blue-200 dark:border-indigo-500/20 mb-3">
+                                Career Path Recommendation Engine
+                            </span>
+                            <h2 class="text-2xl sm:text-3xl font-bold font-outfit tracking-tight text-slate-900 dark:text-white mb-2">
+                                Find Your Best-Fit IT Training Track
+                            </h2>
+                            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Our intelligent recommendation engine dynamically scores Corvit's verified course catalog against your educational background, skill level, interests, and career ambitions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Form & Results Layout -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                        <!-- Input Profile Form -->
+                        <div class="lg:col-span-5 glass-panel rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm space-y-5">
+                            <h3 class="text-base font-semibold font-outfit text-slate-800 dark:text-slate-200 border-b border-slate-200 dark:border-slate-800 pb-3 flex items-center gap-2">
+                                <span>👤</span> Student Profile
+                            </h3>
+
+                            <form id="recommendation-form" class="space-y-4">
+                                <!-- Background -->
+                                <div>
+                                    <label for="rec-background" class="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1.5">
+                                        Educational / Professional Background *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="rec-background"
+                                        placeholder="e.g. Intermediate, Matric, BSCS, Non-IT Graduate"
+                                        class="w-full bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700/80 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition shadow-sm"
+                                        required
+                                    />
+                                </div>
+
+                                <!-- Experience Level -->
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1.5">
+                                        Experience Level *
+                                    </label>
+                                    <div class="grid grid-cols-3 gap-2 text-xs">
+                                        <label class="level-radio-card active-level cursor-pointer p-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-center hover:border-blue-400 transition block shadow-sm">
+                                            <input type="radio" name="rec-level" value="Beginner" class="sr-only" checked>
+                                            <span class="block font-semibold text-slate-800 dark:text-slate-200">Beginner</span>
+                                            <span class="text-[10px] text-slate-500 dark:text-slate-400">New to IT</span>
+                                        </label>
+                                        <label class="level-radio-card cursor-pointer p-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-center hover:border-blue-400 transition block shadow-sm">
+                                            <input type="radio" name="rec-level" value="Intermediate" class="sr-only">
+                                            <span class="block font-semibold text-slate-800 dark:text-slate-200">Intermediate</span>
+                                            <span class="text-[10px] text-slate-500 dark:text-slate-400">Some hands-on</span>
+                                        </label>
+                                        <label class="level-radio-card cursor-pointer p-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-center hover:border-blue-400 transition block shadow-sm">
+                                            <input type="radio" name="rec-level" value="Advanced" class="sr-only">
+                                            <span class="block font-semibold text-slate-800 dark:text-slate-200">Advanced</span>
+                                            <span class="text-[10px] text-slate-500 dark:text-slate-400">Professional</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Areas of Interest -->
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1.5">
+                                        Areas of Interest (Select one or more) *
+                                    </label>
+                                    <div class="flex flex-wrap gap-1.5" id="interest-pills-container">
+                                        <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 hover:border-blue-500 transition shadow-sm" data-val="Networking">
+                                            Networking & Cisco
+                                        </button>
+                                        <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 hover:border-blue-500 transition shadow-sm" data-val="Routing">
+                                            Routing & Switching
+                                        </button>
+                                        <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 hover:border-blue-500 transition shadow-sm" data-val="Artificial Intelligence">
+                                            Artificial Intelligence
+                                        </button>
+                                        <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 hover:border-blue-500 transition shadow-sm" data-val="Machine Learning">
+                                            Machine Learning
+                                        </button>
+                                        <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 hover:border-blue-500 transition shadow-sm" data-val="Cyber Security">
+                                            Cyber Security
+                                        </button>
+                                        <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 hover:border-blue-500 transition shadow-sm" data-val="Cloud Computing">
+                                            Cloud & Azure
+                                        </button>
+                                        <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 hover:border-blue-500 transition shadow-sm" data-val="Python">
+                                            Python Programming
+                                        </button>
+                                        <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 hover:border-blue-500 transition shadow-sm" data-val="Web Development">
+                                            Web Development
+                                        </button>
+                                        <button type="button" class="interest-pill px-3 py-1.5 rounded-lg text-xs font-medium border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 hover:border-blue-500 transition shadow-sm" data-val="DevOps">
+                                            DevOps & Automation
+                                        </button>
+                                    </div>
+                                    <input type="hidden" id="rec-interests" required>
+                                </div>
+
+                                <!-- Career Goal -->
+                                <div>
+                                    <label for="rec-goal" class="block text-xs font-medium text-slate-700 dark:text-slate-300 mb-1.5">
+                                        Desired Career Goal (Optional)
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="rec-goal"
+                                        placeholder="e.g. Network Support Engineer, AI Specialist, SOC Analyst"
+                                        class="w-full bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700/80 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition shadow-sm"
+                                    />
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="pt-2">
+                                    <button
+                                        type="submit"
+                                        id="get-recommendations-btn"
+                                        class="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-md shadow-blue-500/20 transition flex items-center justify-center gap-2"
+                                    >
+                                        <span>Calculate Top Recommendations</span>
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Output Recommendations Display -->
+                        <div class="lg:col-span-7 flex flex-col space-y-4">
+                            <!-- Loading State -->
+                            <div id="rec-loading" class="hidden glass-panel rounded-2xl p-8 border border-slate-200 dark:border-slate-800 text-center space-y-3">
+                                <div class="inline-block w-8 h-8 border-4 border-blue-500/30 border-t-blue-500 rounded-full animate-spin"></div>
+                                <p class="text-sm text-slate-600 dark:text-slate-300 font-medium">Analyzing curriculum chunks from Corvit Knowledge Base...</p>
+                            </div>
+
+                            <!-- Placeholder Empty State -->
+                            <div id="rec-placeholder" class="glass-panel rounded-2xl p-8 sm:p-12 border border-slate-200 dark:border-slate-800 text-center space-y-3">
+                                <div class="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center text-2xl mx-auto text-slate-400">
+                                    🎓
+                                </div>
+                                <h4 class="text-base font-semibold text-slate-800 dark:text-slate-200">Personalized Recommendations Will Appear Here</h4>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 max-w-sm mx-auto leading-relaxed">
+                                    Fill in your background, experience, and interests on the left to calculate the top 2–3 matching courses from Corvit's verified course catalog.
+                                </p>
+                            </div>
+
+                            <!-- Results List -->
+                            <div id="rec-results" class="hidden space-y-4">
+                                <div class="flex items-center justify-between px-1">
+                                    <h4 class="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">Top Recommended Tracks</h4>
+                                    <span id="rec-student-summary" class="text-xs text-slate-500 dark:text-slate-400 truncate max-w-xs font-medium"></span>
+                                </div>
+                                <div id="rec-cards-container" class="space-y-4">
+                                    <!-- Injected dynamically by script.js -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 3: CAMPUSES & CONTACTS VIEW                          -->
+                <!-- ============================================================ -->
+                <section id="contacts-modal" class="hidden flex-1 overflow-y-auto p-2 sm:p-4">
+                    <div class="max-w-4xl mx-auto glass-panel rounded-2xl border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-sm dark:shadow-2xl space-y-6">
+                        <div class="flex items-start justify-between border-b border-slate-200 dark:border-slate-800 pb-4">
+                            <div>
+                                <h3 class="text-xl font-bold font-outfit text-slate-900 dark:text-white">Corvit Systems — Official Campuses</h3>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Verified locations & contact details directly from Corvit's knowledge base</p>
+                            </div>
+                            <button id="close-contacts-btn" class="text-slate-400 hover:text-slate-700 dark:hover:text-white p-1 rounded-lg text-lg transition" title="Back to Chat">✕</button>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                            <!-- Lahore -->
+                            <div class="bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 p-4 rounded-xl space-y-1.5">
+                                <div class="flex items-center justify-between">
+                                    <h4 class="font-semibold text-blue-600 dark:text-blue-400 text-sm">Lahore Campus (Head Office)</h4>
+                                    <span class="px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-500/10 text-blue-700 dark:text-blue-300 text-[10px] font-semibold">Head Office</span>
+                                </div>
+                                <p class="text-slate-700 dark:text-slate-300">11A-D1, Ghalib Road, Gulberg III, Lahore</p>
+                                <p class="text-slate-600 dark:text-slate-400">Phone: <span class="text-slate-900 dark:text-slate-200 font-medium">042-35762401-2 / +92-303-8888555</span></p>
+                                <p class="text-slate-600 dark:text-slate-400">Email: <span class="text-slate-900 dark:text-slate-200 font-medium">info@corvit.com</span></p>
+                                <p class="text-slate-500 text-[11px]">Hours: Mon – Sat, 9:00 AM – 9:00 PM</p>
+                            </div>
+
+                            <!-- Islamabad -->
+                            <div class="bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 p-4 rounded-xl space-y-1.5">
+                                <h4 class="font-semibold text-indigo-600 dark:text-indigo-400 text-sm">Islamabad Campus</h4>
+                                <p class="text-slate-700 dark:text-slate-300">First Floor, Al Malik Center, 70 West, Jinnah Avenue, Blue Area</p>
+                                <p class="text-slate-600 dark:text-slate-400">Phone: <span class="text-slate-900 dark:text-slate-200 font-medium">051-2348287</span></p>
+                                <p class="text-slate-500 text-[11px]">Comprehensive IT labs and training classrooms</p>
+                            </div>
+
+                            <!-- Rawalpindi -->
+                            <div class="bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 p-4 rounded-xl space-y-1.5">
+                                <h4 class="font-semibold text-cyan-600 dark:text-cyan-400 text-sm">Rawalpindi Campus</h4>
+                                <p class="text-slate-700 dark:text-slate-300">2nd Floor, Zarwar Center, Opposite Rabi Center, Murree Road</p>
+                                <p class="text-slate-600 dark:text-slate-400">Phone: <span class="text-slate-900 dark:text-slate-200 font-medium">051-4928004</span></p>
+                                <p class="text-slate-500 text-[11px]">On-campus IT training & physical labs</p>
+                            </div>
+
+                            <!-- Peshawar -->
+                            <div class="bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 p-4 rounded-xl space-y-1.5">
+                                <h4 class="font-semibold text-emerald-600 dark:text-emerald-400 text-sm">Peshawar Campus</h4>
+                                <p class="text-slate-700 dark:text-slate-300">1st Floor, Ali Tower, University Road, Peshawar</p>
+                                <p class="text-slate-600 dark:text-slate-400">Phone: <span class="text-slate-900 dark:text-slate-200 font-medium">091-5701670</span></p>
+                                <p class="text-slate-500 text-[11px]">Regional training center for KP</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-100 dark:bg-slate-950 p-3 rounded-xl border border-slate-200 dark:border-slate-800/80 text-[11px] text-slate-500 dark:text-slate-400 text-center">
+                            Note: For real-time seat availability and registration forms, visit your nearest campus or call during regular business hours.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 4: BACKEND API CONFIGURATION VIEW                    -->
+                <!-- ============================================================ -->
+                <section id="api-modal" class="hidden flex-1 overflow-y-auto p-2 sm:p-4 flex items-start justify-center">
+                    <div class="max-w-xl w-full glass-panel rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm dark:shadow-2xl space-y-5">
+                        <div class="flex items-start justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
+                            <div>
+                                <h3 class="text-lg font-bold font-outfit text-slate-900 dark:text-white">Backend API Server Settings</h3>
+                                <p class="text-xs text-slate-500 dark:text-slate-400">Configure target FastAPI server for local dev or production host</p>
+                            </div>
+                            <button id="close-api-modal-btn" class="text-slate-400 hover:text-slate-700 dark:hover:text-white p-1 rounded-lg text-lg transition" title="Back to Chat">✕</button>
+                        </div>
+
+                        <div class="space-y-4 text-xs">
+                            <div>
+                                <label for="custom-api-input" class="block font-medium text-slate-700 dark:text-slate-300 mb-1">
+                                    FastAPI Backend URL
+                                </label>
+                                <input
+                                    type="url"
+                                    id="custom-api-input"
+                                    placeholder="http://127.0.0.1:8000"
+                                    class="w-full bg-white dark:bg-slate-950 border border-slate-300 dark:border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 shadow-sm"
+                                />
+                                <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">
+                                    Default local URL is <code class="text-blue-600 dark:text-blue-400 font-mono">http://127.0.0.1:8000</code>. For production (e.g. Render), enter your deployed backend URL.
+                                </p>
+                            </div>
+
+                            <div id="api-status-box" class="p-3 rounded-xl bg-slate-50 dark:bg-slate-950/70 border border-slate-200 dark:border-slate-800/80 text-[11px] text-slate-700 dark:text-slate-300 space-y-1">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-500 dark:text-slate-400">Current Target:</span>
+                                    <span id="current-api-display" class="font-mono text-blue-600 dark:text-blue-400 font-medium">http://127.0.0.1:8000</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-500 dark:text-slate-400">Server Health:</span>
+                                    <span id="health-status-badge" class="px-2 py-0.5 rounded text-[10px] bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-semibold">Not Tested</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between gap-2 pt-2">
+                                <button id="test-api-btn" type="button" class="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-medium transition flex items-center gap-1.5 border border-slate-200 dark:border-slate-700">
+                                    <span>🔍 Test Health (/health)</span>
+                                </button>
+                                <div class="flex items-center gap-2">
+                                    <button id="reset-api-btn" type="button" class="px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-900 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition border border-slate-200 dark:border-slate-800">
+                                        Reset Default
+                                    </button>
+                                    <button id="save-api-btn" type="button" class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold transition shadow-sm">
+                                        Save & Apply
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
